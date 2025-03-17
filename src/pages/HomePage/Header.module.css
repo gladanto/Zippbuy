@@ -1,0 +1,45 @@
+
+.header {
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.searchInput {
+  background-color: rgb(185, 231, 232) !important;
+  border: 1px solid brown;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.hoverEffect {
+  transition: 0.3s ease-in-out;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.1);
+  color: #217dbb !important;
+}
+
+.loginBtn, .registerBtn {
+  background-color: #0441aa;
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 10px 20px !important;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease-in-out !important;
+  display: inline-block;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.loginBtn:hover, .registerBtn:hover {
+  background-color: #028a5e !important;
+  transform: scale(1.1);
+}
