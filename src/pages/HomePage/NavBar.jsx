@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaChevronRight, FaChevronDown } from "react-icons/fa";
+import { FaChevronRight, FaChevronDown, FaBars } from "react-icons/fa";
 import Spares from "../../assets/spares.png";
 import Stores from "../../assets/stores.png";
 import FMCG from "../../assets/FMCG.png";
 import Freelance from "../../assets/freelance.png";
 import TechService from "../../assets/techservice.png";
-import styles from "./NavBar.module.css"; // Import CSS Module
+import styles from "./NavBar.module.css"; // Ensure you have proper CSS
 
 const NavBar = () => {
     const [hoveredCategory, setHoveredCategory] = useState(null);
     const [hoveredSub, setHoveredSub] = useState(null);
     const [expandedSub, setExpandedSub] = useState(null);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const categories = [
         { 
@@ -67,7 +68,7 @@ const NavBar = () => {
             subCategories: [
                 { name: "CDT Gayeing", link: "#" },
                 { name: "UTG", link: "#" },
-                { name: "SteelRenewal", link: "#" },
+                { name: "Steel Renewal", link: "#" },
                 { name: "Safety Service", link: "#" },
                 { name: "Painting", link: "#" }
             ]
@@ -88,7 +89,7 @@ const NavBar = () => {
 
     /** Renders subcategories recursively */
     const renderSubCategories = (subCategories, level = 1) => (
-        <ul className={`${styles.dropdownMenu} ${level > 1 ? styles.subMenu : ""}`}>
+        <ul className={`${styles.dropdownMenu} ${level > 1 ? styles.subMenu : ""}`} style={{ right: 0, left: "auto" }}>
             {subCategories.map((sub, idx) => (
                 <li 
                     key={idx} 
@@ -115,31 +116,48 @@ const NavBar = () => {
     );
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <nav className="navbar navbar-expand-md navbar-light bg-light px-3">
             <div className="container-fluid">
-                <div className="navbar-nav d-flex w-100 justify-content-between">
-                    {categories.map((category, index) => (
-                        <div 
-                            key={index} 
-                            className={`${styles.navItem} ${styles.w100}`}
-                            onMouseEnter={() => setHoveredCategory(index)}
-                            onMouseLeave={() => {
-                                setHoveredCategory(null);
-                                setHoveredSub(null);
-                                setExpandedSub(null);
-                            }}
-                        >
-                            <a 
-                                href={category.link} 
-                                className={styles.navLink} 
-                                role="button"
+                
+                {/* Mobile Menu Button */}
+                <button 
+                    className="navbar-toggler" 
+                    type="button" 
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                >
+                    <FaBars />
+                </button>
+
+                <div className={`collapse navbar-collapse ${isMobileMenuOpen ? "show" : ""}`}>
+                    <div className="navbar-nav d-flex w-100 justify-content-between">
+                        {categories.map((category, index) => (
+                            <div 
+                                key={index} 
+                                className={`${styles.navItem} ${styles.w100}`}
+                                onMouseEnter={() => setHoveredCategory(index)}
+                                onMouseLeave={() => {
+                                    setHoveredCategory(null);
+                                    setHoveredSub(null);
+                                    setExpandedSub(null);
+                                }}
                             >
-                                <img src={category.imgSrc} alt={category.alt} className={styles.navImage} />
-                                <span>{category.name}</span>
-                            </a>
-                            {hoveredCategory === index && category.subCategories && renderSubCategories(category.subCategories)}
-                        </div>
-                    ))}
+                                <a 
+                                    href={category.link} 
+                                    className={styles.navLink} 
+                                    role="button"
+                                >
+                                    {/* Show Image on PC, Hide on Mobile */}
+                                    <img 
+                                        src={category.imgSrc} 
+                                        alt={category.alt} 
+                                        className={`${styles.navImage} d-none d-md-inline`} 
+                                    />
+                                    <span>{category.name}</span>
+                                </a>
+                                {hoveredCategory === index && category.subCategories && renderSubCategories(category.subCategories)}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </nav>

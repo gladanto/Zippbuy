@@ -23,7 +23,7 @@ const Header = () => {
             <img src={logo} alt="ZippBuy Logo" height="40" />
           </Link>
 
-          {/* Search Bar */}
+          {/* Search Bar
           <div className="d-flex flex-grow-1 mx-3 ${styles.searchContainer}">
             <input
               type="text"
@@ -33,7 +33,7 @@ const Header = () => {
             <button className="btn btn-outline-primary">
               <i className="bi bi-search"></i>
             </button>
-          </div>
+          </div> */}
 
           {/* Navbar Links */}
           <div className="navbar-nav ms-auto d-flex align-items-center">
@@ -41,14 +41,14 @@ const Header = () => {
               onClick={scrollToCustomerSupport}
               className={`btn btn-link nav-link ${styles.hoverEffect}`}
             >
-              Support 24x7*
+              {/* Support 24x7* */}
             </button>
 
-            {/* Cart Icon */}
+            {/* Cart Icon
             <Link to="/cart" className={`nav-link d-flex align-items-center ${styles.hoverEffect}`}>
               <MdShoppingCart size={24} className="me-1" />
               Cart
-            </Link>
+            </Link> */}
 
             {/* Login & Register Buttons */}
             <div className="d-flex">
