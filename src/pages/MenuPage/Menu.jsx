@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/TopNavBar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./menu.scss";
+import "./Menu.scss";
 import products from "../../data/product.json"
 
 const Menu = () => {
