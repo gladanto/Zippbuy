@@ -1,0 +1,63 @@
+.fadeIn {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.linkHover {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.linkHover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.linkHover:hover {
+    color: #fff;
+}
+
+.linkHover:hover::after {
+    width: 100%;
+}
+
+.socialHover {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.socialHover:hover {
+    transform: scale(1.2);
+    color: #ffeb3b;
+}
+
+.footerAnimated {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

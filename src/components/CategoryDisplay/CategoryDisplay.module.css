@@ -1,0 +1,58 @@
+/* Overall Section */
+.categorySection {
+    /* You may add custom padding or background overrides here if needed */
+  }
+  
+  /* Sidebar Container */
+  .categoryContainer {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Visibility Helpers */
+  .show {
+    display: block !important;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  /* Top-Level Category Header */
+  .categoryHeader {
+    /* Custom styling already provided by Bootstrap classes; add module tweaks if needed */
+  }
+  
+  /* Subcategory Item */
+  .subCategoryItem {
+    transition: background 0.3s;
+  }
+  
+  .subCategoryItem:hover {
+    background: #f8f9fa;
+  }
+  
+  /* Hero Section */
+  .heroContainer {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heroText {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  
+  .heroText span {
+    letter-spacing: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .heroText h2 {
+      font-size: 24px;
+    }
+  
+    .heroText p {
+      font-size: 14px;
+    }
+  }
+  

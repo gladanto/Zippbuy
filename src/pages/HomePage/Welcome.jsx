@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Carousel } from "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import zipbuyvideo from "../../assets/zipbuyvideo.mp4";
-import zipbuy from "../../assets/Zipbuy.mp4";
-import carsoleimg from "../../assets/carsole.jpg";
+import c1 from "/assets/c1.png";
+import c2 from "/assets/c2.mp4";
+import c3 from "/assets/c3.png";
 
 const Welcome = () => {
   useEffect(() => {
@@ -41,20 +41,17 @@ const Welcome = () => {
       </div>
 
       <div className="carousel-inner position-relative w-100" style={{ paddingTop: "37.5%" }}>
-        <div className="carousel-item active position-absolute top-0 start-0 w-100 h-100">
+      <div className="carousel-item active position-absolute top-0 start-0 w-100 h-100">
+          <img src={c1} className="w-100 h-100 object-fit-cover position-absolute" alt="Carousel" />
+        </div>
+        <div className="carousel-item position-absolute top-0 start-0 w-100 h-100">
           <video className="w-100 h-100 object-fit-cover position-absolute" autoPlay muted>
-            <source src={zipbuyvideo} type="video/mp4" />
+            <source src={c2} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className="carousel-item position-absolute top-0 start-0 w-100 h-100">
-          <video className="w-100 h-100 object-fit-cover position-absolute" autoPlay muted>
-            <source src={zipbuy} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className="carousel-item position-absolute top-0 start-0 w-100 h-100">
-          <img src={carsoleimg} className="w-100 h-100 object-fit-cover position-absolute" alt="Carousel" />
+          <img src={c3} className="w-100 h-100 object-fit-cover position-absolute" alt="Carousel" />
         </div>
       </div>
 

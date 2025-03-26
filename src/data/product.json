@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Corrugated Shipping Boxes - 25 Pack",
+        "price": 34.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging.",
+        "used": false
+    },
+    {
+        "id": 2,
+        "name": "Heavy-Duty Packing Tape with Dispenser",
+        "price": 15.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
+        "used": false
+    },
+    {
+        "id": 3,
+        "name": "Bubble Wrap Roll - 12 Inch x 100 Feet",
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Protects fragile items during shipping, lightweight and easy to cut.",
+        "used": false
+    },
+    {
+        "id": 4,
+        "name": "Poly Mailers - 100 Pack",
+        "price": 23.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Water-resistant poly mailers, self-sealing for convenient shipping.",
+        "used": false
+    },
+    {
+        "id": 5,
+        "name": "Digital Shipping Scale - 110 lbs Capacity",
+        "price": 39.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Accurate scale for weighing packages, ideal for postal shipping.",
+        "used": false
+    },
+    {
+        "id": 6,
+        "name": "Kraft Paper Roll for Packing - 30 Inch x 100 Feet",
+        "price": 24.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Thick kraft paper for wrapping, packaging, and cushioning shipments.",
+        "used": false
+    },
+    {
+        "id": 7,
+        "name": "Packing Peanuts - 3 Cubic Feet",
+        "price": 21.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Lightweight, anti-static packing peanuts for filling voids in boxes.",
+        "used": false
+    },
+    {
+        "id": 8,
+        "name": "Fragile Stickers - 500 Labels",
+        "price": 12.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Bright red fragile warning labels to protect delicate shipments.",
+        "used": false
+    },
+    {
+        "id": 9,
+        "name": "Recycled Cardboard Shipping Boxes - 20 Pack",
+        "price": 29.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Eco-friendly recycled shipping boxes, sturdy and reliable.",
+        "used": true
+    },
+    {
+        "id": 10,
+        "name": "Handheld Stretch Wrap for Pallets",
+        "price": 27.99,
+        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "description": "Cling wrap for securing and stabilizing pallet shipments.",
+        "used": false
+    }
+]
+  
