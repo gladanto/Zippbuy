@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css"; // Importing module.css
+import styles from "./Footer.scss";
 import logoW from "/assets/logo-w.png";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
