@@ -102,7 +102,9 @@ const Content = () => {
                   <div className="card-body text-center">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-text">${product.price.toFixed(2)}</p>
-                    <button className="btn btn-primary btn-sm">View Product</button>
+                    <button className="btn btn-primary btn-sm" onClick={() => navigate("/product")}>
+                        View Product
+                    </button>
                   </div>
                 </div>
               </div>
