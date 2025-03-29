@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Productdes.css";
-import proone from "/assets/img - 2.png";
+import proone from "/assets/img2.png";
 import Productsubimg from "./Productsubimg";
 import ProductSpecifications from "./ProductSpecifications";
 
