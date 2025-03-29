@@ -5,6 +5,9 @@ import ProductDescription from "../../components/Product/Productdescription";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Productsubimg from "../../components/Product/Productsubimg";
 import ProductSpecifications from "../../components/Product/ProductSpecifications";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
 
 
 const productData = {
@@ -27,16 +30,25 @@ const productData = {
 const Productpage = () => {
   return (
     <>
+     {<Header/>}
     { <NavBar/> }
+  
+   
+    
+   
     <div className="product-page">
       
       <div className="product-des">
       
         { <ProductDescription {...productData} /> }
+       
       </div>
+    
     </div>
+    <Footer/>
     </>
   );
 };
+
 
 export default Productpage;
