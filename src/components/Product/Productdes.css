@@ -1,8 +1,8 @@
-.product-container {
+ .product-container {
     display: flex;
     border: 1px solid #ddd;
     height: 100vh;
-    border-radius: 8px;
+    border-radius: 6px;
     gap: 5rem;
     justify-content: center;
     padding: 70px;
@@ -79,14 +79,15 @@
   .subimg{
     display: flex;
     flex-direction: column;
-    width: 100px;
-    gap: 2rem;
+    width: 50px;
+   gap: 2rem;
     align-items: center;
   }
   .imgsub{
-    height: 50px;
+    height: 50x;
     width: 50px;
   }
+  
   .subimgcontainer{
     height: 50px;
     width: 50px;
@@ -129,7 +130,6 @@
     }
   }
   
-  /* For tablets (768px - 991px) */
   @media (max-width: 991px) {
     .product-image {
       width: 350px;
@@ -177,3 +177,39 @@
     }
   }
   
+
+
+
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
