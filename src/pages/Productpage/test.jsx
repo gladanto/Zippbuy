@@ -1,108 +1,126 @@
-import React from "react";
-import ProductImage from "../../components/Product/ProductImage";
-import "./Productpage.css";
-import ProductDescription from "../../components/Product/Productdescription";
-import NavBar from "../../components/TopNavBar/NavBar";
-import Productsubimg from "../../components/Product/Productsubimg";
-import ProductSpecifications from "../../components/Product/ProductSpecifications";
 
+import React, { useState, useEffect } from "react";
+import "./test.scss";
+import data from "../../data/newdata.json";
+import { ExpandMore } from "@mui/icons-material";
 
-const productData = {
-  title: " BITZER 2T.2Y COMPRESSORS",
-  description: "The BITZER 2T.2Y is a two-cylinder, semi-hermetic reciprocating compressor designed for reliable and efficient operation in refrigeration and air conditioning applications.",
-  price: 99.99,
-  image: "", 
-  rating: 4.5,
-  reviews: 1200,
-  features: [
-    "Make: Bitzer",
-    "Model: 2T.2Y",
-    "Displacement: 9.4-23.7 m3/h",
-    "Sr No.: 1674602791,1674602792",
-    "Speed: 700-1750 RPM",
-    "LP/HP max.: 19/25 Bar"
-  ],
-};
+const Test = () => {
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeSubcategory, setActiveSubcategory] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
-const test = () => {
+  // Detect window resize to update isMobile state
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 767);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleCategoryClick = (id) => {
+    if (isMobile) {
+      setActiveCategory((prev) => (prev === id ? null : id));
+      setActiveSubcategory(null); // Reset subcategory selection
+    }
+  };
+
+  const handleSubcategoryClick = (subcategory) => {
+    if (isMobile) {
+      setActiveSubcategory((prev) => (prev === subcategory.id ? null : subcategory.id));
+    }
+  };
+
   return (
-
-    <><nav class="navbar bg-light fixed-top d-lg-none">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        {/* Mobile Toggle Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        <div className="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title">Menu</h5>
+            <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider"/>
-                    </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+
+          <div className="offcanvas-body">
+            <ul className="navbar-nav">
+              {data.map((category) => (
+                <li
+                  key={category.id}
+                  className={`nav-item ${activeCategory === category.id ? "active-category" : ""}`}
+                  onMouseEnter={() => !isMobile && setActiveCategory(category.id)}
+                  onMouseLeave={() => !isMobile && setActiveCategory(null)}
+                >
+                  {/* Category Link */}
+                  <a
+                    className="nav-link category-link"
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleCategoryClick(category.id);
+                    }}
+                  >
+                    <div className="icon-wrapper">
+                      {!isMobile && <img src={category.img} alt={category.alt} className="icon" />}
+                      <span className="dropdown-name">{category.name}</span>
+                    </div>
+                  </a>
+
+                  {/* Subcategories Dropdown */}
+                  {activeCategory === category.id && category.subcategories && (
+                    <ul className="dropdown-menu show">
+                      {category.subcategories.map((subcategory) => (
+                        <li
+                          key={subcategory.id}
+                          className={`subcategory-item ${activeSubcategory === subcategory.id ? "active-subcategory" : ""}`}
+                          onMouseEnter={() => !isMobile && setActiveSubcategory(subcategory.id)}
+                          onMouseLeave={() => !isMobile && setActiveSubcategory(null)}
+                        >
+                          {/* Subcategory Link */}
+                          <a
+                            className="dropdown-item"
+                            href="#"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleSubcategoryClick(subcategory);
+                            }}
+                          >
+                            {subcategory.name}
+                            {subcategory.childsubcategories && <ExpandMore className="expand-icon" />}
+                          </a>
+
+                          {/* Child Subcategories */}
+                          <ul className={`child-dropdown ${activeSubcategory === subcategory.id ? "show" : ""}`}>
+                            {subcategory.childsubcategories &&
+                              subcategory.childsubcategories.map((child) => (
+                                <li key={child.id}>
+                                  <a className="dropdown-item" href="#">
+                                    {child.name}
+                                  </a>
+                                </li>
+                              ))}
+                          </ul>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
             </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
           </div>
         </div>
       </div>
-    </nav><nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-flex">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Default Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">     
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex ms-auto" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav></>
-
-  
+    </nav>
   );
 };
 
-export default test;
+export default Test;
