@@ -44,7 +44,7 @@
     { 
         "id": "c003",
         "name": "Provissions", 
-        "img": "/assets/FMCG.png", 
+        "img": "/assets/provissions.png", 
         "alt": "Provissions Icon", 
         "link": "#",
         "subcategories": [

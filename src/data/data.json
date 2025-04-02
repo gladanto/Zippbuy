@@ -39,7 +39,7 @@
     },
     { 
         "name": "Provissions", 
-        "imgSrc": "/assets/FMCG.png", 
+        "imgSrc": "/assets/provissions.png", 
         "alt": "Provissions Icon", 
         "link": "#",
         "subCategories": [{ "name": "Ship Service", 

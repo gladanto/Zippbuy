@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Content from "./Content";
+import { Navbar } from "react-bootstrap";
 
 const Menu = () => {
   const location = useLocation();
