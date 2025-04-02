@@ -1,4 +1,4 @@
-.product-container {
+ .product-container {
     display: flex;
     border: 1px solid #ddd;
     height: 100vh;
@@ -130,7 +130,6 @@
     }
   }
   
-  /* For tablets (768px - 991px) */
   @media (max-width: 991px) {
     .product-image {
       width: 350px;
@@ -182,4 +181,35 @@
 
 
   
-  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

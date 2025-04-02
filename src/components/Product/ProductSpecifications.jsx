@@ -30,6 +30,7 @@ export default ProductSpecifications;
 // import React from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
+
 // const ProductSpecifications = () => {
 //   const specifications = [
 //     "The BITZER 2T.2Y is a high-performance two-cylinder, semi-hermetic reciprocating compressor, designed for various refrigeration and air conditioning applications. It ensures efficient cooling, durability, and reliability with advanced engineering and optimized components.",
