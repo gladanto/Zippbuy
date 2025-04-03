@@ -4,17 +4,16 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Content from "./Content";
-import { Navbar } from "react-bootstrap";
 
 const Menu = () => {
   const location = useLocation();
-  const { subCategoryName, category } = location.state || {};
+  const { category, subCategory, childSubCategory } = location.state || {};
 
   return (
     <div className="menu-container">
       <Header />
       <NavBar />
-      <Content subCategoryName={subCategoryName} category={category} />
+      <Content category={category} subCategory={subCategory} childSubCategory={childSubCategory} />
       <Footer />
     </div>
   );

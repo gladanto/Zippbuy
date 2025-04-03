@@ -6,7 +6,6 @@ import About from "../pages/AboutPage/About";
 import Contact from "../pages/Contact/Contact";
 
 import Productpage from "../pages/Productpage/Productpage";
-import test from "../pages/Productpage/test";
 
 function AppRoutes() {
   return React.createElement(
@@ -17,8 +16,7 @@ function AppRoutes() {
       React.createElement(Route, { path: "/menu", element: React.createElement(Menu) }),
       React.createElement(Route, { path: "/about", element: React.createElement(About) }),
       React.createElement(Route, { path: "/contact", element: React.createElement(Contact) }),
-      React.createElement(Route, { path: "/product", element: React.createElement(Productpage) }),
-      React.createElement(Route, { path: "/test", element: React.createElement(test) })
+      React.createElement(Route, { path: "/product", element: React.createElement(Productpage) })
     )
   );
 }

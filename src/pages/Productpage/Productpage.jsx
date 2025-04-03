@@ -15,7 +15,6 @@ import { Rating } from "@mui/material";
 import { BsStarFill } from "react-icons/bs";
 import { Star } from "@mui/icons-material";
 import { WhatsApp, Instagram, Twitter } from "@mui/icons-material";
-import Test from "./test";
 
 
 const productData = {
