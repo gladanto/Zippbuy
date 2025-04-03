@@ -1,84 +1,81 @@
 [
     { 
+        "id": "c001",
         "name": "Spares", 
-        "imgSrc": "/assets/spares.png", 
+        "img": "/assets/spares.png", 
         "alt": "Spares Icon", 
         "link": "#",
-        "subCategories": [
-            { "name": "Main Engine", "link": "#" },
-            { "name": "Auxiliary Engine", "link": "#" },
+        "subcategories": [
+            { "id": "s001", "name": "Main Engine", "link": "#" },
+            { "id": "s002", "name": "Auxiliary Engine", "link": "#" },
             { 
+                "id": "s003",
                 "name": "Pumps", 
                 "link": "#",
-                "subCategories": [
-                    { "name": "Fuel Pumps", "link": "#" },
-                    { "name": "Water Pumps", "link": "#" }
+                "childsubcategories": [
+                    { "id": "cs001", "name": "Fuel Pumps", "link": "#" },
+                    { "id": "cs002", "name": "Water Pumps", "link": "#" }
                 ]
             },
-            { "name": "Auxiliary Machines", "link": "#" }
+            { "id": "s004", "name": "Auxiliary Machines", "link": "#" }
         ]
     },
     { 
+        "id": "c002",
         "name": "Stores", 
-        "imgSrc": "/assets/stores.png", 
+        "img": "/assets/stores.png", 
         "alt": "Stores Icon", 
         "link": "#",
-        "subCategories": [
-            { "name": "Cabin Stores", "link": "#" },
-            { "name": "Gakey", "link": "#" },
+        "subcategories": [
+            { "id": "s005", "name": "Cabin Stores", "link": "#" },
+            { "id": "s006", "name": "Gakey", "link": "#" },
             { 
+                "id": "s007",
                 "name": "Air Valves", 
                 "link": "#",
-                "subCategories": [
-                    { "name": "High Pressure", "link": "#" },
-                    { "name": "Low Pressure", "link": "#" }
+                "childsubcategories": [
+                    { "id": "cs003", "name": "High Pressure", "link": "#" },
+                    { "id": "cs004", "name": "Low Pressure", "link": "#" }
                 ]
             },
-            { "name": "Shipsew Catalog", "link": "#"}
+            { "id": "s008", "name": "Shipsew Catalog", "link": "#" }
         ]
     },
     { 
+        "id": "c003",
         "name": "Provissions", 
-        "imgSrc": "/assets/provissions.png", 
+        "img": "/assets/provissions.png", 
         "alt": "Provissions Icon", 
         "link": "#",
-        "subCategories": [{ "name": "Ship Service", 
-                            "link": "#",
-                            "subCategories": [
-                                { "name": "High Pressure", "link": "#" },
-                                { "name": "Low Pressure", "link": "#" }
-                            ] }]
+        "subcategories": [
+            { "id": "s009", "name": "Ship Service", "link": "#" }
+        ]
     },
     { 
+        "id": "c004",
         "name": "Service", 
-        "imgSrc": "/assets/techservice.png", 
+        "img": "/assets/techservice.png", 
         "alt": "Service Icon", 
         "link": "#",
-        "subCategories": [
-            { "name": "CDT Gayeing", "link": "#" },
-            { "name": "UTG", "link": "#" },
-            { "name": "SteelRenewal", "link": "#" },
-            { "name": "Safety Service", "link": "#" },
-            { "name": "Painting", "link": "#",
-              "subCategories": [
-                { "name": "High Pressure", "link": "#" },
-                { "name": "Low Pressure", "link": "#" }
-            ] }]
+        "subcategories": [
+            { "id": "s010", "name": "CDT Gayeing", "link": "#" },
+            { "id": "s011", "name": "UTG", "link": "#" },
+            { "id": "s012", "name": "SteelRenewal", "link": "#" },
+            { "id": "s013", "name": "Safety Service", "link": "#" },
+            { "id": "s014", "name": "Painting", "link": "#"  }
+        ]
     },
     { 
+        "id": "c005",
         "name": "Freelance", 
-        "imgSrc": "/assets/freelance.png", 
+        "img": "/assets/freelance.png", 
         "alt": "Freelance Icon", 
         "link": "#",
-        "subCategories": [
-            { "name": "Auditing", "link": "#" },
-            { "name": "Surveys", "link": "#" },
-            { "name": "Pre-Purchase Inspection", "link": "#" },
-            { "name": "Superintendent", "link": "#", 
-            "subCategories": [
-                { "name": "High Pressure", "link": "#" },
-                { "name": "Low Pressure", "link": "#" }
-            ] }
+        "subcategories": [
+            { "id": "s015", "name": "Auditing", "link": "#" },
+            { "id": "s016", "name": "Surveys", "link": "#" },
+            { "id": "s017", "name": "Pre-Purchase Inspection", "link": "#" },
+            { "id": "s019", "name": "Superintendent", "link": "#" }
         ]
     }
 ]
