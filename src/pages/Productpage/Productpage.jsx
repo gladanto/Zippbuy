@@ -67,13 +67,13 @@ const Productpage = () => {
     <>
   <Header/>
      <NavBar />
-      <section className="py-20 overflow-hidden">
+      <section className="py-20 overflow-hidden mt-10">
         <div className="container">
           <div className="row mb-24">
             <div className="col-12 col-md-6 mb-8 mb-md-0">
               <div className="row">
                 {/* Sub-images on the left */}
-                <div className="col-3 d-flex flex-column align-items-center pe-2 sub-images">
+                <div className="col-3 d-flex flex-column align-items-center pe-2 sub-images mt-10">
                   {[Productsubimg2, Productsubimg3, Productsubimg4, Productsubimg5].map((img, index) => (
                     <img
                       key={index}
@@ -86,10 +86,8 @@ const Productpage = () => {
                   ))}
                 </div>
 
-                {/* Main Image on the right (Carousel with Arrows) */}
                 <div className="main-image-container col-9">
                   <div className=" position-relative mb-10 " style={{ height: "564px" }}>
-                    {/* Left Arrow */}
                     <a
                       className="position-absolute top-50 start-0 ms-2 translate-middle-y"
                       href="#"
@@ -113,14 +111,12 @@ const Productpage = () => {
                       </svg>
                     </a>
 
-                    {/* Main Image */}
                     <img
                       className="main-image-container img-fluid w-100 h-100 "
                       style={{ objectFit: "cover" }}
                       src={images[mainImageIndex]}
                       alt="Main Product"
                     />
-                    {/* dot scroll */}
                     <div className="d-flex justify-content-center gap-2 mt-2 d-md-none">
     {images.map((_, idx) => (
       <button
@@ -138,7 +134,6 @@ const Productpage = () => {
     ))}
   </div>
 
-                    {/* Right Arrow */}
                     <a
                       className="position-absolute top-50 end-0 me-2 translate-middle-y"
                       href="#"
@@ -220,7 +215,7 @@ const Productpage = () => {
     { size: "35 inch", price: "$160", detail: "Heavy-duty industrial use" },
     { size: "40 inch", price: "$180", detail: "Max capacity compressor" },
   ].map((option, index) => (
-    <div
+    <div onMouseEnter={() => {setMainImageIndex(index);}}
       key={index}
       className="size-option-box border rounded-2 p-3 text-center position-relative"
       style={{
@@ -232,7 +227,7 @@ const Productpage = () => {
     >
       <div className="size-label fw-bold">{option.size}</div>
       <div className="price text-info">{option.price}</div>
-      <div
+      <div 
         className="hover-detail position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-secondary fw-medium"
         style={{
           backgroundColor: "rgba(255,255,255,0.95)",
@@ -241,7 +236,7 @@ const Productpage = () => {
           transition: "opacity 0.3s",
         }}
       >
-        {option.detail}
+        {option.detail } 
       </div>
     </div>
   ))}

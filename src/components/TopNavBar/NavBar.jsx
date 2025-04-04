@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.scss";
@@ -8,7 +7,6 @@ import { ExpandMore } from "@mui/icons-material";
 const NavBar = () => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeSubcategory, setActiveSubcategory] = useState(null);
-  const [activeChildSubcategory, setActiveChildSubcategory] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
   const navigate = useNavigate();
 
@@ -17,39 +15,51 @@ const NavBar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const handleCategoryClick = (id, e) => {
-    e.stopPropagation();
-    console.log("Clicked Category ID:", id);
-    setActiveCategory((prev) => (prev === id ? null : id));
-    setActiveSubcategory(null);
-    setActiveChildSubcategory(null);
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0px";
+    };
+  }, []);
+  const handleCategoryClick = (id) => {
+    if (isMobile) {
+      setActiveCategory((prev) => (prev === id ? null : id));
+      setActiveSubcategory(null);
+      setActiveChildSubcategory(null);
+    }
   };
 
-  const handleSubCategoryClick = (category, subCategory, e) => {
-    e.stopPropagation();
-    console.log("Clicked Subcategory ID:", subCategory.id);
+  const handleSubCategoryClick = (category, subCategory, event) => {
+    console.log("Clicked Subcategory:",category.id, subCategory.id);
     console.log("Respective Category Data:", category);
 
     if (isMobile) {
-      setActiveSubcategory((prev) => (prev === subCategory.id ? null : subCategory.id));
-      setActiveChildSubcategory(null);
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (subCategory.childsubcategories?.length) {
+        setActiveSubcategory((prev) => (prev === subCategory.id ? null : subCategory.id));
+      } else {
+        navigate("/menu", { state: { category, subCategory } });
+      }
     } else {
       navigate("/menu", { state: { category, subCategory } });
     }
   };
 
-  const handleChildSubCategoryClick = (category, subCategory, childSubCategory, e) => {
-    e.stopPropagation();
-    console.log("Clicked Child Subcategory ID:", childSubCategory.id);
+  const handleChildSubCategoryClick = (category, subCategory, childSubCategory, event) => {
+    console.log("Clicked category:",category.id)
+    console.log("Clicked Subcategory:", subCategory.id,childSubCategory.id);
     console.log("Respective Subcategory ID:", subCategory.id);
     console.log("Respective Category Data:", category);
+    
 
     if (isMobile) {
-      setActiveChildSubcategory((prev) => (prev === childSubCategory.id ? null : childSubCategory.id));
-    } else {
-      navigate("/menu", { state: { category, subCategory, childSubCategory } });
+      event.preventDefault();
+      event.stopPropagation();
     }
+
+    navigate("/menu", { state: { category, subCategory, childSubCategory } });
   };
 
   return (
@@ -84,7 +94,10 @@ const NavBar = () => {
                   <a
                     className="nav-link category-link"
                     href="#"
-                    onClick={(e) => handleCategoryClick(category.id, e)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleCategoryClick(category.id);
+                    }}
                   >
                     <div className="icon-wrapper">
                       {!isMobile && <img src={category.img} alt={category.alt} className="icon" />}
@@ -104,6 +117,7 @@ const NavBar = () => {
                           <a
                             className="dropdown-item"
                             href="#"
+                            
                             onClick={(e) => handleSubCategoryClick(category, subcategory, e)}
                           >
                             {subcategory.name}
@@ -111,7 +125,7 @@ const NavBar = () => {
                           </a>
 
                           {subcategory.childsubcategories?.length > 0 && (
-                            <ul className={`child-dropdown ${isMobile && activeChildSubcategory === subcategory.id ? "show" : ""}`}>
+                            <ul className={`child-dropdown ${activeSubcategory === subcategory.id ? "show" : ""}`}>
                               {subcategory.childsubcategories.map((child) => (
                                 <li key={child.id}>
                                   <a
