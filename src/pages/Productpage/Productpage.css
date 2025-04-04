@@ -1,4 +1,4 @@
-.product-page {
+ .product-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,107 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-  }
+  } 
     
+/*  */
+/* On mobile screens, move sub-images below the main image */
+@media (max-width: 767px) {
+  .product-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/* Hide subimages on mobile devices */
+@media (max-width: 768px) {
+  .sub-images {
+    display: none;
+  }
 
+  .main-image-container {
+    width: 100%;
+  }
+}
 
+  .sub-images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .sub-image {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .main-image {
+    width: 100%;
+    height: 400px; /* Adjust this based on your desired height */
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sub-images-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-image {
+    margin-bottom: 10px;
+  }
+
+  .main-image {
+    width: 100%;
+    height: 564px; /* Adjust based on your design */
+    object-fit: cover;
+  }
+}
+
+/* Mobile View (≤768px) - Swiper Enabled */
+@media (max-width: 768px) {
+  .swiper-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .swiper-slide img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+  /* size box css */
+
+  .size-option-box:hover .hover-detail {
+    opacity: 1 !important;
+    pointer-events: auto;
+   border: black 2px solid;
+  transition: "all 0.3s ease-in-out";
+  
+  
+  }
   

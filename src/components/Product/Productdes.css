@@ -137,15 +137,14 @@
     }
   }
   
-  /* For large smartphones (576px - 767px) */
-  @media (max-width: 767px) {
+ /*For large smartphones (576px - 767px) */
     .product-image {
       width: 300px;
       height: 300px;
     }
-  }
   
-  /* For small smartphones (up to 575px) */
+  
+  /*For small smartphones (up to 575px) */
   @media (max-width: 575px) {
     .product-image {
       width: 250px;
@@ -177,39 +176,10 @@
     }
   }
   
+.imgsub:hover {
+  transform: scale(1.1);
+}
 
-
-
-  
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+.active {
+  border: 2px solid #043e42;
+}
