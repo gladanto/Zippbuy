@@ -1,0 +1,80 @@
+[
+    {
+        "id": "p010",
+        "name": "BITZER 2T.2Y COMPRESSORS",
+        "description": "The BITZER 2T.2Y is a two-cylinder, semi-hermetic reciprocating compressor designed for reliable and efficient operation in refrigeration and air conditioning applications.",
+        "price": 99.99,
+        "image": ["/assets/p008/p1.png", "/assets/p008/p2.png"],
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+            "Make: Bitzer",
+            "Model: 2T.2Y",
+            "Displacement: 9.4-23.7 m3/h",
+            "Sr No.: 1674602791,1674602792",
+            "Speed: 700-1750 RPM",
+            "LP/HP max.: 19/25 Bar"
+        ],
+        "specifications": [
+            "The BITZER 2T.2Y is a high-performance two-cylinder, semi-hermetic reciprocating compressor, designed for various refrigeration and air conditioning applications. It ensures efficient cooling, durability, and reliability with advanced engineering and optimized components.",
+            "Semi-Hermetic Design – Allows for easy maintenance and long service life.",
+            "Two-Cylinder Configuration – Enhances performance and efficiency.",
+            "Versatile Applications – Ideal for supermarkets, cold storage, industrial refrigeration, and air conditioning systems."
+        ],
+        "subcategory_id": "s001",
+        "child_subcategories_id": ["cs003"]
+    },
+    {
+        "id": "p010",
+        "name": "BITZER 2T.2Y COMPRESSORS",
+        "description": "The BITZER 2T.2Y is a two-cylinder, semi-hermetic reciprocating compressor designed for reliable and efficient operation in refrigeration and air conditioning applications.",
+        "price": 99.99,
+        "image": ["/assets/p008/p1.png", "/assets/p008/p2.png"],
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+            "Make: Bitzer",
+            "Model: 2T.2Y",
+            "Displacement: 9.4-23.7 m3/h",
+            "Sr No.: 1674602791,1674602792",
+            "Speed: 700-1750 RPM",
+            "LP/HP max.: 19/25 Bar"
+        ],
+        "specifications": [
+            "The BITZER 2T.2Y is a high-performance two-cylinder, semi-hermetic reciprocating compressor, designed for various refrigeration and air conditioning applications. It ensures efficient cooling, durability, and reliability with advanced engineering and optimized components.",
+            "Semi-Hermetic Design – Allows for easy maintenance and long service life.",
+            "Two-Cylinder Configuration – Enhances performance and efficiency.",
+            "Versatile Applications – Ideal for supermarkets, cold storage, industrial refrigeration, and air conditioning systems."
+        ],
+        "subcategory_id": "s001"
+    },
+    {
+        "id": "p003",
+        "name": "BITZER 2T.2Y COMPRESSORS",
+        "description": "The BITZER 2T.2Y is a two-cylinder, semi-hermetic reciprocating compressor designed for reliable and efficient operation in refrigeration and air conditioning applications.",
+        "price": 99.99,
+        "image": ["/assets/p008/p1.png", "/assets/p008/p2.png"],
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+            "Make: Bitzer",
+            "Model: 2T.2Y",
+            "Displacement: 9.4-23.7 m3/h",
+            "Sr No.: 1674602791,1674602792",
+            "Speed: 700-1750 RPM",
+            "LP/HP max.: 19/25 Bar"
+        ],
+        "specifications": [
+            "The BITZER 2T.2Y is a high-performance two-cylinder, semi-hermetic reciprocating compressor, designed for various refrigeration and air conditioning applications. It ensures efficient cooling, durability, and reliability with advanced engineering and optimized components.",
+            "Semi-Hermetic Design – Allows for easy maintenance and long service life.",
+            "Two-Cylinder Configuration – Enhances performance and efficiency.",
+            "Versatile Applications – Ideal for supermarkets, cold storage, industrial refrigeration, and air conditioning systems."
+        ],
+        "subcategory_id": "s001",
+        "child_subcategories_id": ["cs007"]
+    }
+]
+  

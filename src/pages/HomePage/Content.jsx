@@ -44,16 +44,16 @@ const Content = () => {
         <div className="row align-items-center text-center text-md-start mt-4 mb-4 section-2">
           <div className="col-md-4 text-container">
             <p className="fw-bold fs-4 blinking-text">
-              Zippbuy is a portal designed to reduce complexity and monitoring in Maritime Purchase.
+              ZippBuy is a portal designed to reduce complexity and monitoring in Maritime Purchase.
             </p>
           </div>
 
           <div className="col-md-4 image-container">
-            <img src={bitmapImg} alt="Bitmap" className="img-fluid same-size-img" />
+            <img src={bitmapImg} alt="Bitmap" className="img-fluid responsive-image" />
           </div>
 
           <div className="col-md-4 image-container">
-            <img src={loginImg2} alt="Login" className="img-fluid same-size-img" />
+            <img src={loginImg2} alt="Login" className="img-fluid responsive-image" />
           </div>
         </div>
       </section>
@@ -68,7 +68,7 @@ const Content = () => {
 
         <div className="col-lg-8 col-md-7 col-sm-6">
           <p className="blinking-text">
-            Zippbuy brings all vendors together in one platform, so no more wasting the day tracking orders.
+            ZippBuy brings all vendors together in one platform, so no more wasting the day tracking orders.
           </p>
         </div>
       </section>

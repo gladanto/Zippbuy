@@ -1,83 +1,96 @@
 [
     {
-        "id": 1,
+        "id": "p001",
         "name": "Corrugated Shipping Boxes - 25 Pack",
         "price": 34.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p001/p1.png",
         "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s001",
+        "discount": 0.03
     },
     {
-        "id": 2,
+        "id": "p002",
         "name": "Heavy-Duty Packing Tape with Dispenser",
         "price": 15.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p002/p1.png",
         "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s002"
     },
     {
-        "id": 3,
+        "id": "p003",
         "name": "Bubble Wrap Roll - 12 Inch x 100 Feet",
         "price": 19.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p003/p1.png",
         "description": "Protects fragile items during shipping, lightweight and easy to cut.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s007",
+        "child_subcategories_ids": ["cs004"]
     },
     {
-        "id": 4,
+        "id": "p004",
         "name": "Poly Mailers - 100 Pack",
         "price": 23.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p004/p1.png",
         "description": "Water-resistant poly mailers, self-sealing for convenient shipping.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s004"
     },
     {
-        "id": 5,
+        "id": "p005",
         "name": "Digital Shipping Scale - 110 lbs Capacity",
         "price": 39.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p005/p1.png",
         "description": "Accurate scale for weighing packages, ideal for postal shipping.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s007",
+        "child_subcategories_ids": ["cs004"]
     },
     {
-        "id": 6,
+        "id": "p006",
         "name": "Kraft Paper Roll for Packing - 30 Inch x 100 Feet",
         "price": 24.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p006/p1.png",
         "description": "Thick kraft paper for wrapping, packaging, and cushioning shipments.",
-        "used": false
+        "used": false,
+        "subcategory_id": "sc006"
     },
     {
-        "id": 7,
+        "id": "p007",
         "name": "Packing Peanuts - 3 Cubic Feet",
         "price": 21.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p007/p1.png",
         "description": "Lightweight, anti-static packing peanuts for filling voids in boxes.",
-        "used": false
+        "used": false,
+        "subcategory_id": "sc003",
+        "child_subcategories_ids": ["cs002"]
     },
     {
-        "id": 8,
+        "id": "p008",
         "name": "Fragile Stickers - 500 Labels",
         "price": 12.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p008/p1.png",
         "description": "Bright red fragile warning labels to protect delicate shipments.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s011"
     },
     {
-        "id": 9,
+        "id": "p009",
         "name": "Recycled Cardboard Shipping Boxes - 20 Pack",
         "price": 29.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p009/p1.png",
         "description": "Eco-friendly recycled shipping boxes, sturdy and reliable.",
-        "used": true
+        "used": true,
+        "subcategory_id": "s008"
     },
     {
-        "id": 10,
+        "id": "p010",
         "name": "Handheld Stretch Wrap for Pallets",
         "price": 27.99,
-        "image": "https://m.media-amazon.com/images/I/71wfZRJg1vL._AC_UL320_.jpg",
+        "image": "/assets/p010/p1.jpg",
         "description": "Cling wrap for securing and stabilizing pallet shipments.",
-        "used": false
+        "used": false,
+        "subcategory_id": "s009"
     }
 ]
-  
