@@ -38,12 +38,12 @@
                     { "id": "cs004", "name": "Low Pressure", "link": "#" }
                 ]
             },
-            { "id": "s008", "name": "Shipsew Catalog", "link": "#" }
+            { "id": "s008", "name": "Shipserv Catalog", "link": "#" }
         ]
     },
     { 
         "id": "c003",
-        "name": "Provissions", 
+        "name": "Provisions", 
         "img": "/assets/provissions.png", 
         "alt": "Provissions Icon", 
         "link": "#",
