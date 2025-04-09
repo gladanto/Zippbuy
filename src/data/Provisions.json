@@ -1,0 +1,62 @@
+[
+    {
+        "id": "c003",
+        "name": "Provisions",
+        "img": "/assets/spares.png",
+        "alt": "Spares Icon",
+        "link": "#",
+        "subcategories": [
+            {
+                "id": "s010",
+                "name": "Fresh",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs029",
+                        "name": "Vegetables",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs030",
+                        "name": "Fruits",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s011",
+                "name": "Frozen",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs030",
+                        "name": "Meat",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs031",
+                        "name": "Fish",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s012",
+                "name": "Dry",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs032",
+                        "name": "Dal",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs033",
+                        "name": "Rice",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    }
+]

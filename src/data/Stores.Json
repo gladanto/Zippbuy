@@ -1,0 +1,88 @@
+[
+    {
+        "id": "c002",
+        "name": "Stores",
+        "img": "/assets/spares.png",
+        "alt": "Spares Icon",
+        "link": "#",
+        "subcategories": [
+            {
+                "id": "s007",
+                "name": "Deck Stores",
+                "link": "#",
+                "childsubcategories": []
+            },
+            {
+                "id": "s008",
+                "name": "Engine Stores",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs019",
+                        "name": "Pipes",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs020",
+                        "name": "Plates",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s009",
+                "name": "Electrical",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs021",
+                        "name": "Fuses",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs022",
+                        "name": "Bulbs",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs023",
+                        "name": "Tubelight",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s010",
+                "name": "Safety",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs024",
+                        "name": "Life Saving appliances",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs025",
+                        "name": "FireMans Outfit",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs026",
+                        "name": "Fire Fighting Safety Equipments",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs027",
+                        "name": "LifeBoat",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs028",
+                        "name": "Fire Safety",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    }
+]
