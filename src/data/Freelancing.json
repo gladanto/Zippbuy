@@ -1,0 +1,43 @@
+[
+    {
+        "id": "c005",
+        "name": "Freelancing",
+        "img": "/assets/spares.png",
+        "alt": "Spares Icon",
+        "link": "#",
+        "subcategories": [
+            {
+                "id": "s014",
+                "name": "Audit & Survey",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs040",
+                        "name": "Pre-Purchase Inspection",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs041",
+                        "name": "RightShip Inspection",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs042",
+                        "name": "Sire Inspection",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs043",
+                        "name": "Trainer",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs044",
+                        "name": "Radio Equipment",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    }
+]

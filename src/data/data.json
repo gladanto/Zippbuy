@@ -1,81 +1,161 @@
 [
-    { 
+    {
         "id": "c001",
-        "name": "Spares", 
-        "img": "/assets/spares.png", 
-        "alt": "Spares Icon", 
+        "name": "Spares",
+        "img": "/assets/spares.png",
+        "alt": "Spares Icon",
         "link": "#",
         "subcategories": [
-            { "id": "s001", "name": "Main Engine", "link": "#" },
-            { "id": "s002", "name": "Auxiliary Engine", "link": "#" },
-            { 
+            {
+                "id": "s001",
+                "name": "Main Engine",
+                "link": "#"
+            },
+            {
+                "id": "s002",
+                "name": "Auxiliary Engine",
+                "link": "#"
+            },
+            {
                 "id": "s003",
-                "name": "Pumps", 
+                "name": "Pumps",
                 "link": "#",
                 "childsubcategories": [
-                    { "id": "cs001", "name": "Fuel Pumps", "link": "#" },
-                    { "id": "cs002", "name": "Water Pumps", "link": "#" }
+                    {
+                        "id": "cs001",
+                        "name": "Fuel Pumps",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs002",
+                        "name": "Water Pumps",
+                        "link": "#"
+                    }
                 ]
             },
-            { "id": "s004", "name": "Auxiliary Machines", "link": "#" }
+            {
+                "id": "s004",
+                "name": "Auxiliary Machines",
+                "link": "#"
+            }
         ]
     },
-    { 
+    {
         "id": "c002",
-        "name": "Stores", 
-        "img": "/assets/stores.png", 
-        "alt": "Stores Icon", 
+        "name": "Stores",
+        "img": "/assets/stores.png",
+        "alt": "Stores Icon",
         "link": "#",
         "subcategories": [
-            { "id": "s005", "name": "Cabin Stores", "link": "#" },
-            { "id": "s006", "name": "Gakey", "link": "#" },
-            { 
+            {
+                "id": "s005",
+                "name": "Cabin Stores",
+                "link": "#"
+            },
+            {
+                "id": "s006",
+                "name": "Gakey",
+                "link": "#"
+            },
+            {
                 "id": "s007",
-                "name": "Air Valves", 
+                "name": "Air Valves",
                 "link": "#",
                 "childsubcategories": [
-                    { "id": "cs003", "name": "High Pressure", "link": "#" },
-                    { "id": "cs004", "name": "Low Pressure", "link": "#" }
+                    {
+                        "id": "cs003",
+                        "name": "High Pressure",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs004",
+                        "name": "Low Pressure",
+                        "link": "#"
+                    }
                 ]
             },
-            { "id": "s008", "name": "Shipserv Catalog", "link": "#" }
+            {
+                "id": "s008",
+                "name": "Shipserv Catalog",
+                "link": "#"
+            }
         ]
     },
-    { 
+    {
         "id": "c003",
-        "name": "Provisions", 
-        "img": "/assets/provissions.png", 
-        "alt": "Provissions Icon", 
+        "name": "Provisions",
+        "img": "/assets/provissions.png",
+        "alt": "Provissions Icon",
         "link": "#",
         "subcategories": [
-            { "id": "s009", "name": "Ship Service", "link": "#" }
+            {
+                "id": "s009",
+                "name": "Ship Service",
+                "link": "#"
+            }
         ]
     },
-    { 
+    {
         "id": "c004",
-        "name": "Service", 
-        "img": "/assets/techservice.png", 
-        "alt": "Service Icon", 
+        "name": "Service",
+        "img": "/assets/techservice.png",
+        "alt": "Service Icon",
         "link": "#",
         "subcategories": [
-            { "id": "s010", "name": "CDT Gayeing", "link": "#" },
-            { "id": "s011", "name": "UTG", "link": "#" },
-            { "id": "s012", "name": "SteelRenewal", "link": "#" },
-            { "id": "s013", "name": "Safety Service", "link": "#" },
-            { "id": "s014", "name": "Painting", "link": "#"  }
+            {
+                "id": "s010",
+                "name": "CDT Gayeing",
+                "link": "#"
+            },
+            {
+                "id": "s011",
+                "name": "UTG",
+                "link": "#"
+            },
+            {
+                "id": "s012",
+                "name": "SteelRenewal",
+                "link": "#"
+            },
+            {
+                "id": "s013",
+                "name": "Safety Service",
+                "link": "#"
+            },
+            {
+                "id": "s014",
+                "name": "Painting",
+                "link": "#"
+            }
         ]
     },
-    { 
+    {
         "id": "c005",
-        "name": "Freelance", 
-        "img": "/assets/freelance.png", 
-        "alt": "Freelance Icon", 
+        "name": "Freelance",
+        "img": "/assets/freelance.png",
+        "alt": "Freelance Icon",
         "link": "#",
         "subcategories": [
-            { "id": "s015", "name": "Auditing", "link": "#" },
-            { "id": "s016", "name": "Surveys", "link": "#" },
-            { "id": "s017", "name": "Pre-Purchase Inspection", "link": "#" },
-            { "id": "s019", "name": "Superintendent", "link": "#" }
+            {
+                "id": "s015",
+                "name": "Auditing",
+                "link": "#"
+            },
+            {
+                "id": "s016",
+                "name": "Surveys",
+                "link": "#"
+            },
+            {
+                "id": "s017",
+                "name": "Pre-Purchase Inspection",
+                "link": "#"
+            },
+            {
+                "id": "s019",
+                "name": "Superintendent",
+                "link": "#"
+            }
         ]
     }
 ]

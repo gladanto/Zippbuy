@@ -1,0 +1,140 @@
+[
+    {
+        "id": "c001",
+        "name": "Spares",
+        "img": "/assets/spares.png",
+        "alt": "Spares Icon",
+        "link": "#",
+        "subcategories": [
+            {
+                "id": "s001",
+                "name": "Main Engine",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs001",
+                        "name": "Liner",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs002",
+                        "name": "Piston",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s002",
+                "name": "Generator Engine",
+                "link": "#"
+            },
+            {
+                "id": "s003",
+                "name": "Auxiliary Machinery",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs003",
+                        "name": "Air compressors",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs004",
+                        "name": "Purifiers",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs005",
+                        "name": "Pumps",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs006",
+                        "name": "Reefer & Air Con Systems",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs007",
+                        "name": "Boiler",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs008",
+                        "name": "Fresh Water Generators",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs009",
+                        "name": "Steering Gear",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs010",
+                        "name": "Heat Exchangers",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs011",
+                        "name": "Oil Mist Detectors",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs012",
+                        "name": "VAF ViscoSense",
+                        "link": "#"
+                    },
+                    {}
+                ]
+            },
+            {
+                "id": "s004",
+                "name": "Electrical",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs013",
+                        "name": "Motors",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs014",
+                        "name": "Contactors",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s005",
+                "name": "MARPOL Equipment",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs015",
+                        "name": "Oily Water Separator",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs016",
+                        "name": "Sewage Treatment Plant",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs017",
+                        "name": "Incinerator",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs018",
+                        "name": "Ballast Water Treatment System",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "s006",
+                "name": "Bridge Equipment",
+                "link": "#"
+            }
+        ]
+    }
+]
