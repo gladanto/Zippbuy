@@ -1,0 +1,415 @@
+[
+    {
+        "id": "p001",
+        "name": "Corrugated Shipping Boxes - 25 Pack",
+        "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging",
+        "price": 34.99,
+        "image": "public/assets/p001/p1.png",
+        "rating": 4.5,
+        "discount": 0.03,
+        "reviews": 1200,
+        "used": false,
+        "reviews_content": "This compressor works flawlessly for our cold storage. Quiet and reliable.",
+        "shipping": "Ships within 3–5 business days. Free returns within 30 days.",
+        "brand": "ReliableBox Co. – your trusted partner in durable, eco-conscious packaging solutions designed for safe and efficient shipping.",
+        "features": [
+            
+                "Durable corrugated cardboard",
+                "Standard size for versatile use",
+                "25-pack for bulk shipping",
+                "Easy to fold and assemble",
+                "Recyclable and eco-friendly",
+                "Crush-resistant protection",
+                "Smooth surface for labeling",
+                "Lightweight yet strong"
+              
+        ],
+        "subImages": [
+            "public/assets/p001/p2.png",    
+            "public/assets/p001/p3.png",
+            "public/assets/p001/p4.png",
+            "public/assets/p001/p5.png",
+            "public/assets/p001/p6.png",
+            "public/assets/p001/p7.png"    
+        ],
+        "specifications": [
+            "Dimensions: 12x12x12 inches",
+            "Material: 200# test corrugated cardboard",
+            "Weight Capacity: Up to 65 lbs",
+            "Closure Type: Self-sealing",
+            "Color: Brown kraft",
+            "Pack Size: 25 boxes",
+            "Recyclable: Yes"
+        ],
+        "subcategory_id": "s001",
+        "child_subcategories_id": ["cs003"]
+        
+    },
+    {
+        "id": "p002",
+        "name":"Heavy-Duty Packing Tape with Dispenser",
+        "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
+        "price": 15.99,
+        "image": "public/assets/p002/p1.png",
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+            
+                "Strong adhesive for secure sealing",
+                "Includes ergonomic handheld dispenser",
+                "Ideal for packing, shipping, and storage",
+                "Tears easily by hand or with dispenser blade",
+                "Transparent finish for neat appearance",
+                "Works on cardboard, plastic, and more",
+                "Long-lasting hold even in cold or humid conditions",
+                "Low noise application"  
+        ],
+        "subImages": [
+           "public/assets/p002/p2.png",
+           "public/assets/p002/p3.png",
+           "public/assets/p002/p4.png",
+           "public/assets/p002/p5.png"
+
+        ],
+       
+        "specifications": [
+            
+            {
+                "Tape Width": "2 inches",
+                "Tape Length": "60 yards per roll",
+                "Material": "BOPP (biaxially oriented polypropylene)",
+                "Adhesive Type": "Acrylic",
+                "Color": "Clear",
+                "Dispenser Included": "Yes",
+                "Tensile Strength": "25 lbs/in",
+                "Core Size": "3 inches",
+                "Pack Contents": "6 rolls + 1 dispenser",
+                "Country of Origin": "USA"
+              }
+              
+        ],
+        "subcategory_id": "s002"
+        
+    },
+    {
+        "id": "p003",
+        "name": "Bubble Wrap Roll - 12 Inch x 100 Feet",
+        "description": "Protects fragile items during shipping, lightweight and easy to cut.",
+        "price": 19.99,
+        "image": "public/assets/p003/p1.png",
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+            
+                "Cushions and protects fragile items during transit",
+                "Perforated every 12 inches for easy tearing",
+                "Lightweight to reduce shipping costs",
+                "Flexible and easy to wrap around items",
+                "Ideal for moving, shipping, and storage",
+                "Provides excellent shock and impact absorption",
+                "12-inch width covers larger surfaces efficiently",
+                "Reusable and recyclable material"      
+            
+        ],
+        "subImages": [
+           "public/assets/p003/p2.png",
+              "public/assets/p003/p3.png",
+              "public/assets/p003/p4.png"
+ 
+         ],
+        "specifications": [
+            {
+                "Roll Width": "12 inches",
+                "Roll Length": "100 feet",
+                "Bubble Size": "3/16 inch (standard small bubbles)",
+                "Material": "Polyethylene",
+                "Color": "Clear",
+                "Perforated": "Yes, every 12 inches",
+                "Weight": "1.8 lbs (approx.)",
+                "Use Case": "Shipping, moving, storage protection",
+                "Recyclable": "Yes",
+                "Country of Origin": "USA"
+              }
+              
+            
+        ],
+        "subcategory_id": "s003",
+        "child_subcategories_id": ["cs007"]
+    },
+    {
+        "id": "p004",
+        "name": "Poly Mailers - 100 Pack",
+        "description": "Water-resistant poly mailers, self-sealing for convenient shipping.",
+        "price": 23.99,
+        "image": "public/assets/p004/p1.png",
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+            
+                "Durable and tear-resistant polyethylene material",
+                "Water-resistant to protect contents from moisture",
+                "Self-sealing adhesive strip for quick closure",
+                "Lightweight to reduce shipping costs",
+                "Opaque for privacy and secure shipping",
+                "Smooth surface for easy labeling",
+                "Flexible to accommodate various item shapes",
+                "Perfect for mailing clothing, documents, and soft goods"     
+        ],
+        "subImages": [
+            "public/assets/p004/p2.png",
+            "public/assets/p004/p3.png",
+            "public/assets/p004/p4.png"
+  
+          ],
+        "specifications": [
+            {
+                "Quantity": "100 mailers per pack",
+                "Material": "Polyethylene",
+                "Color": "White (opaque)",
+                "Closure Type": "Self-sealing adhesive strip",
+                "Water-Resistant": "Yes",
+                "Tear-Resistant": "Yes",
+                "Mailing Use": "Clothing, documents, soft goods",
+                "Size": "10 x 13 inches",
+                "Recyclable": "Yes",
+                "Country of Origin": "USA"
+              }
+              
+           
+        ],
+        "subcategory_id": "s004",
+        "child_subcategories_id": ["cs007"]
+    },
+    {
+    
+        "id": "p005",
+        "name": "Digital Shipping Scale - 110 lbs Capacity",
+        "description": "Accurate scale for weighing packages, ideal for postal shipping.",
+        "price": 39.99,
+        "image": "public/assets/p005/p1.png",
+        "rating": 4.5,
+        "reviews": 1200,
+        "used": false,
+        "features": [
+                "Supports up to 110 lbs (50 kg) weight capacity",
+                "High-precision sensors for accurate measurements",
+                "Large backlit LCD display for easy reading",
+                "Tare function to subtract container weight",
+                "Multiple units: lb, oz, kg, g",
+                "Auto-off function to conserve battery life",
+                "Compact, low-profile design for easy storage",
+                "Powered by batteries or included AC adapter"      
+                 
+        ],
+        "subImages": [
+            "public/assets/p005/P2.png",
+            "public/assets/p005/p3.png"
+          ],
+        
+        "specifications": [
+                {
+                    "Capacity": "110 lbs / 50 kg",
+                    "Accuracy": "0.1 oz / 1 g",
+                    "Display": "Backlit LCD",
+                    "Measurement Units": "lb, oz, kg, g",
+                    "Platform Size": "8.5 x 8.5 inches",
+                    "Power Source": "Batteries (included) or AC adapter",
+                    "Material": "ABS plastic with stainless steel platform",
+                    "Tare Function": "Yes",
+                    "Auto-Off": "Yes",
+                    "Country of Origin": "USA"
+                  }  
+        ],
+            "subcategory_id": "s007",
+        "child_subcategories_id":["cs004"]
+    },
+    
+    
+    {
+        "id": "p006",
+        "name": "Kraft Paper Roll for Packing - 30 Inch x 100 Feet",
+        "description": "Thick kraft paper for wrapping, packaging, and cushioning shipments.",
+        "price": 24.99,
+        "image": "/assets/p006/p1.png",
+        "used": false,
+        "features":[
+      "Heavy-duty kraft paper for wrapping and packing",
+      "Ideal for protecting fragile items during transit",
+      "30-inch width covers large surfaces easily",
+      "100-foot length provides ample material for multiple uses",
+      "Can be used for void fill, cushioning, or surface protection",
+      "Tear-resistant and easy to cut",
+      "Recyclable and eco-friendly packaging material",
+      "Perfect for home, office, or warehouse use"
+    ],
+             
+    "subImages": [
+       "public/assets/p006/p2.png",
+        "public/assets/p006/p3.png"
+      ],
+    "specifications": [
+         
+            {
+                "Roll Width": "30 inches",
+                "Roll Length": "100 feet",
+                "Material": "100% recycled kraft paper",
+                "Weight": "2.5 lbs (approx.)",
+                "Color": "Brown kraft",
+                "Use Case": "Wrapping, packing, cushioning",
+                "Recyclable": "Yes",
+                "Country of Origin": "USA"
+            }
+        ],
+        "subcategory_id": "s006",
+        "child_subcategories_id": ["cs005"]
+    
+    },
+    
+    {
+        "id": "p007",
+        "name": "Packing Peanuts - 3 Cubic Feet",
+        "description": "Lightweight, anti-static packing peanuts for filling voids in boxes.",
+        "price": 21.99,
+        "image": "/assets/p007/p1.png",
+        "used": false,
+        "features": [
+            "3 cubic feet of packing peanuts for void fill",
+            "Lightweight and anti-static for safe shipping",
+            "Biodegradable and eco-friendly material",
+            "Ideal for cushioning fragile items during transit",
+            "Reusable and recyclable packing solution",
+            "Perfect for shipping, moving, or storage needs",
+            "Non-toxic and safe for all items",
+            "Easy to pour and fill into boxes"
+        ],
+        "subImages": [
+            "public/assets/p007/p2.png",
+            "public/assets/p007/p3.png"
+        ],                              
+        "specifications": [
+            {
+                "Volume": "3 cubic feet",
+                "Material": "Biodegradable polystyrene",
+                "Color": "White",
+                "Anti-Static": "Yes",
+                "Weight": "1.5 lbs (approx.)",
+                "Use Case": "Void fill, cushioning, packing",
+                "Recyclable": "Yes",
+                "Country of Origin": "USA"
+            }
+        ],
+        "subcategory_id": "sc003",
+        "child_subcategories_ids": ["cs002"]
+    },
+    {
+        "id": "p008",
+        "name": "Fragile Stickers - 500 Labels",
+        "description": "Bright red fragile warning labels to protect delicate shipments.",
+        "price": 12.99,
+        "image": "/assets/p008/p1.png",
+        "used": false,
+        "features": [
+            "500 bright red fragile warning labels",
+            "Self-adhesive for easy application",
+            "Large, clear font for visibility",
+            "Ideal for protecting delicate items during shipping",
+            "Water-resistant and durable material",
+            "Perfect for home, office, or shipping center use",
+            "Helps prevent mishandling of fragile packages",
+            "Compact roll for easy storage and dispensing"
+        ],
+        "subImages": [
+            "/assets/p008/p2.png",
+            "/assets/p008/p3.png",
+            "/assets/p008/p4.png"
+        ],
+        "specifications": [
+            {
+                "Label Size": "2 x 3 inches",
+                "Material": "Vinyl with adhesive backing",
+                "Color": "Red with white text",
+                "Quantity": "500 labels per roll",
+                "Water-Resistant": "Yes",
+                "Use Case": "Shipping, moving, storage",
+                "Country of Origin": "USA"
+            }
+        ],
+        "subcategory_id": "s011"
+    },
+    
+    {
+        "id": "p009",
+        "name": "Recycled Cardboard Shipping Boxes - 20 Pack",
+        "price": 29.99,
+        "image": "/assets/p009/p1.png",
+        "description": "Eco-friendly recycled shipping boxes, sturdy and reliable.",
+        "used": true,
+        "features": [
+            "Made from 100% recycled cardboard",
+            "Sturdy construction for reliable shipping",
+            "20-pack for bulk shipping needs",
+            "Easy to fold and assemble",
+            "Recyclable and eco-friendly packaging solution",
+            "Smooth surface for easy labeling",
+            "Lightweight yet strong design",
+            "Perfect for home, office, or warehouse use"
+        ],
+        "subImages": [
+            "/assets/p009/p2.png",
+            "/assets/p009/p3.png"
+        ],
+        "specifications": [
+            {
+                "Dimensions": "12 x 12 x 12 inches",
+                "Material": "Recycled cardboard",
+                "Weight Capacity": "Up to 50 lbs",
+                "Closure Type": "Self-sealing",
+                "Color": "Brown kraft",
+                "Pack Size": "20 boxes",
+                "Recyclable": "Yes",
+                "Country of Origin": "USA"
+            }
+        ],  
+    
+        "subcategory_id": "s008"
+    
+    },
+    {
+        "id": "p010",
+        "name": "Handheld Stretch Wrap for Pallets",
+        "description": "Cling wrap for securing and stabilizing pallet shipments.",
+        "price": 27.99,
+        "image": "/assets/p010/p1.jpg",
+        "used": false,
+        "features": [
+            "Stretch wrap for securing pallet loads",
+            "Handheld dispenser for easy application",
+            "Clear film for visibility of contents",
+            "Strong cling for secure hold",
+            "Ideal for warehouse and shipping use",
+            "Lightweight and easy to handle",
+            "Protects against dust and moisture",
+            "Recyclable material"
+        ],
+        "subImages": [
+            "/assets/p010/p2.png",
+            "/assets/p010/p3.png"
+        ],
+        "specifications": [
+            {
+                "Roll Width": "18 inches",
+                "Roll Length": "1500 feet",
+                "Material": "Polyethylene stretch film",
+                "Color": "Clear",
+                "Core Size": "3 inches",
+                "Use Case": "Pallet wrapping, shipping protection",
+                "Recyclable": "Yes",
+                "Country of Origin": "USA"
+            }
+        ],  
+        "subcategory_id": "s009"
+    }
+]
