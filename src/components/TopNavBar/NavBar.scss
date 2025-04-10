@@ -74,7 +74,6 @@ $light-grey: #f0f0f0;
   top: 100%;
   left: 0;
   width: 100vw;
-  transform: none;
   background: white;
   border: 1px solid #ddd;
   display: none;
@@ -162,16 +161,6 @@ $light-grey: #f0f0f0;
   }
 }
 
-@media (max-width: 767px) {
-  .subcategory-item .child-dropdown {
-    display: none;
-  }
-
-  .subcategory-item.active-subcategory .child-dropdown {
-    display: flex;
-  }
-}
-
 .mega-menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -223,12 +212,7 @@ $light-grey: #f0f0f0;
   }
 }
 
-@media (max-width: 767px) {
-  .mega-menu {
-    display: none;
-  }
-}
-/* FORCE DROPDOWNS TO SPAN FULL WIDTH ON DESKTOP */
+/* Force full width dropdown on desktop */
 @media (min-width: 768px) {
   .nav-item {
     position: static;
@@ -243,7 +227,7 @@ $light-grey: #f0f0f0;
   }
 }
 
-/* FIX FOR 4TH & 5TH CATEGORY DROPDOWN VISIBILITY */
+/* Fix z-index for deep items */
 .nav-item {
   z-index: 10;
 

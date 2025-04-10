@@ -14,6 +14,7 @@ const NavBar = () => {
   const [activeSubcategory, setActiveSubcategory] = useState(null);
   const [activeChildSubcategory, setActiveChildSubcategory] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+  const [dropdownClicked, setDropdownClicked] = useState(false);
   const navigate = useNavigate();
 
   const combinedData = [
@@ -37,11 +38,26 @@ const NavBar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!e.target.closest(".nav-item")) {
+        setActiveCategory(null);
+        setDropdownClicked(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   const handleCategoryClick = (id) => {
     if (isMobile) {
       setActiveCategory((prev) => (prev === id ? null : id));
       setActiveSubcategory(null);
       setActiveChildSubcategory(null);
+    } else {
+      const isSame = activeCategory === id;
+      setActiveCategory(isSame ? null : id);
+      setDropdownClicked(!isSame);
     }
   };
 
@@ -108,8 +124,12 @@ const NavBar = () => {
                   className={`nav-item ${
                     activeCategory === category.id ? "active-category" : ""
                   }`}
-                  onMouseEnter={() => !isMobile && setActiveCategory(category.id)}
-                  onMouseLeave={() => !isMobile && setActiveCategory(null)}
+                  onMouseEnter={() =>
+                    !isMobile && setActiveCategory(category.id)
+                  }
+                  onMouseLeave={() =>
+                    !isMobile && !dropdownClicked && setActiveCategory(null)
+                  }
                 >
                   <a
                     className="nav-link category-link"
@@ -131,9 +151,12 @@ const NavBar = () => {
                     </div>
                   </a>
 
-                  {/* Desktop Mega Menu */}
                   {!isMobile && activeCategory === category.id && (
-                    <div className="mega-menu">
+                    <div
+                      className="mega-menu"
+                      onMouseEnter={() => setActiveCategory(category.id)}
+                      onMouseLeave={() => !dropdownClicked && setActiveCategory(null)}
+                    >
                       {category.subcategories?.length > 0 ? (
                         category.subcategories.map((subcategory) => (
                           <div key={subcategory.id} className="mega-column">
