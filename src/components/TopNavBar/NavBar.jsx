@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.scss";
-import Spares from "../../data/Spares.json";
+import Spares from "../../data/spares.json";
 import Stores from "../../data/Stores.json";
 import Provisions from "../../data/Provisions.json";
 import Service from "../../data/Service.json";
