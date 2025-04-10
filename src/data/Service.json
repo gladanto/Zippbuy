@@ -2,7 +2,7 @@
     {
         "id": "c004",
         "name": "Service",
-        "img": "/assets/spares.png",
+        "img": "/assets/techservice.png",
         "alt": "Spares Icon",
         "link": "#",
         "subcategories": [
