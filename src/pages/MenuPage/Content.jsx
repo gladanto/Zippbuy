@@ -23,7 +23,7 @@ const Content = () => {
   const toggleSubCategory = (index, subName) => {
     setOpenSubCategory(openSubCategory === index ? null : index);
     setSubCategoryName(subName);
-    setChildSubCategoryName(null); // Reset child selection
+    setChildSubCategoryName(subName); // Reset child selection
   };
 
   const selectChildCategory = (childName) => {

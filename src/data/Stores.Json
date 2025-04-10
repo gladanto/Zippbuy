@@ -2,7 +2,7 @@
     {
         "id": "c002",
         "name": "Stores",
-        "img": "/assets/spares.png",
+        "img": "/assets/stores.png",
         "alt": "Spares Icon",
         "link": "#",
         "subcategories": [

@@ -34,7 +34,6 @@ $light-grey: #f0f0f0;
   }
 }
 
-/* ICON ON TOP, CATEGORY NAME BELOW */
 .category-link {
   display: flex;
   flex-direction: column;
@@ -55,7 +54,6 @@ $light-grey: #f0f0f0;
   margin-bottom: 5px;
 }
 
-/* Hide icons on mobile */
 @media (max-width: 767px) {
   .icon {
     display: none !important;
@@ -71,51 +69,42 @@ $light-grey: #f0f0f0;
   background: $light-grey;
 }
 
-/* CATEGORY DROPDOWN */
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100vw;
+  transform: none;
   background: white;
   border: 1px solid #ddd;
   display: none;
   flex-direction: column;
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 200px;
-  z-index: 9999;
   list-style: none;
+  z-index: 9999;
 }
 
-/* HOVER DROPDOWN FOR TABLET & DESKTOP */
 @media (min-width: 768px) {
   .nav-item:hover .dropdown-menu,
   .nav-item:focus-within .dropdown-menu {
-    display: flex;
-    padding-left: 10px;
+    display: grid;
   }
 }
 
-/* MOBILE VIEW - SHOW DROPDOWN BELOW CATEGORY */
 @media (max-width: 767px) {
   .dropdown-menu {
     position: relative;
-    padding-left: 10px;
-    left: 0;
-    top: auto;
-    transform: none;
     width: 100%;
     display: none;
+    padding-left: 10px;
   }
 
   .nav-item.active-category .dropdown-menu {
     display: flex;
-    padding-left: 10px;
   }
 }
 
-/* SUBCATEGORY & CHILD DROPDOWN */
 .subcategory-item {
   position: relative;
   list-style: none;
@@ -127,7 +116,7 @@ $light-grey: #f0f0f0;
     padding: 6px 6px 2px 0px;
     font-size: 14px;
     color: black;
-    background: white;
+    background: rgb(243, 239, 239);
     cursor: pointer;
     transition: background 0.3s;
 
@@ -137,39 +126,29 @@ $light-grey: #f0f0f0;
   }
 }
 
-/* EXPAND ICON */
 .expand-icon {
   font-size: 18px;
   color: gray;
 }
 
-/* CHILD DROPDOWN */
 .child-dropdown {
   position: relative;
   left: 0;
   top: 0;
-  background: rgb(255, 255, 255);
+  background: white;
   border: 1px solid #949090;
   display: none;
   flex-direction: column;
   padding: 5px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   min-width: 150px;
   list-style: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* SHOW CHILD DROPDOWN BELOW IN MOBILE */
 @media (max-width: 767px) {
   .child-dropdown {
-    position: relative;
-    left: 0;
-    top: auto;
-    background: rgb(255, 255, 255);
+    width: 100% !important;
     border: 1px solid #797474;
-    transform: none;
-    width: 100%;
-    display: none;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);   
   }
 
   .subcategory-item.active-subcategory .child-dropdown {
@@ -177,14 +156,12 @@ $light-grey: #f0f0f0;
   }
 }
 
-/* SHOW CHILD DROPDOWN ON HOVER FOR TABLET & DESKTOP */
 @media (min-width: 768px) {
   .subcategory-item:hover .child-dropdown {
     display: flex;
   }
 }
 
-/* REMOVE HOVER EFFECT FOR MOBILE */
 @media (max-width: 767px) {
   .subcategory-item .child-dropdown {
     display: none;
@@ -192,5 +169,86 @@ $light-grey: #f0f0f0;
 
   .subcategory-item.active-subcategory .child-dropdown {
     display: flex;
+  }
+}
+
+.mega-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background: rgb(218, 223, 223);
+  padding: 20px 40px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ddd;
+  z-index: 9999;
+}
+
+.mega-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.subcategory-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #070707;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.child-links {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 6px;
+
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #131212;
+
+      &:hover {
+        color: rgb(89, 5, 245);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mega-menu {
+    display: none;
+  }
+}
+/* FORCE DROPDOWNS TO SPAN FULL WIDTH ON DESKTOP */
+@media (min-width: 768px) {
+  .nav-item {
+    position: static;
+
+    .dropdown-menu,
+    .mega-menu {
+      left: 0 !important;
+      transform: none !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
+    }
+  }
+}
+
+/* FIX FOR 4TH & 5TH CATEGORY DROPDOWN VISIBILITY */
+.nav-item {
+  z-index: 10;
+
+  &:nth-child(4),
+  &:nth-child(5) {
+    z-index: 9999;
   }
 }

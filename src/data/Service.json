@@ -1,5 +1,49 @@
 [
     {
-        
+        "id": "c004",
+        "name": "Service",
+        "img": "/assets/spares.png",
+        "alt": "Spares Icon",
+        "link": "#",
+        "subcategories": [
+            {
+                "id": "s013",
+                "name": "Radio Equipment",
+                "link": "#",
+                "childsubcategories": [
+                    {
+                        "id": "cs034",
+                        "name": "UT Gauging",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs035",
+                        "name": "OverHauling",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs036",
+                        "name": "Liferaft",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs037",
+                        "name": "Lifeboat",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cs038",
+                        "name": "Fire Fighting Equipment",
+                        "link": "#"
+                    },
+                    {
+                        
+                        "id": "cs039",
+                        "name": "Under Water Services",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
     }
 ]
