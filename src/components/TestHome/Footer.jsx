@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import logo from "/assets/logo.png";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -8,7 +9,16 @@ const Footer = () => {
       <div className="footer-container">
         {/* Header Section */}
         <div className="footer-header">
-          <h2>ZIPPBUY</h2>
+           <img 
+                      src={logo} 
+                      alt="Company Logo" 
+                      className="logo hover-opacity" 
+                      style={{ 
+                        height: "40px", 
+                        cursor: "pointer",
+                        transition: "opacity 0.0s ease"
+                      }} 
+         />
           <p>Call or Message Us for a detailed expression of our expertise!</p>
         </div>
 

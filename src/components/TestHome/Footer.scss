@@ -1,7 +1,7 @@
 // Footer.scss
 .footer-enoch {
-    background-color: #1a1a1a;
-    color: #ddd;
+    background-color: #f8f7f7;
+    color: #161414;
     padding: 20px 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -18,14 +18,14 @@
       margin-bottom: 20px;
   
       h2 {
-        color: #fff;
+        color: #0f0f0f;
         font-size: 28px;
         font-weight: bold;
         margin-bottom: 10px;
       }
   
       p {
-        color: #ccc;
+        color: #080808;
         font-size: 16px;
       }
     }
@@ -44,7 +44,7 @@
   
     .footer-column {
       h3 {
-        color: #fff;
+        color: #0e0d0d;
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 20px;
@@ -60,7 +60,7 @@
     .contact-section {
       margin-top: 20px;
       p {
-        color: #ccc;
+        color: #0a0a0a;
       }
     }
   
@@ -74,12 +74,12 @@
       }
   
       a {
-        color: #ccc;
+        color: #0e0d0d;
         text-decoration: none;
         transition: color 0.3s;
   
         &:hover {
-          color: #fff;
+          color: #0a0a0a;
           text-decoration: underline;
         }
       }
@@ -90,12 +90,12 @@
       gap: 20px;
   
       a {
-        color: #ccc;
+        color: #0c0b0b;
         font-size: 24px;
         transition: color 0.3s;
   
         &:hover {
-          color: #fff;
+          color: #0f0e0e;
         }
       }
     }
@@ -103,7 +103,7 @@
     .footer-copyright {
       text-align: center;
       margin: 20px 0 20px;
-      color: #999;
+      color: #111010;
   
       p {
         margin: 5px 0;
@@ -133,12 +133,12 @@
       border-top: 1px solid #333;
   
       a {
-        color: #ccc;
+        color: #070707;
         text-decoration: none;
         transition: color 0.3s;
   
         &:hover {
-          color: #fff;
+          color: #0a0909;
           text-decoration: underline;
         }
       }

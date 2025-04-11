@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/TestHome/Footer";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Content from "./Content";
 
