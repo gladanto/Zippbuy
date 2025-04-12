@@ -175,25 +175,25 @@
   .feature-section {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 0.2s;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.3s;
   
     .text-content {
-      animation: slideInLeft 1s ease forwards;
+      animation: slideInLeft 2s ease forwards;
       animation-delay: 0.3s;
     }
   
     .image-content {
-      animation: slideInRight 1s ease forwards;
+      animation: slideInRight 2s ease forwards;
       animation-delay: 0.3s;
     }
   
     &.reverse {
       .text-content {
-        animation: slideInRight 1s ease forwards;
+        animation: slideInRight 2s ease forwards;
       }
       .image-content {
-        animation: slideInLeft 1s ease forwards;
+        animation: slideInLeft 2s ease forwards;
       }
     }
   }
