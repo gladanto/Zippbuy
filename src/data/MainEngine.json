@@ -9,43 +9,80 @@
             {
                 "id": "Sc001",
                 "name": "Crankshaft",
+                "Partname":"Crankshaft",
+                "Company":"Sulzer",
+                "condition":"New",
                 "link": "#",
                 "price": 15.99,
                 "image": "/assets/p002/p1.png",
                 "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
-                "childsubcategories": [
+                "childsubcategories": [{
+                    "id": "s0",
+                    "name": "Crankshaft",
+                    "Partname":"Crankshaft",
+                    "company":"Sulzer",
+                    "Available/on demand":"on demand",
+                    "condition":"New",
+                    "image": "/assets/p001/p1.png",
+                    "link": "#"
+                },
                     {
                         "id": "s1",
                         "name": "Main Bearings",
-                        "image": "/assets/p002/p1.png",
+                        "company":"Sulzer",
+                        "partname":"Crankshaft",
+                        "Available/on demand":"on demand",
+                        "condition":"New",
+                        "image": "/assets/p003/p1.png",
                         "link": "#"
                     }, 
                     {
                         "id": "s2",
                         "name": "Rod Bearings",
-                        "image": "/assets/p002/p1.png",
+                        "partname":"Crankshaft",
+                        "company":"Sulzer",
+                        "Available/on demand":"Available",
+                        "condition":"New",
+                        "image": "/assets/p004/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s3",
                         "name": "Thrust Washers/ Thrust Bearings",
-                        "image": "/assets/p002/p1.png",
+                        "partname":"Crankshaft",
+                        "company":"Sulzer",
+                        "Available/on demand":"Available",
+                        "condition":"old",
+                        "image": "/assets/p005/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s4",
-                        "name": "Crankshaft Oil Seals",
+                        "name": "Crankshaft Oil Seals", 
+                        "partname":"Crankshaft",
+                        "company":"Sulzer",
+                        "Available/on demand":"Available",
+                        "condition":"old",
+                        "image": "/assets/p006/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s5",
                         "name": "Crankshaft Pulley",
-                        "image": "/assets/p002/p1.png",
+                        "partname":"Crankshaft",
+                        "company":"Sulzer",
+                        "Available/on demand":"on demand",
+                        "condition":"new",
+                        "image": "/assets/p007/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s6",
                         "name": "Crankshaft Position Sensor Reluctor Ring",
+                        "partname":"Crankshaft",
+                        "company":"Sulzer",
+                        "Available/on demand":"on demand",
+                        "condition":"old",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
@@ -53,6 +90,10 @@
                     {
                         "id": "s7",
                         "name": "Woodruff Keys / Crank Keys",
+                        "partname":"Crankshaft",
+                        "company":"Sulzer",
+                        "Available/on demand":"on demand",
+                        "condition":"new",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
@@ -68,36 +109,37 @@
                 "description": "Protects fragile items during shipping, lightweight and easy to cut.",
                 "childsubcategories": [
                     {
-                        "id": "s1",
+                        "id": "s8",
                         "name": "Bearing shells/ Liners",
-                        "image": "/assets/p002/p1.png",
+                        "image": "/assets/p005/p1.png",
                         "link": "#"
                     }, 
                     {
-                        "id": "s2",
+                        "id": "s9",
                         "name": "Bearing Cap",
+                        "image": "/assets/p006/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s10",
                         "name": "Bearing Saddle",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s4",
+                        "id": "s11",
                         "name": "Crankshaft Journal",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s5",
+                        "id": "s12",
                         "name": "Retaining studs and nuts",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s6",
+                        "id": "s13",
                         "name": "Thrust Pads",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
@@ -113,37 +155,37 @@
                 "description": "Water-resistant poly mailers, self-sealing for convenient shipping.",
                 "childsubcategories": [
                     {
-                        "id": "s1",
+                        "id": "s14",
                         "name": "Shank",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }, 
                     {
-                        "id": "s2",
+                        "id": "s15",
                         "name": "Bearing Shells (Big end)",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s16",
                         "name": "Bearing Shells (Big end)",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s4",
+                        "id": "s17",
                         "name": "Bolts/Nuts",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s5",
+                        "id": "s18",
                         "name": "Small End Bushing",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s6",
+                        "id": "s19",
                         "name": "Thrust washers",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
@@ -160,19 +202,19 @@
                 "childsubcategories": [
                 
                     {
-                        "id": "s1",
+                        "id": "s20",
                         "name": "Crosshead Body",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s2",
+                        "id": "s21",
                         "name": "Crosshead Pin",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s22",
                         "name": "Crosshead Nut",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
@@ -188,61 +230,61 @@
                 "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging.",
                 "childsubcategories": [
                     {
-                        "id": "s1",
+                        "id": "s23",
                         "name": "Piston Complete",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s2",
-                        "name": "Piston Complete",
+                        "id": "s24",
+                        "name": "Piston Crown",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s25",
                         "name": "Piston Skirt",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s1",
+                        "id": "s26",
                         "name": "Bolt",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s2",
+                        "id": "s27",
                         "name": "Thrust Piece",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s28",
                         "name": "Position Pin",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s1",
+                        "id": "s29",
                         "name": "Piston Pin complete",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s2",
+                        "id": "s30",
                         "name": "Retaining Ring",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s31",
                         "name": "Compressor ring",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s3",
+                        "id": "s32",
                         "name": "Oil Scrapper ring",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
@@ -256,31 +298,153 @@
                 "link": "#",
                 "price": 24.99,
                 "image": "/assets/p007/p1.png",
-                "description": "Thick kraft paper for wrapping, packaging, and cushioning shipments."
-            },
+                "description": "Thick kraft paper for wrapping, packaging, and cushioning shipments.",
+                "childsubcategories": [
+                    {
+                        "id": "s32",
+                        "name": "Sealing Rings", 
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s33",
+                        "name": "Cooling Jacket",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s34",
+                        "name": "Cylinder Liner Complete",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+         ] },
             {
                 "id": "Sc007",
                 "name": "Cylinder Head",
                 "link": "#",
                 "price": 21.99,
                 "image": "/assets/p008/p1.png",
-                "description": "Lightweight, anti-static packing peanuts for filling voids in boxes."
+                "description": "Lightweight, anti-static packing peanuts for filling voids in boxes.",
+                 "childsubcategories": [
+                    {
+                        "id": "s35",
+                        "name": "valves",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s36",
+                        "name": "valve springs",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s37",
+                        "name": "Rocker arms",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+               },
+               {
+                "id": "s38",
+                "name": "Pushrods",
+                "image": "/assets/p002/p1.png",
+                "link": "#"
             },
+            {
+                "id": "s39",
+                "name": "Head Gasket surface",
+                "image": "/assets/p002/p1.png",
+                "link": "#"
+            }
+        ]},
             {
                 "id": "Sc008",
                 "name": "Fuel Injector",
                 "link": "#",
                 "price": 12.99,
                 "image": "/assets/p009/p1.png",
-                "description": "Bright red fragile warning labels to protect delicate shipments."
+                "description": "Bright red fragile warning labels to protect delicate shipments.",
+                "childsubcategories": [
+                   
+                    {
+                        "id": "s40",
+                        "name": "Injector nozzle",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s41",
+                        "name": "Solenoid or Piezo Actuator",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s42",
+                        "name": "valve needle",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s43",
+                        "name": "Fuel Basket",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s44",
+                        "name": "Electrical Connector",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s45",
+                        "name": "Body/Housing",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]
             },
+            
             {
                 "id": "Sc009",
                 "name": "Exhaust Value",
                 "link": "#",
                 "price": 29.99,
                 "image": "/assets/p010/p1.jpg",
-                "description": "Eco-friendly recycled shipping boxes, sturdy and reliable."
+                "description": "Eco-friendly recycled shipping boxes, sturdy and reliable.",
+                "childsubcategories": [
+                    {
+                        "id": "s46",
+                        "name": "Valve head",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s47", 
+                        "name": "Valve face",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s48",
+                        "name": "Valve stem",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s49",
+                        "name": "Valve tip",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s50",
+                        "name": "Lock Groove/ Keeper Groove",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]
             },
             {
                 "id": "Sc010",
@@ -288,24 +452,176 @@
                 "link": "#",
                 "price": 27.99,
                 "image": "/assets/p001/p1.png",
-                "description": "Cling wrap for securing and stabilizing pallet shipments."
-            },
+                "description": "Cling wrap for securing and stabilizing pallet shipments.",
+                "childsubcategories": [
+                    {
+                        "id": "s51",
+                        "name": "Turbo charger",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s52",
+                        "name": "Air Cooler/intercooler",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s53",
+                        "name": "Exhaust valve",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s54",
+                        "name": "Blower",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s55",
+                        "name": "Air filters",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]
+ },
             {
                 "id": "Sc011",
                 "name": "Turbo charger",
                 "link": "#",
                 "price": 34.99,
                 "image": "/assets/p002/p1.png",
-                "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging."
-            },
+                "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging.",
+"childsubcategories": [
+                    {
+                        "id": "s56",
+                        "name": "Compressor wheels",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s57",
+                        "name": "Turbine wheel",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s58",
+                        "name":"Center Housing (Bearing Housing / CHRA - Center Housing Rotating Assembly)",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s59",
+                        "name": "Wastegate",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s60",
+                        "name": "Actuator",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s61",
+                        "name": "Intercooler",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]
+    },
             {
                 "id": "Sc012",
                 "name": "Camshaft",
                 "link": "#",
                 "price": 15.99,
                 "image": "/assets/p003/p1.png",
-                "description": "Strong adhesive tape for securing packages, includes a handheld dispenser."
-            }       
+                "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
+                "childsubcategories": [
+                    {
+                        "id": "s62",
+                        "name": "Complete Camshaft",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }, 
+                    {
+                        "id": "s63",
+                        "name": "Cam Lobes",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s64",
+                        "name": "Bearing Journals",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s65",
+                        "name": "Camshaft gear or sprocket",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s66",
+                        "name": "Thrust plate/retaining plate",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s67",
+                        "name": "Distributor Drive gear",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s68",
+                        "name": "Position Sensor Reluctor",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]},
+                {
+                    "id": "Sc013",
+                    "name": "Valve (others)",
+                    "link": "#",
+                    "price": 15.99,
+                    "image": "/assets/p003/p1.png",
+                    "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
+                    "childsubcategories": [
+                        {
+                            "id": "s69",
+                            "name": "Valve guide",
+                            "image": "/assets/p002/p1.png",
+                            "link": "#"
+                        }, 
+                        {
+                            "id": "s70",
+                            "name": "Valve seat",
+                            "image": "/assets/p002/p1.png",
+                            "link": "#"
+                        },
+                        {
+                            "id": "s71",
+                            "name": "Valve Spring",
+                            "image": "/assets/p002/p1.png",
+                            "link": "#"
+                        },
+                        {
+                            "id": "s72",
+                            "name": "Valve spring retainer",
+                            "image": "/assets/p002/p1.png",
+                            "link": "#"
+                        },
+                        {
+                            "id": "s73",
+                            "name": "Valve locks/Collets/keepers",
+                            "image": "/assets/p002/p1.png",
+                            "link": "#"
+                        }
+                    ]}
             
         ]
     }
