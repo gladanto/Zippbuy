@@ -105,7 +105,7 @@ const Content = () => {
 
         {/* Main Content */}
         <div className="col-md-10 col-sm-12 p-0">
-          Child Category Navbar Section
+          {/* Child Category Navbar Section */}
           {childToDisplay && (
             <div className="bg-white shadow-sm py-2 px-3 border-bottom">
               <div className="d-flex flex-wrap align-items-center gap-2">
@@ -233,6 +233,9 @@ const Content = () => {
                         <p className="small mb-1">
                           <strong>Part:</strong> {product.partname}
                         </p>
+                        <p className="small mb-1">
+                          <strong>Company:</strong> {product.company}
+                        </p>
                         <p className="small mb-2">
                           <strong>Condition:</strong>{" "}
                           {normalizeCondition(product.condition)}
@@ -254,6 +257,7 @@ const Content = () => {
               )}
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -261,5 +265,3 @@ const Content = () => {
 };
 
 export default Content;
-
-
