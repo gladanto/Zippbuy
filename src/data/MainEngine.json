@@ -9,100 +9,103 @@
             {
                 "id": "Sc001",
                 "name": "Crankshaft",
-                "Partname":"Crankshaft",
-                "Company":"Sulzer",
-                "condition":"New",
+                "partname": "Crankshaft",
+                "company": "Sulzer",
+                "condition": "New",
                 "link": "#",
                 "price": 15.99,
                 "image": "/assets/p002/p1.png",
                 "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
-                "childsubcategories": [{
-                    "id": "s0",
-                    "name": "Crankshaft",
-                    "Partname":"Crankshaft",
-                    "company":"Sulzer",
-                    "Available/on demand":"on demand",
-                    "condition":"New",
-                    "image": "/assets/p001/p1.png",
-                    "link": "#"
-                },
+                "childsubcategories": [
+                    {
+                        "id": "s0",
+                        "name": "Crankshaft",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "on demand",
+                        "condition": "New",
+                        "image": "/assets/p001/p1.png",
+                        "link": "#"
+                    },
                     {
                         "id": "s1",
                         "name": "Main Bearings",
-                        "company":"Sulzer",
-                        "partname":"Crankshaft",
-                        "Available/on demand":"on demand",
-                        "condition":"New",
+                        "company": "Sulzer",
+                        "partname": "Crankshaft",
+                        "Available/on demand": "on demand",
+                        "condition": "New",
                         "image": "/assets/p003/p1.png",
                         "link": "#"
-                    }, 
+                    },
                     {
                         "id": "s2",
                         "name": "Rod Bearings",
-                        "partname":"Crankshaft",
-                        "company":"Sulzer",
-                        "Available/on demand":"Available",
-                        "condition":"New",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "Available",
+                        "condition": "New",
                         "image": "/assets/p004/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s3",
                         "name": "Thrust Washers/ Thrust Bearings",
-                        "partname":"Crankshaft",
-                        "company":"Sulzer",
-                        "Available/on demand":"Available",
-                        "condition":"old",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "Available",
+                        "condition": "old",
                         "image": "/assets/p005/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s4",
-                        "name": "Crankshaft Oil Seals", 
-                        "partname":"Crankshaft",
-                        "company":"Sulzer",
-                        "Available/on demand":"Available",
-                        "condition":"old",
+                        "name": "Crankshaft Oil Seals",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "Available",
+                        "condition": "old",
                         "image": "/assets/p006/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s5",
                         "name": "Crankshaft Pulley",
-                        "partname":"Crankshaft",
-                        "company":"Sulzer",
-                        "Available/on demand":"on demand",
-                        "condition":"new",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "on demand",
+                        "condition": "new",
                         "image": "/assets/p007/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s6",
                         "name": "Crankshaft Position Sensor Reluctor Ring",
-                        "partname":"Crankshaft",
-                        "company":"Sulzer",
-                        "Available/on demand":"on demand",
-                        "condition":"old",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "on demand",
+                        "condition": "old",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
-
                     {
                         "id": "s7",
                         "name": "Woodruff Keys / Crank Keys",
-                        "partname":"Crankshaft",
-                        "company":"Sulzer",
-                        "Available/on demand":"on demand",
-                        "condition":"new",
+                        "partname": "Crankshaft",
+                        "company": "Sulzer",
+                        "Available/on demand": "on demand",
+                        "condition": "new",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
-             ]
-
+                ]
             },
             {
                 "id": "Sc002",
                 "name": "Main Bearings",
+                "partname": "gubkknnnn",
+                "company": "ftgefgr",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 19.99,
                 "image": "/assets/p003/p1.png",
@@ -111,36 +114,60 @@
                     {
                         "id": "s8",
                         "name": "Bearing shells/ Liners",
+                        "partname": "gubkknnnn",
+                        "company": "fbh tsecv",
+                        "Available/on demand": "dcrf",
+                        "condition": "swedrfwt",
                         "image": "/assets/p005/p1.png",
                         "link": "#"
-                    }, 
+                    },
                     {
                         "id": "s9",
                         "name": "Bearing Cap",
+                        "partname": "bkbk,",
+                        "company": "e4dred",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p006/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s10",
                         "name": "Bearing Saddle",
+                        "partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s11",
                         "name": "Crankshaft Journal",
+                        "partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s12",
                         "name": "Retaining studs and nuts",
+                        "partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s13",
                         "name": "Thrust Pads",
+                        "partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
@@ -149,6 +176,10 @@
             {
                 "id": "Sc003",
                 "name": "Connecting Rod",
+                "partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 23.99,
                 "image": "/assets/p004/p1.png",
@@ -157,65 +188,104 @@
                     {
                         "id": "s14",
                         "name": "Shank",
+                        "Partname": "bghydxrftg",
+                        "company": "",
+                        "Available/on demand": "sdrtgr4g",
+                        "condition": "sedtg",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
-                    }, 
+                    },
                     {
                         "id": "s15",
                         "name": "Bearing Shells (Big end)",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s16",
                         "name": "Bearing Shells (Big end)",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s17",
                         "name": "Bolts/Nuts",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s18",
                         "name": "Small End Bushing",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s19",
                         "name": "Thrust washers",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
                 ]
             },
-             {
+            {
                 "id": "Sc004",
                 "name": "Cross Head",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 39.99,
                 "image": "/assets/p005/p1.png",
                 "description": "Accurate scale for weighing packages, ideal for postal shipping.",
                 "childsubcategories": [
-                
                     {
                         "id": "s20",
                         "name": "Crosshead Body",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s21",
                         "name": "Crosshead Pin",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s22",
                         "name": "Crosshead Nut",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
@@ -224,6 +294,10 @@
             {
                 "id": "Sc005",
                 "name": "Piston",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 24.99,
                 "image": "/assets/p006/p1.png",
@@ -232,66 +306,105 @@
                     {
                         "id": "s23",
                         "name": "Piston Complete",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s24",
                         "name": "Piston Crown",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s25",
                         "name": "Piston Skirt",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s26",
                         "name": "Bolt",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s27",
                         "name": "Thrust Piece",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s28",
                         "name": "Position Pin",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s29",
                         "name": "Piston Pin complete",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s30",
                         "name": "Retaining Ring",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s31",
                         "name": "Compressor ring",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s32",
                         "name": "Oil Scrapper ring",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
                 ]
             },
-
             {
                 "id": "Sc006",
                 "name": "Cylinder Liner",
@@ -301,114 +414,458 @@
                 "description": "Thick kraft paper for wrapping, packaging, and cushioning shipments.",
                 "childsubcategories": [
                     {
-                        "id": "s32",
-                        "name": "Sealing Rings", 
+                        "id": "cl01",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "New",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s33",
-                        "name": "Cooling Jacket",
+                        "id": "cl02",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s34",
-                        "name": "Cylinder Liner Complete",
+                        "id": "cl03",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl04",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED GOOD",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl05",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "New",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl06",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "New",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl07",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl08",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl09",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "New",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl09",
+                        "company": "SULZER",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "New",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl10",
+                        "company": "AKASAKA",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl11",
+                        "company": "MITSUBISHI",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl12",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl13",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl14",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl15",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl16",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl17",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl18",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER WITH CCS CERTIFICATE",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl19",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl20",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl21",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "RECON",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl22",
+                        "company": "MAN B&W",
+                        "partname": "Cylinder Liner",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl23",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER WITH CCS STAMPING",
+                        "Avilabilty": "Available",
+                        "condition": "UNUSED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl24",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl25",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "RECON",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl26",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "RECON",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl27",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl28",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl29",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "RECON",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl30",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl31",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "RECON",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl32",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "NEW",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "cl33",
+                        "company": "MAN B&W",
+                        "partname": "CYLINDER LINER",
+                        "Avilabilty": "Available",
+                        "condition": "USED",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
-         ] },
+                ]
+            },
             {
                 "id": "Sc007",
                 "name": "Cylinder Head",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 21.99,
                 "image": "/assets/p008/p1.png",
                 "description": "Lightweight, anti-static packing peanuts for filling voids in boxes.",
-                 "childsubcategories": [
+                "childsubcategories": [
                     {
                         "id": "s35",
                         "name": "valves",
+                        "partname": "bkjpkp[p",
+                        "company": "cvihy0oik-",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s36",
                         "name": "valve springs",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s37",
                         "name": "Rocker arms",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
-               },
-               {
-                "id": "s38",
-                "name": "Pushrods",
-                "image": "/assets/p002/p1.png",
-                "link": "#"
+                    },
+                    {
+                        "id": "s38",
+                        "name": "Pushrods",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s39",
+                        "name": "Head Gasket surface",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]
             },
-            {
-                "id": "s39",
-                "name": "Head Gasket surface",
-                "image": "/assets/p002/p1.png",
-                "link": "#"
-            }
-        ]},
             {
                 "id": "Sc008",
                 "name": "Fuel Injector",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 12.99,
                 "image": "/assets/p009/p1.png",
                 "description": "Bright red fragile warning labels to protect delicate shipments.",
                 "childsubcategories": [
-                   
                     {
                         "id": "s40",
                         "name": "Injector nozzle",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s41",
                         "name": "Solenoid or Piezo Actuator",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s42",
                         "name": "valve needle",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s43",
                         "name": "Fuel Basket",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s44",
                         "name": "Electrical Connector",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s45",
                         "name": "Body/Housing",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
                 ]
             },
-            
             {
                 "id": "Sc009",
                 "name": "Exhaust Value",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 29.99,
                 "image": "/assets/p010/p1.jpg",
@@ -417,30 +874,50 @@
                     {
                         "id": "s46",
                         "name": "Valve head",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
-                        "id": "s47", 
+                        "id": "s47",
                         "name": "Valve face",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s48",
                         "name": "Valve stem",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s49",
                         "name": "Valve tip",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s50",
                         "name": "Lock Groove/ Keeper Groove",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
@@ -449,6 +926,10 @@
             {
                 "id": "Sc010",
                 "name": "Scavenge Air system",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 27.99,
                 "image": "/assets/p001/p1.png",
@@ -457,84 +938,136 @@
                     {
                         "id": "s51",
                         "name": "Turbo charger",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s52",
                         "name": "Air Cooler/intercooler",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s53",
                         "name": "Exhaust valve",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s54",
                         "name": "Blower",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s55",
                         "name": "Air filters",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
                 ]
- },
+            },
             {
                 "id": "Sc011",
                 "name": "Turbo charger",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 34.99,
                 "image": "/assets/p002/p1.png",
                 "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging.",
-"childsubcategories": [
+                "childsubcategories": [
                     {
                         "id": "s56",
                         "name": "Compressor wheels",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s57",
                         "name": "Turbine wheel",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s58",
-                        "name":"Center Housing (Bearing Housing / CHRA - Center Housing Rotating Assembly)",
+                        "name": "Center Housing (Bearing Housing / CHRA - Center Housing Rotating Assembly)",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s59",
                         "name": "Wastegate",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s60",
                         "name": "Actuator",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s61",
                         "name": "Intercooler",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
                 ]
-    },
+            },
             {
                 "id": "Sc012",
                 "name": "Camshaft",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
                 "link": "#",
                 "price": 15.99,
                 "image": "/assets/p003/p1.png",
@@ -543,86 +1076,139 @@
                     {
                         "id": "s62",
                         "name": "Complete Camshaft",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
-                    }, 
+                    },
                     {
                         "id": "s63",
                         "name": "Cam Lobes",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s64",
                         "name": "Bearing Journals",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s65",
                         "name": "Camshaft gear or sprocket",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s66",
                         "name": "Thrust plate/retaining plate",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s67",
                         "name": "Distributor Drive gear",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     },
                     {
                         "id": "s68",
                         "name": "Position Sensor Reluctor",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
                         "image": "/assets/p002/p1.png",
                         "link": "#"
                     }
-                ]},
-                {
-                    "id": "Sc013",
-                    "name": "Valve (others)",
-                    "link": "#",
-                    "price": 15.99,
-                    "image": "/assets/p003/p1.png",
-                    "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
-                    "childsubcategories": [
-                        {
-                            "id": "s69",
-                            "name": "Valve guide",
-                            "image": "/assets/p002/p1.png",
-                            "link": "#"
-                        }, 
-                        {
-                            "id": "s70",
-                            "name": "Valve seat",
-                            "image": "/assets/p002/p1.png",
-                            "link": "#"
-                        },
-                        {
-                            "id": "s71",
-                            "name": "Valve Spring",
-                            "image": "/assets/p002/p1.png",
-                            "link": "#"
-                        },
-                        {
-                            "id": "s72",
-                            "name": "Valve spring retainer",
-                            "image": "/assets/p002/p1.png",
-                            "link": "#"
-                        },
-                        {
-                            "id": "s73",
-                            "name": "Valve locks/Collets/keepers",
-                            "image": "/assets/p002/p1.png",
-                            "link": "#"
-                        }
-                    ]}
-            
+                ]
+            },
+            {
+                "id": "Sc013",
+                "name": "Valve (others)",
+                "Partname": "",
+                "company": "",
+                "Available/on demand": "",
+                "condition": "",
+                "link": "#",
+                "price": 15.99,
+                "image": "/assets/p003/p1.png",
+                "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
+                "childsubcategories": [
+                    {
+                        "id": "s69",
+                        "name": "Valve guide",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s70",
+                        "name": "Valve seat",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s71",
+                        "name": "Valve Spring",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s72",
+                        "name": "Valve spring retainer",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    },
+                    {
+                        "id": "s73",
+                        "name": "Valve locks/Collets/keepers",
+                        "Partname": "",
+                        "company": "",
+                        "Available/on demand": "",
+                        "condition": "",
+                        "image": "/assets/p002/p1.png",
+                        "link": "#"
+                    }
+                ]
+            }
         ]
     }
 ]

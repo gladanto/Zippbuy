@@ -196,6 +196,7 @@
         max-width: 50%;
       }
     }
+    
   
     @media (max-width: 768px) {
       .col-md-2 {
@@ -220,6 +221,47 @@
         max-width: 100%;
       }
     }
+    @media (max-width: 768px) {
+      /* Make dropdowns full width on mobile */
+      .filter-dropdown select {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    
+      /* Stack the filter dropdowns */
+      .d-flex {
+        flex-direction: column;
+      }
+    
+      /* Adjust the clear button on mobile */
+      .clear-btn {
+        width: 100%;
+      }
+    }
+    
+    /* Additional styling for dropdowns to ensure good visual appearance */
+    .filter-dropdown {
+      flex: 1;
+      min-width: 150px;
+    }
+    
+    .modern-dropdown {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 0.375rem;
+      border: 1px solid #ced4da;
+      background-color: #fff;
+    }
+    
+    .clear-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      border: none;
+      background-color: #e74c3c;
+      color: white;
+    }
+    
+    
   }
   
 

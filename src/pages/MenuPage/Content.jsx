@@ -1,6 +1,4 @@
-// filterproduct category
-
-import React, { useState, useRef, useMemo, useEffect } from "react";
+import React, { useState, useRef, useMemo } from "react";
 import "./Content.scss";
 import { useNavigate } from "react-router-dom";
 import productsData from "../../data/MainEngine.json";
@@ -10,28 +8,23 @@ const Content = () => {
   const navigate = useNavigate();
   const [selectedSubCategory, setSelectedSubCategory] = useState(null);
   const [hoveredSubCategory, setHoveredSubCategory] = useState(null);
-  const [filterType, setFilterType] = useState(null);
   const [filterPartName, setFilterPartName] = useState(null);
   const [filterCondition, setFilterCondition] = useState(null);
+  const [filterCompany, setFilterCompany] = useState(null);
+  const [filterAvailability, setFilterAvailability] = useState(null);
 
   const hoverTimeoutRef = useRef(null);
 
-  const category = productsData[0];
+  const category = productsData[0] || {};
   const subcategories = category.subcategories || [];
-
-  // Select first subcategory by default
-  useEffect(() => {
-    if (!selectedSubCategory && subcategories.length > 0) {
-      setSelectedSubCategory(subcategories[0]);
-    }
-  }, [selectedSubCategory, subcategories]);
 
   const handleSubCategoryClick = (sub) => {
     setSelectedSubCategory(sub);
     setHoveredSubCategory(null);
-    setFilterType(null);
     setFilterPartName(null);
     setFilterCondition(null);
+    setFilterCompany(null);
+    setFilterAvailability(null);
   };
 
   const handleMouseEnter = (sub) => {
@@ -49,28 +42,37 @@ const Content = () => {
     hoveredSubCategory?.childsubcategories ||
     selectedSubCategory?.childsubcategories;
 
-  // All filtered products from selected subcategory
-  const allProducts = selectedSubCategory?.childsubcategories || [];
+  const allProducts = useMemo(() => {
+    return selectedSubCategory
+      ? selectedSubCategory.childsubcategories || []
+      : subcategories.flatMap((sub) => sub.childsubcategories || []);
+  }, [selectedSubCategory, subcategories]);
 
-  // Unique filter values
-  const types = [...new Set(allProducts.map((p) => p.type))];
   const partNames = [...new Set(allProducts.map((p) => p.partname))];
-  const conditions = ["New", "Old"]; 
+  const companies = [...new Set(allProducts.map((p) => p.company))];
+  const availabilities = [...new Set(
+    allProducts.map((p) => p["Available/on demand"]).filter(Boolean)
+  )];
+  const conditions = ["New", "Old"];
 
   const normalizeCondition = (condition) => {
-    return condition === "Used" ? "Old" : condition;
+    return condition?.toLowerCase() === "used" ? "Old" : condition;
   };
 
   const filteredProducts = useMemo(() => {
     return allProducts.filter((product) => {
-      const matchType = filterType ? product.type === filterType : true;
       const matchPart = filterPartName ? product.partname === filterPartName : true;
+      const matchCompany = filterCompany ? product.company === filterCompany : true;
+      const matchAvailability = filterAvailability
+        ? product["Available/on demand"] === filterAvailability
+        : true;
       const matchCondition = filterCondition
         ? normalizeCondition(product.condition) === filterCondition
         : true;
-      return matchType && matchPart && matchCondition;
+
+      return matchPart && matchCompany && matchAvailability && matchCondition;
     });
-  }, [allProducts, filterType, filterPartName, filterCondition]);
+  }, [allProducts, filterPartName, filterCondition, filterCompany, filterAvailability]);
 
   return (
     <div className="container-fluid bg-light">
@@ -91,9 +93,7 @@ const Content = () => {
             {subcategories.map((sub, i) => (
               <button
                 key={i}
-                className={`sidebar-item ${
-                  selectedSubCategory?.id === sub.id ? "active" : ""
-                }`}
+                className={`sidebar-item ${selectedSubCategory?.id === sub.id ? "active" : ""}`}
                 onMouseEnter={() => handleMouseEnter(sub)}
                 onClick={() => handleSubCategoryClick(sub)}
               >
@@ -105,7 +105,7 @@ const Content = () => {
 
         {/* Main Content */}
         <div className="col-md-10 col-sm-12 p-0">
-          {/* Child Category Navbar Section */}
+          Child Category Navbar Section
           {childToDisplay && (
             <div className="bg-white shadow-sm py-2 px-3 border-bottom">
               <div className="d-flex flex-wrap align-items-center gap-2">
@@ -122,79 +122,90 @@ const Content = () => {
             </div>
           )}
 
-          {/* Filter Buttons */}
-          {selectedSubCategory && (
+          {/* Filter Dropdowns */}
+          {allProducts.length > 0 && (
             <div className="bg-white shadow-sm border-bottom p-3">
-              <div className="mb-2">
-                <strong>Type:</strong>{" "}
-                {types
-  .filter((type) => type && type.trim() !== "")
-  .map((type, idx) => (
-    <button
-      key={idx}
-      className={`btn btn-sm mx-1 ${
-        filterType === type ? "btn-primary" : "btn-outline-primary"
-      }`}
-      onClick={() =>
-        setFilterType(filterType === type ? null : type)
-      }
-    >
-      {type}
-    </button>
-))}
-              </div>
-              <div className="mb-2">
-  <strong>Part Name:</strong>{" "}
-  {partNames
-    .filter((part) => part && part.trim() !== "")
-    .map((part, idx) => (
-      <button
-        key={idx}
-        className={`btn btn-sm mx-1 ${
-          filterPartName === part
-            ? "btn-success"
-            : "btn-outline-success"
-        }`}
-        onClick={() =>
-          setFilterPartName(filterPartName === part ? null : part)
-        }
-      >
-        {part}
-      </button>
-  ))}
-</div>
+              <div className="d-flex flex-wrap justify-content-start gap-4 align-items-center">
 
-              <div className="mb-2">
-                <strong>Condition:</strong>{" "}
-                {conditions.map((cond, idx) => (
-                  <button
-                    key={idx}
-                    className={`btn btn-sm mx-1 ${
-                      filterCondition === cond
-                        ? "btn-warning"
-                        : "btn-outline-warning"
-                    }`}
-                    onClick={() =>
-                      setFilterCondition(
-                        filterCondition === cond ? null : cond
-                      )
-                    }
+                {/* Part Name Filter */}
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterPartName || ""}
+                    onChange={(e) => setFilterPartName(e.target.value || null)}
                   >
-                    {cond}
-                  </button>
-                ))}
-              </div>
+                    <option value="" hidden>PartName</option>
+                    {partNames.map((part, idx) => (
+                      <option key={idx} value={part}>
+                        {part}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => {
-                  setFilterType(null);
-                  setFilterPartName(null);
-                  setFilterCondition(null);
-                }}
-              >
-                Clear All
-              </button>
+                {/* Company Filter */}
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterCompany || ""}
+                    onChange={(e) => setFilterCompany(e.target.value || null)}
+                  >
+                    <option value="" hidden>Companies</option>
+                    {companies.map((company, idx) => (
+                      <option key={idx} value={company}>
+                        {company}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Availability Filter */}
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterAvailability || ""}
+                    onChange={(e) => setFilterAvailability(e.target.value || null)}
+                  >
+                    <option value="" hidden>Availability</option>
+                    {availabilities.map((availability, idx) => (
+                      <option key={idx} value={availability}>
+                        {availability}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Condition Filter */}
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterCondition || ""}
+                    onChange={(e) => setFilterCondition(e.target.value || null)}
+                  >
+                    <option value="" hidden>Conditions</option>
+                    {conditions.map((cond, idx) => (
+                      <option key={idx} value={cond}>
+                        {cond}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Clear All Filters */}
+                <div className="filter-dropdown mb-3">
+                  <button
+                    className="btn btn-danger btn-sm clear-btn"
+                    onClick={() => {
+                      setFilterPartName(null);
+                      setFilterCondition(null);
+                      setFilterCompany(null);
+                      setFilterAvailability(null);
+                    }}
+                  >
+                    Clear All
+                  </button>
+                </div>
+              </div>
             </div>
           )}
 
@@ -215,9 +226,7 @@ const Content = () => {
                         <p className="card-text">
                           ${product.price?.toFixed(2) || "N/A"}
                         </p>
-                        <p className="small text-muted">
-                          {product.description}
-                        </p>
+                        <p className="small text-muted">{product.description}</p>
                         <p className="small mb-1">
                           <strong>Type:</strong> {product.type}
                         </p>
@@ -240,7 +249,7 @@ const Content = () => {
                 ))
               ) : (
                 <div className="text-center text-muted mt-5">
-                  No products match the filters.
+                  No products match
                 </div>
               )}
             </div>
@@ -252,3 +261,5 @@ const Content = () => {
 };
 
 export default Content;
+
+
