@@ -25,12 +25,13 @@
               
         ],
         "subImages": [
-            "public/assets/p001/p2.png",    
-            "public/assets/p001/p3.png",
-            "public/assets/p001/p4.png",
-            "public/assets/p001/p5.png",
-            "public/assets/p001/p6.png",
-            "public/assets/p001/p7.png"    
+          
+            "public/assets/p001/P2.png",
+            "public/assets/p001/P3.png",
+            "public/assets/p001/P4.png",
+            "public/assets/p001/P5.png",
+            "public/assets/p001/P6.png",
+            "public/assets/p001/P7.png"
         ],
         "specifications": [
             "Dimensions: 12x12x12 inches",
