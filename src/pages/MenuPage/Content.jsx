@@ -48,24 +48,41 @@ const Content = () => {
       : subcategories.flatMap((sub) => sub.childsubcategories || []);
   }, [selectedSubCategory, subcategories]);
 
-  const partNames = [...new Set(allProducts.map((p) => p.partname))];
-  const companies = [...new Set(allProducts.map((p) => p.company))];
-  const availabilities = [...new Set(
-    allProducts.map((p) => p["Available/on demand"]).filter(Boolean)
+  const normalize = (str) => str?.trim();
+
+  const partNames = [...new Set(
+    allProducts.map((p) => normalize(p.partname)).filter(Boolean)
   )];
+
+  const companies = [...new Set(
+    allProducts.map((p) => normalize(p.company)).filter(Boolean)
+  )];
+
+  const availabilities = [...new Set(
+    allProducts.map((p) => normalize(p["Available/on demand"])).filter(Boolean)
+  )];
+
   const conditions = ["New", "Old"];
 
   const normalizeCondition = (condition) => {
-    return condition?.toLowerCase() === "used" ? "Old" : condition;
+    const trimmed = condition?.trim()?.toLowerCase();
+    return trimmed === "used" ? "Old" : "New";
   };
 
   const filteredProducts = useMemo(() => {
     return allProducts.filter((product) => {
-      const matchPart = filterPartName ? product.partname === filterPartName : true;
-      const matchCompany = filterCompany ? product.company === filterCompany : true;
-      const matchAvailability = filterAvailability
-        ? product["Available/on demand"] === filterAvailability
+      const matchPart = filterPartName
+        ? normalize(product.partname) === filterPartName
         : true;
+
+      const matchCompany = filterCompany
+        ? normalize(product.company) === filterCompany
+        : true;
+
+      const matchAvailability = filterAvailability
+        ? normalize(product["Available/on demand"]) === filterAvailability
+        : true;
+
       const matchCondition = filterCondition
         ? normalizeCondition(product.condition) === filterCondition
         : true;
@@ -134,7 +151,7 @@ const Content = () => {
                     value={filterPartName || ""}
                     onChange={(e) => setFilterPartName(e.target.value || null)}
                   >
-                    <option value="" hidden>PartName</option>
+                    <option value="" hidden>Part Name</option>
                     {partNames.map((part, idx) => (
                       <option key={idx} value={part}>
                         {part}
@@ -150,7 +167,7 @@ const Content = () => {
                     value={filterCompany || ""}
                     onChange={(e) => setFilterCompany(e.target.value || null)}
                   >
-                    <option value="" hidden>Companies</option>
+                    <option value="" hidden>Company</option>
                     {companies.map((company, idx) => (
                       <option key={idx} value={company}>
                         {company}
@@ -182,7 +199,7 @@ const Content = () => {
                     value={filterCondition || ""}
                     onChange={(e) => setFilterCondition(e.target.value || null)}
                   >
-                    <option value="" hidden>Conditions</option>
+                    <option value="" hidden>Condition</option>
                     {conditions.map((cond, idx) => (
                       <option key={idx} value={cond}>
                         {cond}
@@ -227,9 +244,9 @@ const Content = () => {
                           ${product.price?.toFixed(2) || "N/A"}
                         </p>
                         <p className="small text-muted">{product.description}</p>
-                        <p className="small mb-1">
+                        {/* <p className="small mb-1">
                           <strong>Type:</strong> {product.type}
-                        </p>
+                        </p> */}
                         <p className="small mb-1">
                           <strong>Part:</strong> {product.partname}
                         </p>
@@ -257,7 +274,6 @@ const Content = () => {
               )}
             </div>
           </div>
-
         </div>
       </div>
     </div>
