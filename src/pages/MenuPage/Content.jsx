@@ -345,7 +345,10 @@ const Content = () => {
   return (
     <div className="fixed-layout-container">
       {/* Mobile Header (visible only on small screens) */}
-    
+      <div className="mobile-header" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <div className="mobile-menu-icon">☰</div>
+        <div className="mobile-title">Products</div>
+      </div>
 
       <div className="layout-wrapper">
         {/* Sidebar */}
