@@ -1,467 +1,159 @@
-// .features {
-//   padding: 5rem 0;
-//   background-color: #e6f8f0;
-//   color: #333;
-
-//   .container {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     padding: 0 15px;
-//   }
-
-//   .feature-section {
-//     display: flex;
-//     align-items: center;
-//     gap: 4rem;
-//     margin-bottom: 6rem;
-
-//     &.reverse {
-//       flex-direction: row-reverse;
-//     }
-//   }
-
-//   .text-content {
-//     flex: 1;
-//   }
-
-//   .image-content {
-//     flex: 1;
-//     border-radius: 8px;
-//     overflow: hidden;
-//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-//   }
-
-//   .section-image {
-//     width: 100%;
-//     height: auto;
-//     display: block;
-//     transition: transform 0.3s ease;
-
-//     &:hover {
-//       transform: scale(1.02);
-//     }
-//   }
-
-//   .section-title {
-//     font-size: 2.5rem;
-//     color: #0a2463;
-//     margin-bottom: 1.5rem;
-//     position: relative;
-
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       bottom: -10px;
-//       left: 0;
-//       width: 60px;
-//       height: 4px;
-//       background-color: #3e92cc;
-//     }
-//   }
-
-//   .section-subtitle {
-//     font-size: 2rem;
-//     color: #0a2463;
-//     margin-bottom: 1.5rem;
-//     position: relative;
-
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       bottom: -8px;
-//       left: 0;
-//       width: 50px;
-//       height: 3px;
-//       background-color: #3e92cc;
-//     }
-//   }
-
-
-//   .section-description {
-//     font-size: 1.1rem;
-//     line-height: 1.8;
-//     color: #555;
-//     margin-bottom: 1.5rem;
-//   }
-
-//   .feature-list {
-//     padding-left: 1.5rem;
-//     margin-bottom: 1.5rem;
-
-//     li {
-//       margin-bottom: 0.8rem;
-//       line-height: 1.6;
-//       color: #555;
-//     }
-//   }
-
-//   .company-signature {
-//     margin-top: 2rem;
-//     font-size: 1.2rem;
-//     color: #0a2463;
-//     font-style: italic;
-//   }
-
-//   // Responsive design
-//   @media (max-width: 992px) {
-//     .feature-section {
-//       flex-direction: column;
-//       gap: 2rem;
-//       margin-bottom: 4rem;
-
-//       &.reverse {
-//         flex-direction: column;
-//       }
-//     }
-
-//     .text-content, .image-content {
-//       width: 100%;
-//     }
-//   }
-
-//   @media (max-width: 768px) {
-//     padding: 3rem 0;
-
-//     .section-title {
-//       font-size: 2rem;
-//     }
-
-//     .section-subtitle {
-//       font-size: 1.8rem;
-//     }
-
-//     .section-description {
-//       font-size: 1rem;
-//     }
-//   }
-
-//   @media (max-width: 480px) {
-//     padding: 2rem 0;
-
-//     .section-title {
-//       font-size: 1.8rem;
-//     }
-
-//     .section-subtitle {
-//       font-size: 1.5rem;
-//     }
-
-//     .company-signature {
-//       font-size: 1rem;
-//     }
-//   }
-
-//   @keyframes slideInLeft {
-//     from {
-//       transform: translateX(-100px);
-//       opacity: 0;
-//     }
-//     to {
-//       transform: translateX(0);
-//       opacity: 1;
-//     }
-//   }
-  
-//   @keyframes slideInRight {
-//     from {
-//       transform: translateX(100px);
-//       opacity: 0;
-//     }
-//     to {
-//       transform: translateX(0);
-//       opacity: 1;
-//     }
-//   }
-//   .feature-section {
-//     opacity: 0;
-//     transform: translateY(20px);
-//     animation: fadeIn 2s ease forwards;
-//     animation-delay: 0.3s;
-  
-//     .text-content {
-//       animation: slideInLeft 2s ease forwards;
-//       animation-delay: 0.3s;
-//     }
-  
-//     .image-content {
-//       animation: slideInRight 2s ease forwards;
-//       animation-delay: 0.3s;
-//     }
-  
-//     &.reverse {
-//       .text-content {
-//         animation: slideInRight 2s ease forwards;
-//       }
-//       .image-content {
-//         animation: slideInLeft 2s ease forwards;
-//       }
-//     }
-//   }
-  
-//   @keyframes fadeIn {
-//     to {
-//       opacity: 1;
-//       transform: translateY(0);
-//     }
-//   }
-      
-// }
-
 .features {
-  // Base styles
-  padding: 6rem 0;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e6f8f0 100%);
+  padding: 5rem 0;
+  background-color: #e6f8f0;
   color: #333;
-  position: relative;
-  overflow: hidden;
 
-  // Pseudo-elements
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
-    z-index: 0;
-  }
-
-  // Container
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    position: relative;
-    z-index: 1;
   }
 
-  // Feature section layout
   .feature-section {
     display: flex;
     align-items: center;
-    gap: 5rem;
-    margin-bottom: 8rem;
-    position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    gap: 4rem;
+    margin-bottom: 6rem;
 
     &.reverse {
       flex-direction: row-reverse;
     }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
-  // Text content block
   .text-content {
     flex: 1;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 16px;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 32px rgba(10, 36, 99, 0.08);
-    transition: all 0.4s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(10, 36, 99, 0.15);
-      border-color: rgba(62, 146, 204, 0.3);
-    }
   }
 
-  // Image content block
   .image-content {
     flex: 1;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-    transition: all 0.4s ease;
-    position: relative;
-    z-index: 1;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, rgba(10, 36, 99, 0.1) 0%, rgba(62, 146, 204, 0.1) 100%);
-      z-index: 1;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-
-      &::before {
-        opacity: 1;
-      }
-
-      .section-image {
-        transform: scale(1.05);
-      }
-    }
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
 
   .section-image {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
-  // Typography
   .section-title {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     color: #0a2463;
     margin-bottom: 1.5rem;
     position: relative;
-    font-weight: 700;
-    line-height: 1.2;
-    background: linear-gradient(90deg, #0a2463 0%, #3e92cc 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
 
-    &:hover::after {
-      width: 120px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: #3e92cc;
     }
   }
 
   .section-subtitle {
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: #0a2463;
     margin-bottom: 1.5rem;
     position: relative;
-    font-weight: 600;
-    line-height: 1.3;
-  }
 
-  .section-description {
-    font-size: 1.15rem;
-    line-height: 1.9;
-    color: #555;
-    margin-bottom: 2rem;
-  }
-
-  // Feature list
-  .feature-list {
-    padding-left: 0;
-    margin-bottom: 2rem;
-    list-style: none;
-
-    li {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-      color: #555;
-      position: relative;
-      padding-left: 2rem;
-      transition: transform 0.3s ease;
-
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0.5rem;
-        width: 12px;
-        height: 12px;
-        background-color: #3e92cc;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: transform 0.3s ease;
-      }
-
-      &:hover {
-        transform: translateX(5px);
-        color: #0a2463;
-
-        &::before {
-          transform: scale(1);
-        }
-      }
-    }
-  }
-
-  // Company signature
-  .company-signature {
-    margin-top: 2.5rem;
-    font-size: 1.25rem;
-    color: #0a2463;
-    font-style: italic;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: rgba(62, 146, 204, 0.1);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background: rgba(62, 146, 204, 0.2);
-      transform: translateX(5px);
-    }
-  }
-
-  // CTA Button
-  .cta-button {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background: linear-gradient(90deg, #0a2463 0%, #3e92cc 100%);
-    color: white;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 4px 15px rgba(10, 36, 99, 0.3);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    cursor: pointer;
-
-    &::before {
+    &::after {
       content: '';
       position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: 0.5s;
-    }
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(10, 36, 99, 0.4);
-
-      &::before {
-        left: 100%;
-      }
-    }
-
-    &:active {
-      transform: translateY(1px);
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #3e92cc;
     }
   }
 
-  // Animations
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
+
+  .section-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    li {
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+      color: #555;
+    }
+  }
+
+  .company-signature {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #0a2463;
+    font-style: italic;
+  }
+
+  // Responsive design
+  @media (max-width: 992px) {
+    .feature-section {
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 4rem;
+
+      &.reverse {
+        flex-direction: column;
+      }
+    }
+
+    .text-content, .image-content {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.8rem;
+    }
+
+    .section-description {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 0;
+
+    .section-title {
+      font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.5rem;
+    }
+
+    .company-signature {
+      font-size: 1rem;
     }
   }
 
   @keyframes slideInLeft {
     from {
-      transform: translateX(-50px);
+      transform: translateX(-100px);
       opacity: 0;
     }
     to {
@@ -472,7 +164,7 @@
   
   @keyframes slideInRight {
     from {
-      transform: translateX(50px);
+      transform: translateX(100px);
       opacity: 0;
     }
     to {
@@ -480,110 +172,37 @@
       opacity: 1;
     }
   }
-
-  // Animation delays
-  .feature-section:nth-child(1) {
-    animation-delay: 0.1s;
-    
+  .feature-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.3s;
+  
     .text-content {
-      animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-      animation-delay: 0.2s;
-    }
-    
-    .image-content {
-      animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation: slideInLeft 2s ease forwards;
       animation-delay: 0.3s;
     }
-    
+  
+    .image-content {
+      animation: slideInRight 2s ease forwards;
+      animation-delay: 0.3s;
+    }
+  
     &.reverse {
       .text-content {
-        animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation: slideInRight 2s ease forwards;
       }
       .image-content {
-        animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation: slideInLeft 2s ease forwards;
       }
     }
   }
-
-  .feature-section:nth-child(2) {
-    animation-delay: 0.3s;
-    
-    .text-content {
-      animation-delay: 0.4s;
-    }
-    
-    .image-content {
-      animation-delay: 0.5s;
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
-
-  .feature-section:nth-child(3) {
-    animation-delay: 0.5s;
-    
-    .text-content {
-      animation-delay: 0.6s;
-    }
-    
-    .image-content {
-      animation-delay: 0.7s;
-    }
-  }
-
-  // Responsive design
-  @media (max-width: 992px) {
-    .feature-section {
-      flex-direction: column;
-      gap: 3rem;
-      margin-bottom: 6rem;
-
-      &.reverse {
-        flex-direction: column;
-      }
-    }
-
-    .text-content, .image-content {
-      width: 100%;
-    }
-
-    .text-content {
-      padding: 1.5rem;
-    }
-  }
-
-  @media (max-width: 768px) {
-    padding: 4rem 0;
-
-    .section-title {
-      font-size: 2.25rem;
-    }
-
-    .section-subtitle {
-      font-size: 1.8rem;
-    }
-
-    .section-description {
-      font-size: 1.05rem;
-    }
-  }
-
-  @media (max-width: 576px) {
-    padding: 3rem 0;
-
-    .section-title {
-      font-size: 1.9rem;
-    }
-
-    .section-subtitle {
-      font-size: 1.5rem;
-    }
-
-    .company-signature {
-      font-size: 1.1rem;
-    }
-
-    .feature-section {
-      gap: 2rem;
-      margin-bottom: 4rem;
-    }
-  }
+      
 }

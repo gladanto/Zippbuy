@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b880ce3049bec35592cbbf7b1fb88542f51076f
 import React, { useState, useRef, useMemo } from "react";
 import "./Content.scss";
 import { useNavigate } from "react-router-dom";
 import productsData from "../../data/MainEngine.json";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Content = () => {
   const navigate = useNavigate();
@@ -12,7 +16,6 @@ const Content = () => {
   const [filterCondition, setFilterCondition] = useState(null);
   const [filterCompany, setFilterCompany] = useState(null);
   const [filterAvailability, setFilterAvailability] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const hoverTimeoutRef = useRef(null);
 
@@ -26,7 +29,6 @@ const Content = () => {
     setFilterCondition(null);
     setFilterCompany(null);
     setFilterAvailability(null);
-    setMobileMenuOpen(false);
   };
 
   const handleMouseEnter = (sub) => {
@@ -77,12 +79,21 @@ const Content = () => {
   }, [allProducts, filterPartName, filterCondition, filterCompany, filterAvailability]);
 
   return (
+<<<<<<< HEAD
     <div className="fixed-layout-container">
       {/* Mobile Header (visible only on small screens) */}
 
       <div className="layout-wrapper">
+=======
+    <div className="container-fluid bg-light">
+      <div
+        className="row"
+        onMouseEnter={() => clearTimeout(hoverTimeoutRef.current)}
+        onMouseLeave={handleMouseLeave}
+      >
+>>>>>>> 2b880ce3049bec35592cbbf7b1fb88542f51076f
         {/* Sidebar */}
-        <div className={`modern-sidebar ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+        <div className="col-md-2 col-sm-12 modern-sidebar">
           <div className="sidebar-category">
             <span className="sidebar-title">
               <strong>{category.name}</strong>
@@ -104,15 +115,15 @@ const Content = () => {
         </div>
 
         {/* Main Content */}
-        <div className="main-content-area">
-          {/* Child Category Navigation */}
+        <div className="col-md-10 col-sm-12 p-0">
+          {/* Child Category Navbar Section */}
           {childToDisplay && (
-            <div className="child-category-nav">
-              <div className="nav-scroll-container">
+            <div className="bg-white shadow-sm py-2 px-3 border-bottom">
+              <div className="d-flex flex-wrap align-items-center gap-2">
                 {childToDisplay.map((child, index) => (
                   <button
                     key={index}
-                    className="nav-item"
+                    className="btn btn-outline-secondary btn-sm"
                     onClick={() => alert(`Child clicked: ${child.name}`)}
                   >
                     {child.name}
@@ -122,109 +133,142 @@ const Content = () => {
             </div>
           )}
 
-          {/* Filter Section */}
+          {/* Filter Dropdowns */}
           {allProducts.length > 0 && (
-            <div className="filter-section">
-              <div className="filter-container">
+            <div className="bg-white shadow-sm border-bottom p-3">
+              <div className="d-flex flex-wrap justify-content-start gap-4 align-items-center">
+
                 {/* Part Name Filter */}
-                <select
-                  className="filter-dropdown"
-                  value={filterPartName || ""}
-                  onChange={(e) => setFilterPartName(e.target.value || null)}
-                >
-                  <option value="" hidden>Part Name</option>
-                  {partNames.map((part, idx) => (
-                    <option key={idx} value={part}>{part}</option>
-                  ))}
-                </select>
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterPartName || ""}
+                    onChange={(e) => setFilterPartName(e.target.value || null)}
+                  >
+                    <option value="" hidden>PartName</option>
+                    {partNames.map((part, idx) => (
+                      <option key={idx} value={part}>
+                        {part}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
                 {/* Company Filter */}
-                <select
-                  className="filter-dropdown"
-                  value={filterCompany || ""}
-                  onChange={(e) => setFilterCompany(e.target.value || null)}
-                >
-                  <option value="" hidden>Company</option>
-                  {companies.map((company, idx) => (
-                    <option key={idx} value={company}>{company}</option>
-                  ))}
-                </select>
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterCompany || ""}
+                    onChange={(e) => setFilterCompany(e.target.value || null)}
+                  >
+                    <option value="" hidden>Companies</option>
+                    {companies.map((company, idx) => (
+                      <option key={idx} value={company}>
+                        {company}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
                 {/* Availability Filter */}
-                <select
-                  className="filter-dropdown"
-                  value={filterAvailability || ""}
-                  onChange={(e) => setFilterAvailability(e.target.value || null)}
-                >
-                  <option value="" hidden>Availability</option>
-                  {availabilities.map((availability, idx) => (
-                    <option key={idx} value={availability}>{availability}</option>
-                  ))}
-                </select>
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterAvailability || ""}
+                    onChange={(e) => setFilterAvailability(e.target.value || null)}
+                  >
+                    <option value="" hidden>Availability</option>
+                    {availabilities.map((availability, idx) => (
+                      <option key={idx} value={availability}>
+                        {availability}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
                 {/* Condition Filter */}
-                <select
-                  className="filter-dropdown"
-                  value={filterCondition || ""}
-                  onChange={(e) => setFilterCondition(e.target.value || null)}
-                >
-                  <option value="" hidden>Condition</option>
-                  {conditions.map((cond, idx) => (
-                    <option key={idx} value={cond}>{cond}</option>
-                  ))}
-                </select>
+                <div className="filter-dropdown mb-3">
+                  <select
+                    className="form-select modern-dropdown"
+                    value={filterCondition || ""}
+                    onChange={(e) => setFilterCondition(e.target.value || null)}
+                  >
+                    <option value="" hidden>Conditions</option>
+                    {conditions.map((cond, idx) => (
+                      <option key={idx} value={cond}>
+                        {cond}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
                 {/* Clear All Filters */}
-                <button
-                  className="clear-btn"
-                  onClick={() => {
-                    setFilterPartName(null);
-                    setFilterCondition(null);
-                    setFilterCompany(null);
-                    setFilterAvailability(null);
-                  }}
-                >
-                  Clear All
-                </button>
+                <div className="filter-dropdown mb-3">
+                  <button
+                    className="btn btn-danger btn-sm clear-btn"
+                    onClick={() => {
+                      setFilterPartName(null);
+                      setFilterCondition(null);
+                      setFilterCompany(null);
+                      setFilterAvailability(null);
+                    }}
+                  >
+                    Clear All
+                  </button>
+                </div>
               </div>
             </div>
           )}
 
-          {/* Product Grid */}
-          <div className="product-grid">
-            {filteredProducts.length > 0 ? (
-              filteredProducts.map((product, idx) => (
-                <div key={idx} className="product-card">
-                  <img
-                    src={product.image || "/assets/default.jpg"}
-                    className="product-image"
-                    alt={product.name}
-                  />
-                  <div className="product-details">
-                    <h5>{product.name}</h5>
-                    <p className="product-price">${product.price?.toFixed(2) || "N/A"}</p>
-                    <p className="product-description">{product.description}</p>
-                    <div className="product-info">
-                      <p><strong>Type:</strong> {product.type}</p>
-                      <p><strong>Part:</strong> {product.partname}</p>
-                      <p><strong>Company:</strong> {product.company}</p>
-                      <p><strong>Condition:</strong> {normalizeCondition(product.condition)}</p>
+          {/* Product List */}
+          <div className="py-3 px-3">
+            <div className="row">
+              {filteredProducts.length > 0 ? (
+                filteredProducts.map((product, idx) => (
+                  <div key={idx} className="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div className="card h-100 shadow-sm">
+                      <img
+                        src={product.image || "/assets/default.jpg"}
+                        className="card-img-top"
+                        alt={product.name}
+                      />
+                      <div className="card-body text-center">
+                        <h5 className="card-title">{product.name}</h5>
+                        <p className="card-text">
+                          ${product.price?.toFixed(2) || "N/A"}
+                        </p>
+                        <p className="small text-muted">{product.description}</p>
+                        <p className="small mb-1">
+                          <strong>Type:</strong> {product.type}
+                        </p>
+                        <p className="small mb-1">
+                          <strong>Part:</strong> {product.partname}
+                        </p>
+                        <p className="small mb-1">
+                          <strong>Company:</strong> {product.company}
+                        </p>
+                        <p className="small mb-2">
+                          <strong>Condition:</strong>{" "}
+                          {normalizeCondition(product.condition)}
+                        </p>
+                        <button
+                          className="btn btn-primary btn-sm"
+                          onClick={() => navigate("/product")}
+                        >
+                          View Product
+                        </button>
+                      </div>
                     </div>
-                    <button
-                      className="view-product-btn"
-                      onClick={() => navigate("/product")}
-                    >
-                      View Product
-                    </button>
                   </div>
+                ))
+              ) : (
+                <div className="text-center text-muted mt-5">
+                  No products match
                 </div>
-              ))
-            ) : (
-              <div className="no-products">
-                No products match your filters
-              </div>
-            )}
+              )}
+            </div>
           </div>
+
         </div>
       </div>
     </div>

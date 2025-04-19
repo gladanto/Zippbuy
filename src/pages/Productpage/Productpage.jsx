@@ -11,6 +11,9 @@ import { BsStarFill } from "react-icons/bs";
 import { Key, Star } from "@mui/icons-material";
 import data from "../../data/productpage.json";
 
+
+
+
 const Productpage = () => {
   const product = data[0]; 
   const images = [product.image, ...product.subImages];
@@ -271,6 +274,8 @@ console.log("hey");
           </div>
         </div>
       </section>
+  
+
     </>
   );
 };
