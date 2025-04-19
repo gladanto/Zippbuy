@@ -30,8 +30,8 @@
                     {
                         "id": "s1",
                         "name": "Main Bearings",
-                        "company":"SULZER",
                         "partname": "Crankshaft",
+                        "company":"SULZER",
                         "Available/on demand": "on demand",
                         "condition": "New",
                         "image": "/assets/p003/p1.png",
@@ -47,16 +47,7 @@
                         "image": "/assets/p004/p1.png",
                         "link": "#"
                     },
-                    {
-                        "id": "s3",
-                        "name": "Thrust Washers/ Thrust Bearings",
-                        "partname": "Crankshaft",
-                        "company": "SULZER",
-                        "Available/on demand": "Available",
-                        "condition": "Old",
-                        "image": "/assets/p005/p1.png",
-                        "link": "#"
-                    },
+                    
                     {
                         "id": "s4",
                         "name": "Crankshaft Oil Seals",
@@ -416,6 +407,7 @@
                     {
                         "id": "cl01",
                         "company": "SULZER",
+                        "name":"Sealing Rings",
                         "partname": "Cylinder Liner",
                         "Available/on demand":"Available",
                         "condition": "New",
@@ -425,6 +417,7 @@
                     {
                         "id": "cl02",
                         "company": "SULZER",
+                        "name": "Cooling Jacket",
                         "partname": "Cylinder Liner",
                         "Available/on demand":"Available",
                         "condition": "Old",
@@ -434,6 +427,7 @@
                     {
                         "id": "cl03",
                         "company": "SULZER",
+                        "name": "Cylinder Liner Complete",
                         "partname": "Cylinder Liner",
                         "Available/on demand":"Available",
                         "condition": "Old",

@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useMemo } from "react";
 import "./Content.scss";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +17,17 @@ const Content = () => {
 
   const category = productsData[0] || {};
   const subcategories = category.subcategories || [];
+
+  const handleMainCategoryClick = () => {
+    // ✅ When Main Engine clicked, clear selection
+    setSelectedSubCategory(null);
+    setHoveredSubCategory(null);
+    setFilterPartName(null);
+    setFilterCondition(null);
+    setFilterCompany(null);
+    setFilterAvailability(null);
+    setMobileMenuOpen(false);
+  };
 
   const handleSubCategoryClick = (sub) => {
     setSelectedSubCategory(sub);
@@ -40,9 +50,8 @@ const Content = () => {
     }, 200);
   };
 
-  const childToDisplay =
-    hoveredSubCategory?.childsubcategories ||
-    selectedSubCategory?.childsubcategories;
+  const childToDisplay = selectedSubCategory?.childsubcategories
+    || (!selectedSubCategory && hoveredSubCategory?.childsubcategories);
 
   const allProducts = useMemo(() => {
     return selectedSubCategory
@@ -78,13 +87,15 @@ const Content = () => {
 
   return (
     <div className="fixed-layout-container">
-      {/* Mobile Header (visible only on small screens) */}
-
       <div className="layout-wrapper">
         {/* Sidebar */}
         <div className={`modern-sidebar ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <div className="sidebar-category">
-            <span className="sidebar-title">
+            {/* ✅ Make Main Category clickable */}
+            <span
+              className="sidebar-title clickable"
+              onClick={handleMainCategoryClick}
+            >
               <strong>{category.name}</strong>
             </span>
           </div>
@@ -95,6 +106,7 @@ const Content = () => {
                 key={i}
                 className={`sidebar-item ${selectedSubCategory?.id === sub.id ? "active" : ""}`}
                 onMouseEnter={() => handleMouseEnter(sub)}
+                onMouseLeave={handleMouseLeave}
                 onClick={() => handleSubCategoryClick(sub)}
               >
                 {sub.name}
@@ -232,3 +244,4 @@ const Content = () => {
 };
 
 export default Content;
+
