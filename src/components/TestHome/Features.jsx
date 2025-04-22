@@ -147,9 +147,7 @@ const Features = () => {
             labour are trainied for a global market and will easily fit
             into any enterprise with ease
             </p>
-            <div className="company-signature">
-              <strong>Enoch Shipping Solutions Pvt. Ltd</strong>
-            </div>
+           
           </div>
           <div className="image-content">
             <img 
