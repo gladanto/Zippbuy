@@ -9,19 +9,7 @@
             {
                 "id": "s001",
                 "name": "Main Engine",
-                "link": "#",
-                "childsubcategories": [
-                    {
-                        "id": "cs001",
-                        "name": "Liner",
-                        "link": "#"
-                    },
-                    {
-                        "id": "cs002",
-                        "name": "Piston",
-                        "link": "#"
-                    }
-                ]
+                "link": "#"
             },
             {
                 "id": "s002",

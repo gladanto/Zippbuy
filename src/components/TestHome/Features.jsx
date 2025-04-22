@@ -32,23 +32,22 @@ const Features = () => {
             />
           </div>
           </div>
-        {/* Chartering Section */}
+        {/*HydroBlasting */}
         <div className="feature-section">
           <div className="text-content">
-            <h1 className="section-title">Chartering</h1>
+            <h1 className="section-title">HydroBlasting</h1>
             <p className="section-description">
-              Experienced Master Mariners backed by able technical expertise and technology, 
-              provide in-depth analysis to Ship Owners and Cargo Owners on Voyage optimisation 
-              for an economically viable voyage and superior value for all stakeholders. With 
-              our industry experience of over 20 years, we provide round the dock support for 
-              our clients. Our post-fixture team:
+            Zippbay provides comprehensive hydro-blasting solutions
+            to suit client requirement. Rust removal, Paint layer
+            removal, surface preparation to bare metal- we have it
+            all with various machines to bring the desired surface on
+            hull or deck.
+            Low Pressure machines for onboard maintenance,
+            High Pressure machines with operators for Offshore units,
+            dry docks and ship repair units. We have your surface
+            prepared to last long
             </p>
-            <ul className="feature-list">
-              <li>Provides support to Vessel's Master for safe execution of Voyage</li>
-              <li>Manages every aspect of the Charter for smooth operations</li>
-              <li>Optimisation of Cargo Operation</li>
-              <li>Bunker Purchase and freight collection as per Charter Party</li>
-            </ul>
+           
           </div>
           <div className="image-content">
             <img 
@@ -59,12 +58,21 @@ const Features = () => {
           </div>
         </div>
 
-          {/* IHM */}
+          {/* Rope Access */}
           <div className="feature-section reverse">
           <div className="text-content">
-            <h2 className="section-subtitle">IHM</h2>
+            <h2 className="section-subtitle">Rope Access</h2>
             <p className="section-description">
-            Hazmat Experts trained to list and maintain Inventory of Hazardous materials onboard.
+            Akrivis offers advanced rope access techniques, to reach
+            even the most challenging areas of your vessel,
+            eliminating the need for expensive scaffolding or dry
+            docking. From inspections to repairs, our team delivers
+            swift and reliable solutions, minimizing downtime and
+            maximizing your vessel's operational efficiency.
+            Our highly trained and certified rope access technicians
+            can access confined spaces, elevated surfaces, and
+            other chalylenging locations with precision and
+            proficiency
             </p>
           </div>
           <div className="image-content">
@@ -81,7 +89,18 @@ const Features = () => {
             <h2 className="section-subtitle">Spares and Stores</h2>
             <p className="section-description">
               Welcome to our portal and explore the fastest means of connecting spares and stores onboard. 
-              We have technology enabled vendors to ensure supplies at reduced cost.
+              We have technology enabled vendors to ensure supplies at reduced cost.Zippbay offers advanced rope access techniques, to reach
+              even the most challenging areas of your vessel,
+              eliminating the need for expensive scaffolding or dry
+              docking. From inspections to repairs, our team delivers
+              swift and reliable solutions, minimizing downtime and
+              maximizing your vessel's operational efficiency.
+              Our highly trained and certified rope access technicians
+              can access confined spaces, elevated surfaces, and
+              other challenging locations with precision and
+              proficiency.We employ state-of-the-art
+              inspection equipment and methodologies to ensure
+              accurate and reliable data collection. 
             </p>
           </div>
           <div className="image-content">
@@ -113,13 +132,20 @@ const Features = () => {
           </div>
         </div>
 
-        {/* Smart Shipping Section */}
+        {/* Ship Block Fabrication */}
         <div className="feature-section ">
           <div className="text-content">
-            <h2 className="section-subtitle">Smart Shipping</h2>
+            <h2 className="section-subtitle">Ship Block Fabrication</h2>
             <p className="section-description">
-              Technology driven Master Mariners and Chief Engineers who have a vision to steer 
-              shipping into the digital era with cost effective solutions.
+            Zippbay delivers quality and effective solutions for Dry
+            Docks and ocean-going vessels, Zippbay has a workshop
+            area of 8,000 square feet which offers a wide range of
+            maritime services.
+            Zippbay has a training facility which constantly
+            endeavours to provide quality labour for trouble free
+            and smooth flow of work. The technicians and skilled
+            labour are trainied for a global market and will easily fit
+            into any enterprise with ease
             </p>
             <div className="company-signature">
               <strong>Enoch Shipping Solutions Pvt. Ltd</strong>

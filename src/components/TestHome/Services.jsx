@@ -17,13 +17,13 @@ const Services = () => {
       image: s1
     },
     {
-      title: "IHM",
-      description: "Inventory of Hazardous Materials Onboard",
+      title: "HydroBlasting",
+      description: "Offshore units,dry docks and ship repair units",
       image: s2
     },
     {
-      title: "Chartering",
-      description: "Ensuring cost saving in all aspects",
+      title: "Rope Access",
+      description: " swift and reliable solutions, minimizing downtime and maximizing your vessel's operational efficiency.",
       image: s3
     },
     {
@@ -32,8 +32,8 @@ const Services = () => {
       image: s4
     },
     {
-      title: "Smart Shipping",
-      description: "Towards a Digital Shipping Era",
+      title: "Ship Block Fabrication",
+      description: " offers a wide range of maritime services",
       image: s5
     },
     {
