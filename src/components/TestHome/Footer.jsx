@@ -36,7 +36,8 @@ const Footer = () => {
             </div>
             <div className="contact-section">
               <p>info@zippbay.com</p>
-              <p>+91-44-2446 0444</p>
+              <p>+91-44-45488670</p>
+              <p>+91-9790865554</p>
             </div>
           </div>
 
