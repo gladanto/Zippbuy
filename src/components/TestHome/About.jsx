@@ -17,7 +17,7 @@ const AboutUs = () => {
           
           <div className="about-us__content">
             <h1 className="about-us__title">About Us</h1>
-            <h2 className="about-us__tagline">Sofer Ships, Efficient Ships</h2>
+            <h2 className="about-us__tagline">Safer Ships, Efficient Ships</h2>
             
             <p className="about-us__paragraph">
               Enoch was founded with the sole intention of providing quality service to a ship owner.
