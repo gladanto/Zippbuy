@@ -15,7 +15,7 @@ const Footer = () => {
             alt="Company Logo" 
             className="logo hover-opacity" 
             style={{ 
-              height: "40px", 
+              height: "70px", 
               cursor: "pointer",
               transition: "opacity 0.0s ease"
             }} 
@@ -63,10 +63,8 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="footer-copyright">
-          <p>© Copyright Enoch</p>
-          <p>All Rights Reserved</p>
           <p className="additional-copyright">
-            ©2025 ZippBay, <a href="https://www.enochshipping.com" target="_blank" rel="noopener noreferrer">Enoch Shipping Solutions</a>. All rights reserved.
+            ©2025  <a href="https://www.zippbay.com" target="_blank" rel="noopener noreferrer">ZippBay</a>. All rights reserved.
           </p>
         </div>
 {/* Bottom Quick Links Section */}

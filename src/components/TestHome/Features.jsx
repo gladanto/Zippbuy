@@ -1,10 +1,10 @@
 import React from 'react';
 import './Features.scss';
 import VessaleImage from '../../../public/assets/_1.png';
-import charteringImage from '../../../public/assets/_3.png';
+import charteringImage from '../../../public/assets/Hydroblasting.jpeg.jpg';
 import repairImage from '../../../public/assets/_4.png';
-import IHMImage from '../../../public/assets/_2.png'
-import smartShippingImage from '../../../public/assets/_5.png';
+import IHMImage from '../../../public/assets/Rope Access 1.jpg'
+import smartShippingImage from '../../../public/assets/ship Block Fab.jpg';
 import sparesImage from '../../../public/assets/_6.png';
 
 const Features = () => {
@@ -17,7 +17,7 @@ const Features = () => {
           <div className="text-content">
             <h2 className="section-subtitle">Vessel Inspection</h2>
             <p className="section-description">
-            Includes assessment of cargo gear, Navigation equipment, Certificate status,
+            Vessel Inspection Includes assessment of cargo gear, Navigation equipment, Certificate status,
             Vessel History based on Document analysis and Class Status review. Estimate future
             expenses based on present state of vessel. Experienced Master Mariners and Experienced 
             Vessel Superintendents with ample sea experience to ensure Vessel is ready in all
@@ -35,7 +35,7 @@ const Features = () => {
         {/*HydroBlasting */}
         <div className="feature-section">
           <div className="text-content">
-            <h1 className="section-title">HydroBlasting</h1>
+            <h1 className="section-title">Hydro-Blasting</h1>
             <p className="section-description">
             Zippbay provides comprehensive hydro-blasting solutions
             to suit client requirement. Rust removal, Paint layer
@@ -63,7 +63,7 @@ const Features = () => {
           <div className="text-content">
             <h2 className="section-subtitle">Rope Access</h2>
             <p className="section-description">
-            Akrivis offers advanced rope access techniques, to reach
+            ZippBay offers advanced rope access techniques, to reach
             even the most challenging areas of your vessel,
             eliminating the need for expensive scaffolding or dry
             docking. From inspections to repairs, our team delivers

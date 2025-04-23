@@ -23,7 +23,7 @@ const Services = () => {
     },
     {
       title: "Rope Access",
-      description: " swift and reliable solutions, minimizing downtime and maximizing your vessel's operational efficiency.",
+      description: " Swift and reliable solutions, minimizing downtime and maximizing your vessel's operational efficiency.",
       image: s3
     },
     {
@@ -33,7 +33,7 @@ const Services = () => {
     },
     {
       title: "Ship Block Fabrication",
-      description: " offers a wide range of maritime services",
+      description: " Offers a wide range of maritime services",
       image: s5
     },
     {

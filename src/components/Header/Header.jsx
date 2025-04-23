@@ -30,7 +30,7 @@ const Header = () => {
             alt="Company Logo" 
             className="logo hover-opacity" 
             style={{ 
-              height: "40px", 
+              height: "70px", 
               cursor: "pointer",
               transition: "opacity 0.0s ease"
             }} 

@@ -20,7 +20,7 @@ const AboutUs = () => {
             <h2 className="about-us__tagline">Safer Ships, Efficient Ships</h2>
             
             <p className="about-us__paragraph">
-              Enoch was founded with the sole intention of providing quality service to a ship owner.
+                ZippBay was founded with the sole intention of providing quality service to a ship owner.
             </p>
             
             <p className="about-us__paragraph">
