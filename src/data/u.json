@@ -203,7 +203,7 @@
     "Make": "SULZER",
     "Model": "RTA58",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -214,7 +214,7 @@
     "Make": "SULZER",
     "Model": "RTA58",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -258,7 +258,7 @@
     "Make": "SULZER",
     "Model": "RND68",
     "stock": "Available",
-    "condition": "Old",
+  "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -269,7 +269,7 @@
     "Make": "SULZER",
     "Model": "RND68M",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -302,7 +302,7 @@
     "Make": "MITSUBISHI",
     "Model": "UEC 85LS2",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -324,7 +324,7 @@
     "Make": "MAN B&W",
     "Model": "L50MC",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -335,7 +335,7 @@
     "Make": "MAN B&W",
     "Model": "L35MC",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -346,7 +346,7 @@
     "Make": "MAN B&W",
     "Model": "L35MC",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -357,7 +357,7 @@
     "Make": "MAN B&W",
     "Model": "L35MC",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -368,7 +368,7 @@
     "Make": "MAN B&W",
     "Model": "S35MC",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -434,7 +434,7 @@
     "Make": "",
     "Model": "",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -445,7 +445,7 @@
     "Make": "",
     "Model": "",
     "stock": "Available",
-    "condition": "Old",
+  "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -456,7 +456,7 @@
     "Make": "",
     "Model": "",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -489,7 +489,7 @@
     "Make": "",
     "Model": "",
     "stock": "Available",
-    "condition": "Old",
+   "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -522,7 +522,7 @@
     "Make": "",
     "Model": "",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
@@ -555,7 +555,7 @@
     "Model": "",
     "partname": "CYLINDER LINER",
     "stock": "Available",
-    "condition": "Old",
+    "condition": "Republished",
     "image": "/assets/p002/p1.png",
     "link": "#",
     "category": "Cylinder Liner"
