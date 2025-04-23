@@ -32,13 +32,13 @@ const Services = () => {
       image: s4
     },
     {
-      title: "Ship Block Fabrication",
-      description: " Offers a wide range of maritime services",
+      title: "Fiting,Welding and Fabrication",
+      description: " Experiance and Certified manpower",
       image: s5
     },
     {
-      title: "Fiting,Welding and Fabrication",
-      description: "Experiance and Certified manpower",
+      title: "Repair and Maintenance",
+      description: "Breakdown Analysis of Machinery During Overhaul",
       image: s6
     }
   ];
