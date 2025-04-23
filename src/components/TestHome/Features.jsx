@@ -3,7 +3,7 @@ import './Features.scss';
 import VessaleImage from '../../../public/assets/_1.png';
 import charteringImage from '../../../public/assets/Hydroblasting.jpeg.jpg';
 import repairImage from '../../../public/assets/_4.png';
-import IHMImage from '../../../public/assets/Rope-access.jpg'
+import IHMImage from '../../../public/assets/rope-access.jpg'
 import smartShippingImage from '../../../public/assets/ship Block Fab.jpg';
 import sparesImage from '../../../public/assets/_6.png';
 
