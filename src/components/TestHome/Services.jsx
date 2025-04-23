@@ -18,17 +18,17 @@ const Services = () => {
     },
     {
       title: "HydroBlasting",
-      description: "Offshore units,dry docks and ship repair units",
+      description: "Surface preparation as per requirement",
       image: s2
     },
     {
       title: "Rope Access",
-      description: " Swift and reliable solutions, minimizing downtime and maximizing your vessel's operational efficiency.",
+      description: " TRATA approved technicians",
       image: s3
     },
     {
       title: "Spares and Stores",
-      description: "Tech Aided Swift Supply",
+      description: "Tech Aided Swift and reliable Supply",
       image: s4
     },
     {
@@ -37,8 +37,8 @@ const Services = () => {
       image: s5
     },
     {
-      title: "Repair and Maintenance",
-      description: "Breakdown Analysis of Machinery During Overhaul",
+      title: "Fiting,Welding and Fabrication",
+      description: "Experiance and Certified manpower",
       image: s6
     }
   ];

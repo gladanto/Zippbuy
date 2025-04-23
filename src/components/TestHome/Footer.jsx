@@ -29,8 +29,8 @@ const Footer = () => {
           <div className="footer-column">
             <div className="address-section">
               <h3>ADDRESS</h3>
-              <p>NO. 1, OLD NO. 12 </p>
-              <p> Demonte St, Pattinapakkam</p>
+              
+              <p>12, Demonte St, </p>
               <p>Santhome, Chennai,</p>
               <p>Tamil Nadu 60004, India</p>
             </div>
