@@ -11,11 +11,6 @@ const Header = () => {
     navigate("/", { replace: true });
   };
 
-  const handleMobileMenu = () => {
-    console.log("clicked test");
-    navigate("/test");
-  };
-
   return (
     <div className="header-container py-2 px-4 shadow-sm bg-white">
       <nav className="navbar d-flex justify-content-between align-items-center">
@@ -38,7 +33,7 @@ const Header = () => {
         </button>
         <div className="d-flex gap-2 flex-nowrap">
           <ReusableButton className="reusable-btn login btn-sm" label="Login" onClick={() => console.log("Login clicked")} />
-          <ReusableButton className="reusable-btn register btn-sm" label="Register" onClick={handleMobileMenu} />
+          <ReusableButton className="reusable-btn register btn-sm" label="Register" onClick={() => console.log("Rigster clicked")} />
         </div>
       </nav>
     </div>

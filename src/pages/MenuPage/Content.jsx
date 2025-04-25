@@ -1,9 +1,7 @@
-
 import React, { useState, useMemo } from "react";
 import "./Content.scss";
 import { useNavigate } from "react-router-dom";
 import productsData from "../../data/u.json";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 const Content = () => {
   const navigate = useNavigate();

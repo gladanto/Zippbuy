@@ -4,7 +4,7 @@
         "name": "Corrugated Shipping Boxes - 25 Pack",
         "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging",
         "price": 34.99,
-        "image": "public/assets/p001/p1.png",
+        "image": "/assets/p001/p1.png",
         "rating": 4.5,
         "discount": 0.03,
         "reviews": 1200,
@@ -26,12 +26,12 @@
         ],
         "subImages": [
           
-            "public/assets/p001/P2.png",
-            "public/assets/p001/P3.png",
-            "public/assets/p001/P4.png",
-            "public/assets/p001/P5.png",
-            "public/assets/p001/P6.png",
-            "public/assets/p001/P7.png"
+            "/assets/p001/P2.png",
+            "/assets/p001/P3.png",
+            "/assets/p001/P4.png",
+            "/assets/p001/P5.png",
+            "/assets/p001/P6.png",
+            "/assets/p001/P7.png"
         ],
         "specifications": [
             "Dimensions: 12x12x12 inches",
@@ -51,7 +51,7 @@
         "name":"Heavy-Duty Packing Tape with Dispenser",
         "description": "Strong adhesive tape for securing packages, includes a handheld dispenser.",
         "price": 15.99,
-        "image": "public/assets/p002/p1.png",
+        "image": "/assets/p002/p1.png",
         "rating": 4.5,
         "reviews": 1200,
         "used": false,
@@ -67,10 +67,10 @@
                 "Low noise application"  
         ],
         "subImages": [
-           "public/assets/p002/p2.png",
-           "public/assets/p002/p3.png",
-           "public/assets/p002/p4.png",
-           "public/assets/p002/p5.png"
+           "/assets/p002/p2.png",
+           "/assets/p002/p3.png",
+           "/assets/p002/p4.png",
+           "/assets/p002/p5.png"
 
         ],
        
@@ -98,7 +98,7 @@
         "name": "Bubble Wrap Roll - 12 Inch x 100 Feet",
         "description": "Protects fragile items during shipping, lightweight and easy to cut.",
         "price": 19.99,
-        "image": "public/assets/p003/p1.png",
+        "image": "/assets/p003/p1.png",
         "rating": 4.5,
         "reviews": 1200,
         "used": false,
@@ -115,9 +115,9 @@
             
         ],
         "subImages": [
-             "public/assets/p003/p2.png",
-              "public/assets/p003/p3.png",
-              "public/assets/p003/p4.png"
+             "/assets/p003/p2.png",
+              "/assets/p003/p3.png",
+              "/assets/p003/p4.png"
  
          ],
         "specifications": [
@@ -144,7 +144,7 @@
         "name": "Poly Mailers - 100 Pack",
         "description": "Water-resistant poly mailers, self-sealing for convenient shipping.",
         "price": 23.99,
-        "image": "public/assets/p004/p1.png",
+        "image": "/assets/p004/p1.png",
         "rating": 4.5,
         "reviews": 1200,
         "used": false,
@@ -160,9 +160,9 @@
                 "Perfect for mailing clothing, documents, and soft goods"     
         ],
         "subImages": [
-            "public/assets/p004/p2.png",
-            "public/assets/p004/p3.png",
-            "public/assets/p004/p4.png"
+            "/assets/p004/p2.png",
+            "/assets/p004/p3.png",
+            "/assets/p004/p4.png"
   
           ],
         "specifications": [
@@ -190,7 +190,7 @@
         "name": "Digital Shipping Scale - 110 lbs Capacity",
         "description": "Accurate scale for weighing packages, ideal for postal shipping.",
         "price": 39.99,
-        "image": "public/assets/p005/p1.png",
+        "image": "/assets/p005/p1.png",
         "rating": 4.5,
         "reviews": 1200,
         "used": false,
@@ -206,8 +206,8 @@
                  
         ],
         "subImages": [
-            "public/assets/p005/P2.png",
-            "public/assets/p005/p3.png"
+            "/assets/p005/P2.png",
+            "/assets/p005/p3.png"
           ],
         
         "specifications": [
@@ -248,8 +248,8 @@
     ],
              
     "subImages": [
-       "public/assets/p006/p2.png",
-        "public/assets/p006/p3.png"
+       "/assets/p006/p2.png",
+        "/assets/p006/p3.png"
       ],
     "specifications": [
          
@@ -287,8 +287,8 @@
             "Easy to pour and fill into boxes"
         ],
         "subImages": [
-            "public/assets/p007/p2.png",
-            "public/assets/p007/p3.png"
+            "/assets/p007/p2.png",
+            "/assets/p007/p3.png"
         ],                              
         "specifications": [
             {

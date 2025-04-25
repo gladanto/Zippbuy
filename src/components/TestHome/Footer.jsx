@@ -21,20 +21,16 @@ const Footer = () => {
           />
           <p>Call or Message Us for a detailed expression of our expertise!</p>
         </div>
-
         {/* Main Content - 3 Columns */}
         <div className="footer-grid">
-          
-
           {/* Quick Links Column - Center */}
           <div className="footer-column">
-            <h3>ABOUT</h3>
+            <h3>COMPANY</h3>
             <ul className="links-list">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
               <li><a href="/contact">Contact Us</a></li>
-              <li><a href="/terms">Terms & Conditions</a></li>
-              {/* <li><a href="/privacy-policy">Privacy Policy</a></li> */}
+              <li><a href="#">Terms & Conditions</a></li>
             </ul>
             <h3>FOLLOW US</h3>
             <div className="social-icons">
@@ -52,7 +48,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
           <div className="footer-column">
             <h3>ADDRESS</h3>
             <div className="address-section">
@@ -67,23 +62,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-column">
-          <div style={{ marginBottom: "40px", marginTop: "20px" }}>
-          <iframe
-            title="ZippBay Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3932913660785!2d80.27148241482445!3d13.026657717179705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267bf3c1fcdfd%3A0x60c4d20e5c3e5f9b!2sSanthome%2C%20Chennai%2C%20Tamil%20Nadu%20600004%2C%20India!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
-            width="100%"
-            height="300"
-            style={{ border: 0, borderRadius: "10px" }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-            
+            <div style={{ marginBottom: "40px", marginTop: "20px" }}>
+              <iframe
+                title="ZippBay Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3932913660785!2d80.27148241482445!3d13.026657717179705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267bf3c1fcdfd%3A0x60c4d20e5c3e5f9b!2sSanthome%2C%20Chennai%2C%20Tamil%20Nadu%20600004%2C%20India!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style={{ border: 0, borderRadius: "10px" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
-       
-
         {/* Copyright Section */}
         <div className="footer-copyright">
           <p className="additional-copyright">

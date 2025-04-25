@@ -10,7 +10,6 @@ const Menu = () => {
   const location = useLocation();
   const { category, subCategory, childSubCategory } = location.state || {};
 
-  // Optional: Log props once on first load (only when sub or child exists)
   useEffect(() => {
     if (subCategory || childSubCategory) {
       console.log("Props passed to Content:", {
