@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    margin-bottom: 40px;
+   
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -58,24 +58,17 @@
   .footer-column {
     h3 {
       color: #0e0d0d;
+      text-align: center;
+      text-align: left;
       font-size: 18px;
       font-weight: 600;
-      margin-bottom: 24px;
-      padding-bottom: 8px;
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 50px;
-        height: 2px;
-        background: linear-gradient(90deg, #3a7bd5, #00d2ff);
-      }
+      margin-bottom: 10px;
+      padding-bottom: 5px;
     }
+    
 
     &:nth-child(2) {
-      text-align: center;
+      text-align: left;
 
       @media (max-width: 768px) {
         text-align: left;
@@ -94,8 +87,6 @@
   .address-section {
     p {
       margin: 2px 0;
-      display: flex;
-      align-items: flex-start;
       gap: 5px;
 
       svg {
@@ -111,9 +102,8 @@
 
     p {
       margin: 2px 0;
-      display: flex;
-      align-items: flex-start;
       gap: 5px;
+      text-align: left;
       color: #4a4a4a;
       transition: color 0.2s ease;
 
@@ -136,6 +126,7 @@
 
     li {
       margin-bottom: 12px;
+      text-align: left;
       transition: transform 0.2s ease;
 
       &:hover {
@@ -146,11 +137,9 @@
     a {
       color: #4a4a4a;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      gap: 3px;
       transition: all 0.2s ease;
-      justify-content: center;
+      justify-content: start;
 
       @media (max-width: 768px) {
         justify-content: flex-start;
@@ -177,7 +166,7 @@
     display: flex;
     gap: 16px;
     margin-top: 16px;
-    justify-content: flex-end;
+    justify-content:flex-start;
 
     @media (max-width: 768px) {
       justify-content: flex-start;
@@ -203,6 +192,12 @@
         box-shadow: 0 5px 15px rgba(58, 123, 213, 0.3);
       }
     }
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
   }
 
   .footer-copyright {

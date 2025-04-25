@@ -7,7 +7,15 @@ import data from "../../data/demoProduct.json";
 import "./Productpage.css";
 
 const Productpage = () => {
+<<<<<<< HEAD
   const product = data[0];
+=======
+  const product = data[0]; 
+  const images = [product.image, ...product.subImages || []];
+  const [rating, setRating] = useState(product.rating || 4);
+  const [mainImageIndex, setMainImageIndex] = useState([0]);
+  const [activeTab, setActiveTab] = useState("description");
+>>>>>>> d5a400cbed3534afe480a0460d23f0ac1b893771
 
   // Handle image array
   const subImages = Array.isArray(product.subImages) ? product.subImages : [];
