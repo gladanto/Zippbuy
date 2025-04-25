@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "/assets/logo.png";
@@ -23,13 +22,12 @@ const Footer = () => {
           <p>Call or Message Us for a detailed expression of our expertise!</p>
         </div>
 
-        {/* Main Content - 2 Columns Now */}
+        {/* Main Content - 3 Columns */}
         <div className="footer-grid">
-          {/* Address Column */}
+          {/* Address Column - Left */}
           <div className="footer-column">
+            <h3>ADDRESS</h3>
             <div className="address-section">
-              <h3>ADDRESS</h3>
-              
               <p>12, Demonte St, </p>
               <p>Santhome, Chennai,</p>
               <p>Tamil Nadu 60004, India</p>
@@ -41,9 +39,22 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media Column */}
+          {/* Quick Links Column - Center */}
           <div className="footer-column">
-            <h3>Follow Us</h3>
+            <h3>QUICK LINKS</h3>
+            <ul className="links-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/terms">Terms & Conditions</a></li>
+              {/* <li><a href="/privacy-policy">Privacy Policy</a></li> */}
+            </ul>
+          </div>
+
+          {/* Social Media Column - Right */}
+          <div className="footer-column">
+            <h3>FOLLOW US</h3>
             <div className="social-icons">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF />
@@ -67,21 +78,6 @@ const Footer = () => {
             ©2025  <a href="https://www.zippbay.com" target="_blank" rel="noopener noreferrer">ZippBay</a>. All rights reserved.
           </p>
         </div>
-{/* Bottom Quick Links Section */}
-<div className="footer-bottom-links">
-  <div className="links-inline">
-    <a href="/">Home</a>
-    <span>|</span>
-    <a href="/about">About Us</a>
-    <span>|</span>
-    <a href="/contact">Contact Us</a>
-    <span>|</span>
-    <a href="/terms">Terms & Conditions</a>
-    {/* <span>|</span>
-    <a href="/privacy-policy">Privacy Policy</a> */}
-  </div>
-</div>
-
       </div>
     </footer>
   );
