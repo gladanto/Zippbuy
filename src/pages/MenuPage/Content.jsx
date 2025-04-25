@@ -222,7 +222,7 @@
 import React, { useState, useMemo } from "react";
 import "./Content.scss";
 import { useNavigate } from "react-router-dom";
-import productsData from "../../data/u.json";
+import productsData from "../../data/r.json";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Content = () => {
@@ -416,7 +416,7 @@ const Content = () => {
                   </div>
                   <button
                     className="view-button"
-                    onClick={() => navigate(`/product/${product.id}`)}
+                    onClick={() => navigate(`/product`)}
                   >
                     View Details
                   </button>

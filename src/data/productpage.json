@@ -1,10 +1,10 @@
 [
     {
-        "id": "p001",
-        "name": "Corrugated Shipping Boxes - 25 Pack",
+        "id": "e0",
+        "name": "",
         "description": "Durable 12x12x12-inch corrugated cardboard boxes ideal for shipping and packaging",
         "price": 34.99,
-        "image": "public/assets/p001/p1.png",
+        "image": "public/assets/p/p2.png",
         "rating": 4.5,
         "discount": 0.03,
         "reviews": 1200,
@@ -26,12 +26,12 @@
         ],
         "subImages": [
           
-            "public/assets/p001/P2.png",
-            "public/assets/p001/P3.png",
-            "public/assets/p001/P4.png",
-            "public/assets/p001/P5.png",
-            "public/assets/p001/P6.png",
-            "public/assets/p001/P7.png"
+            "public/assets/p/p2.png",
+            "public/assets/p/p2.png",
+            "public/assets/p/p2.png",
+            "public/assets/p/p2.png",
+            "public/assets/p/p2.png",
+            "public/assets/p/p2.png"
         ],
         "specifications": [
             "Dimensions: 12x12x12 inches",
@@ -42,8 +42,16 @@
             "Pack Size: 25 boxes",
             "Recyclable: Yes"
         ],
+        
         "subcategory_id": "s001",
-        "child_subcategories_id": ["cs003"]
+        "child_subcategories_id": ["cs003"],
+        "model rta":[
+            {
+                "model1": "gsxdioawed",
+            "specifications" : "Dimensions: 12x12x12 inches, Material: 200# test corrugated cardboard, Weight Capacity: Up to 65 lbs, Closure Type: Self-sealing, Color: Brown kraft, Pack Size: 25 boxes, Recyclable: Yes"
+            }
+        ]
+        
         
     },
     {
