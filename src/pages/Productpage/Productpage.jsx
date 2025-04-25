@@ -16,7 +16,7 @@ import data from "../../data/productpage.json";
 
 const Productpage = () => {
   const product = data[0]; 
-  const images = [product.image, ...product.subImages];
+  const images = [product.image, ...product.subImages || []];
   const [rating, setRating] = useState(product.rating || 4);
   const [mainImageIndex, setMainImageIndex] = useState([0]);
   const [activeTab, setActiveTab] = useState("description");
