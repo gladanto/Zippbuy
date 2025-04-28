@@ -164,37 +164,18 @@ $light-grey: #f0f0f0;
   top: 100%;
   left: 0;
   background: rgb(218, 223, 223);
-  padding: 20px 40px;
+  padding: 20px 20px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   border-top: 1px solid #ddd;
   z-index: 9999;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 30px;
+  display: flex;
+  gap: 50px;
   text-align: left;
   width: max-content; // OR a fixed width like 800px
   min-width: 400px;
   max-width: 90vw;
 }
 
-// .mega-menu {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-//   gap: 30px;
-//   text-align: left;
-//   position: absolute;
-//   //top: 100%;
-//   left: 0;
-//   width: 100vw;
-//   background: rgb(218, 223, 223);
-//   padding: 20px 40px;
-//   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-//   border-top: 1px solid #ddd;
-//   z-index: 9999;
-//   opacity: 1;
-//   visibility: visible;
-//   transition: opacity 0.3s visibility 0.3s delay 0.3s ease;
-// }
 
 .mega-column {
   display: flex;
