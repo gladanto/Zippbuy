@@ -3,7 +3,7 @@ import "./Content.scss";
 import { useNavigate } from "react-router-dom";
 import productsData from "../../data/r.json";
 import { FaBars, FaTimes } from "react-icons/fa";
-import productsData from "../../data/u.json";
+//import productsData from "../../data/u.json";
 
 const Content = () => {
   const navigate = useNavigate();
