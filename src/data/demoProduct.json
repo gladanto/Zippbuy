@@ -25,6 +25,10 @@
       "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
     
     ],
+    "stock_by_condition": [
+  { "condition": "New", "quantity": 10 }
+
+],
     "subImages": [
       "/public/assets/p/p2.png",
       "/public/assets/p/p2.png",
@@ -35,20 +39,9 @@
     "subcategory_id": "s001",
     "child_subcategories_id": ["cs003"],
     "variants": [
+     
       {
-        "model1": "RTA48T",
-        "price": "$99",
-        "Make": "SULZER",
-        "features": [
-          "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
-          "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
-          "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
-        
-        ]
-    
-      },
-      {
-        "model2": "RTA58",
+        "model2": "RTA48T",
         "price": "$99",
         "Make": "SULZER",
         "features": [
@@ -59,7 +52,7 @@
         ]
       },
       {
-        "model3": "RTA52U",
+        "model3": "RTA58",
         "price": "$99",
         "Make": "SULZER",
         "features": [
@@ -70,7 +63,7 @@
         ]
       },
       {
-        "model4": "RTA84T",
+        "model4": "RTA52U",
         "price": "$99",
         "Make": "SULZER",
         "features": [
@@ -81,40 +74,7 @@
         ]
       },
       {
-        "model5": "RND68",
-        "price": "$99",
-        "Make": "SULZER",
-        "features": [
-          "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
-          "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
-          "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
-        
-        ]
-      },
-      {
-        "model5": "RND68M",
-        "price": "$99",
-        "Make": "SULZER",
-        "features": [
-          "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
-          "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
-          "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
-        
-        ]
-      },
-      {
-        "model5": "RTA58",
-        "price": "$99",
-        "Make": "SULZER",
-        "features": [
-          "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
-          "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
-          "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
-        
-        ]
-      },
-      {
-        "model5": "RTA52U",
+        "model5": "RTA84T",
         "price": "$99",
         "Make": "SULZER",
         "features": [
@@ -124,6 +84,9 @@
         
         ]
       }
+     
+      
+    
     ]
   }
 ]

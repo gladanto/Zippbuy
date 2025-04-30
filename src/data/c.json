@@ -1,74 +1,60 @@
 [
-
-    {
-
+{
+    "id": "P001",
+    "partname": "Cylinder Liner",
+    "name": "Cylinder Liner",
+    "make": "SULZER",
+    "makeId": "M01",
+    "seriesId": "S01",
+    "seriesName": "RTA",
+    "category": "Cylinder Liner",
+    "Header": "Cylinder Liner (Complete)",
+    "rating": 4.5,
+    "image": "/assets/p/P5.png",
+    "reviews": 1200,
+    "reviews_content": "This cylinder liner works flawlessly for our marine engines. Durable and highly precise.",
+    "shipping": "Ships within 3–5 business days. Free returns within 30 days.",
+    "brand": "Trusted marine engine component supplier for robust and reliable performance.",
+    "features": [
+      "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+      "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+      "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+    ],
+    "description": [
+      "Machined with tight tolerances for perfect integration with the engine block and piston.",
+      "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+    ],
+    "variants": [
+      {
         "id": "e1",
-
-        "partname": "Cylinder Liner Complete",
-
-        "partId": "P001",
-
-        "make": "SULZER",
-
-        "makeId": "M01",
-
-        "seriesId": "S01",
-
-        "seriesName": "RTA",
-
-        "Products": "RTA48T",
-
-        "stock": "Available",
-
+        "model": "RTA48T",
         "condition": "New",
-
-        "category": "Cylinder Liner",
-
-        "image": "/assets/p/P2.png",
-
-        "link": "#",
-
-        "Quantity": "1"
-
-    },
-
-    {
-
-        "id": "e2",
-
-        "partname": "Cylinder Liner Complete",
-
-        "partId": "P001",
-
-        "make": "SULZER",
-
-        "makeId": "M01",
-
-        "seriesId": "S01",
-
-        "seriesName": "RTA",
-
-        "Products": "RTA58",
-
         "stock": "Available",
-
-        "condition": "Recondition",
-
-        "category": "Cylinder Liner",
-
+        "quantity": 1,
+        "price": 34.99,
         "image": "/assets/p/P2.png",
+        "link": "#"
+      },
+      {
+        "id": "e2",
+        "model": "RTA58",
+        "condition": "Recondition",
+        "stock": "Available",
+        "quantity": 3,
+        "price": 34.99,
+        "image": "/assets/p/P2.png",
+        "link": "#"
+      }
+    ]
+  },
+  
 
-        "link": "#",
-
-        "Quantity": "3"
-
-    },
 
     {
 
         "id": "e3",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -87,6 +73,7 @@
         "condition": "Recondition",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P5.png",
 
@@ -100,7 +87,7 @@
 
         "id": "e4",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -119,6 +106,7 @@
         "condition": "New",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -132,7 +120,7 @@
 
         "id": "e5",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -151,6 +139,7 @@
         "condition": "Recondition",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -164,7 +153,7 @@
 
         "id": "e6",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -183,6 +172,7 @@
         "condition": "New",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -196,7 +186,7 @@
 
         "id": "e7",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -215,6 +205,7 @@
         "condition": "New",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -228,7 +219,7 @@
 
         "id": "e8",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -247,6 +238,7 @@
         "condition": "Recondition",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -260,7 +252,7 @@
 
         "id": "e9",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -297,6 +289,7 @@
         ],
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -308,7 +301,7 @@
 
         "id": "e10",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -327,6 +320,7 @@
         "condition": "New",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -340,7 +334,7 @@
 
         "id": "e11",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -359,6 +353,7 @@
         "condition": "Recondition",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -372,7 +367,7 @@
 
         "id": "e12",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -409,6 +404,7 @@
         ],
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -420,7 +416,7 @@
 
         "id": "e13",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -439,6 +435,7 @@
         "condition": "Recondition",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -452,7 +449,7 @@
 
         "id": "e14",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -489,6 +486,7 @@
         ],
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -500,7 +498,7 @@
 
         "id": "e15",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -519,6 +517,8 @@
         "condition": "Recondition",
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
+        
 
         "image": "/assets/p/P2.png",
 
@@ -532,7 +532,7 @@
 
         "id": "e16",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -569,6 +569,7 @@
         ],
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -580,7 +581,7 @@
 
         "id": "e17",
 
-        "partname": "Cylinder Liner Complete",
+        "partname": "Cylinder Liner",
 
         "partId": "P001",
 
@@ -617,6 +618,7 @@
         ],
 
         "category": "Cylinder Liner",
+        "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P2.png",
 
@@ -624,11 +626,15 @@
 
     },
 
+
+
+
+
     {
 
         "id": "e18",
 
-        "partname": "Cylinder Head (Complete)",
+        "partname": "Cylinder Head",
 
         "partId": "P002",
 
@@ -647,10 +653,11 @@
         "condition": "Recondition",
 
         "category": "Cylinder Head ",
+        
 
         "Header":"Cylinder Head (Complete)",
 
-        "image": "/assets/p/P1.png",
+        "image": "/assets/p/P2.png",
 
         "link": "#",
 
@@ -751,7 +758,7 @@
 
         "condition": "New",
 
-        "category": "Cylinder Liner",
+        "category": "Cylinder Head ",
 
         "Header":"Cylinder Head (Complete)",
 
@@ -1091,7 +1098,7 @@
 
         "id": "e31",
 
-        "partname": "CYLINDER HEAD (LOWER ONLY)",
+        "partname": "Cylinder head (lower only)",
 
         "partId": "P004",
 
@@ -1125,7 +1132,7 @@
 
         "id": "e32",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P004",
 
@@ -1159,7 +1166,7 @@
 
         "id": "e33",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P004",
 
@@ -1193,7 +1200,7 @@
 
         "id": "e34",
 
-        "partname": "BARE CYLINDER HEAD LOWER PART",
+        "partname": "Bare cylinder head lower part",
 
         "partId": "P005",
 
@@ -1227,7 +1234,7 @@
 
         "id": "e35",
 
-        "partname": "BARE CYLINDER HEAD LOWER PART",
+        "partname": "Bare cylinder head lower part",
 
         "partId": "P005",
 
@@ -1261,7 +1268,7 @@
 
         "id": "e36",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P006",
 
@@ -1295,7 +1302,7 @@
 
         "id": "e37 ",
 
-        "partname": "CYLINDER HEAD BARE",
+       "partname": "Cylinder head bare",
 
         "partId": "P006",
 
@@ -1329,7 +1336,7 @@
 
         "id": "e38",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P006",
 
@@ -1363,7 +1370,7 @@
 
         "id": "e39",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P006",
 
@@ -1397,7 +1404,7 @@
 
         "id": "e40",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P006",
 
@@ -1431,7 +1438,7 @@
 
         "id": "e41",
 
-        "partname": "CYLINDER HEAD BARE",
+        "partname": "Cylinder head bare",
 
         "partId": "P006",
 
