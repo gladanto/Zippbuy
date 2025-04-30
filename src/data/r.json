@@ -6,10 +6,18 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
 
-        "Model": "RTA48T",
+        "make": "SULZER",
 
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA48T" ,
+        
         "stock": "Available",
 
         "condition": "New",
@@ -29,9 +37,16 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "stock": "Available",
 
@@ -51,9 +66,16 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+         "make": "SULZER",
 
-        "Model": "RTA52U",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA52U",
 
         "stock": "Available",
 
@@ -73,9 +95,16 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+         "make": "SULZER",
 
-        "Model": "RTA84T",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA84T",
 
         "stock": "Available",
 
@@ -95,9 +124,13 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+        
+         "make": "SULZER",
 
-        "Model": "RND68",
+        "makeId": "m1",
+
+        "Products": "RND68",
 
         "stock": "Available",
 
@@ -117,9 +150,12 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+         "make": "SULZER",
 
-        "Model": "RND68M",
+        "makeId": "m1",
+
+        "Products": "RND68M",
 
         "stock": "Available",
 
@@ -139,9 +175,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "AKASAKA",
 
-        "Model": "UEC 45/8o",
+        "Products": "UEC 45/8o",
 
         "stock": "Available",
 
@@ -161,9 +198,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MITSUBISHI",
 
-        "Model": "UEC 85LS2",
+        "Products": "UEC 85LS2",
 
         "stock": "Available",
 
@@ -183,9 +221,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "stock": "Available",
 
@@ -205,9 +244,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "stock": "Available",
 
@@ -229,7 +269,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "4L35MC",
+        "Products": "4L35MC",
 
         "stock": "Available",
 
@@ -249,9 +289,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "42MC",
+        "Products": "42MC",
 
         "stock": "Available",
 
@@ -271,9 +312,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "stock": "Available",
 
@@ -293,9 +335,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "stock": "Available",
 
@@ -317,7 +360,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "stock": "Available",
 
@@ -337,9 +380,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "stock": "Available",
 
@@ -359,9 +403,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S60M                                                                                                                                                                                                                                   C",
+        "Products": "S60M                                                                                                                                                                                                                                   C",
  
         "stock": "Available",
 
@@ -381,9 +426,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "70MC",
+        "Products": "70MC",
 
         "stock": "on demand",
 
@@ -403,9 +449,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "stock": "Available",
 
@@ -425,9 +472,16 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "stock": "Available",
 
@@ -447,9 +501,16 @@
 
         "partname": "Cylinder Liner Complete",
 
-        "Make": "SULZER",
+        "partId": "p1",
+         "make": "SULZER",
 
-        "Model": "RTA52U",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA52U",
 
         "stock": "Available",
 
@@ -468,9 +529,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S35MC",
+        "Products": "S35MC",
 
         "stock": "Available",
 
@@ -490,9 +552,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "stock": "Available",
 
@@ -512,9 +575,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "stock": "Available",
 
@@ -534,9 +598,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "stock": "Available",
 
@@ -556,9 +621,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "stock": "Available",
 
@@ -578,9 +644,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "stock": "Available",
 
@@ -600,9 +667,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "stock": "Available",
 
@@ -622,9 +690,10 @@
 
         "partname": "Cylinder Liner Complete",
 
+        "partId": "p1",
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "stock": "Available",
 
@@ -644,7 +713,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "BARE CYLINDER HEAD LOWER PART",
 
@@ -665,8 +734,7 @@
         "id": "e35",
 
         "Make": "MAN B&W",
-
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "BARE CYLINDER HEAD",
 
@@ -686,11 +754,9 @@
 
         "id": "e36",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "70 MC",
+        "Products": "70 MC",
 
         "partname": "CYL HEAD JACKET WITH HEAD",
 
@@ -710,9 +776,15 @@
 
         "id": "e37",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA",
 
         "partname": "CYLINDER HEAD",
 
@@ -732,9 +804,15 @@
 
         "id": "e38",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "partname": "CYLINDER HEAD (COMPLETE)",
 
@@ -754,9 +832,15 @@
 
         "id": "e39",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "partname": "CYLINDER HEAD (LOWER ONLY)",
 
@@ -776,9 +860,15 @@
 
         "id": "e40",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "partname": "CYLINDER HEAD BARE",
 
@@ -798,9 +888,15 @@
 
         "id": "e42",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA58T-B",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58T-B",
 
         "partname": "CYLINDER HEAD",
 
@@ -820,9 +916,15 @@
 
         "id": "e43",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA62",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA62",
 
         "partname": "CYLINDER HEAD WITH JACKET",
 
@@ -842,9 +944,15 @@
 
         "id": "e44",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA72",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA72",
 
         "partname": "CYLINDER HEAD",
 
@@ -866,7 +974,7 @@
 
         "Make": "MITSUBISHI",
 
-        "Model": "UEC37LA",
+        "Products": "UEC37LA",
 
         "partname": "CYLINDER HEAD BARE",
 
@@ -888,7 +996,7 @@
 
         "Make": "AKASAKA/MITSUBISHI",
 
-        "Model": "7UEC37/37HA",
+        "Products": "7UEC37/37HA",
 
         "partname": "CYLINDER HEAD",
 
@@ -910,7 +1018,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "35MC",
+        "Products": "35MC",
 
         "partname": "CYLINDER HEAD COMPLETE",
 
@@ -932,7 +1040,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "CYLINDER HEAD COMPLETE",
 
@@ -954,7 +1062,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "42MC",
+        "Products": "42MC",
 
         "partname": "CYLINDER HEAD BARE",
 
@@ -976,7 +1084,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S42MC-C",
+        "Products": "S42MC-C",
 
         "partname": "CYLINDER HEAD COMPLETE",
 
@@ -998,7 +1106,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "46MC",
+        "Products": "46MC",
 
         "partname": "CYLINDER HEAD (LOWER PART)",
 
@@ -1020,7 +1128,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "partname": "CYLINDER HEAD BARE",
 
@@ -1042,7 +1150,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "CYLINDER HEAD BARE",
 
@@ -1064,7 +1172,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1086,7 +1194,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "CYLINDER HEAD COOLING TYPE WITH VALVE CAGE & WITHOUT VALVE",
 
@@ -1108,7 +1216,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "60MC",
+        "Products": "60MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1130,7 +1238,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L60MC",
+        "Products": "L60MC",
 
         "partname": "CYLINDER HEAD WITHOUT VALVE",
 
@@ -1152,7 +1260,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "70 MC",
+        "Products": "70 MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1174,7 +1282,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1196,7 +1304,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1218,7 +1326,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1240,7 +1348,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC-C ",
+        "Products": "S70MC-C ",
 
         "partname": "CYLINDER HEAD",
 
@@ -1262,7 +1370,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC - C ",
+        "Products": "S60MC - C ",
 
         "partname": "CYLINDER HEAD",
 
@@ -1282,9 +1390,15 @@
 
         "id": "e108",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "partname": "CYLINDER HEAD (COMPLETE)",
 
@@ -1304,9 +1418,15 @@
 
         "id": "e109",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA72",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA72",
 
         "partname": "CYLINDER HEAD",
 
@@ -1328,7 +1448,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L60MC",
+        "Products": "L60MC",
 
         "partname": "CYLINDER HEAD BARE",
 
@@ -1350,7 +1470,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "CYLINDER HEAD (COMPLETE)",
 
@@ -1372,7 +1492,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "CYLINDER HEAD (LOWER ONLY)",
 
@@ -1394,7 +1514,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "CYLINDER HEAD WITHOUT VALVE",
 
@@ -1416,7 +1536,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "CYLINDER HEAD WITHOUT VALVE & ACCUMULATOR",
 
@@ -1438,7 +1558,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "CYLINDER HEAD WITHOUT VALVE",
 
@@ -1460,7 +1580,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1482,7 +1602,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "CYLINDER HEAD",
 
@@ -1504,7 +1624,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "CYLINDER HEAD WITH JACKET",
 
@@ -1524,9 +1644,15 @@
 
         "id": "e74",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA58",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA58",
 
         "partname": "PISTON CROWN",
 
@@ -1546,9 +1672,15 @@
 
         "id": "e75",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA62",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA62",
 
         "partname": "PISTON CROWN",
 
@@ -1568,9 +1700,15 @@
 
         "id": "e76",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "RTA84",
+        "makeId": "m1",
+
+        "seriesId": "s1",
+
+        "seriesName": "RTA",
+
+        "Products": "RTA84",
 
         "partname": "PISTON CROWN",
 
@@ -1590,9 +1728,11 @@
 
         "id": "e77",
 
-        "Make": "SULZER",
+         "make": "SULZER",
 
-        "Model": "7RTA84-TB",
+        "makeId": "m1",
+
+        "Products": "7RTA84-TB",
 
         "partname": "PISTON",
 
@@ -1614,7 +1754,7 @@
 
         "Make": "MITSUBISHI",
 
-        "Model": "UEC37HA",
+        "Products": "UEC37HA",
 
         "partname": "PISTON CROWN",
 
@@ -1636,7 +1776,7 @@
 
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON",
 
@@ -1656,11 +1796,9 @@
 
         "id": "e80",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON CROWN (WITH ROD)",
 
@@ -1680,11 +1818,9 @@
 
         "id": "e81",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "partname": "PISTON (WITH SKIRT)",
 
@@ -1704,11 +1840,9 @@
 
         "id": "e82",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "partname": "PISTON",
 
@@ -1727,11 +1861,9 @@
 
         "id": "e139",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "partname": "PISTON CROWN",
 
@@ -1751,11 +1883,9 @@
 
         "id": "e83",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON CROWN (OVERSIZED)",
 
@@ -1773,11 +1903,9 @@
     {
         "id": "e140",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON CROWN",
 
@@ -1794,11 +1922,8 @@
     {
         "id": "e141",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
-
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON CROWN O/S",
 
@@ -1817,11 +1942,9 @@
 
         "id": "e84",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON CROWN - RECON",
 
@@ -1841,11 +1964,9 @@
 
         "id": "e85",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "60MC",
+        "Products": "60MC",
 
         "partname": "PISTON CROWN",
 
@@ -1864,11 +1985,9 @@
 
         "id": "e141",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON CROWN (S60MCC)",
 
@@ -1887,11 +2006,9 @@
 
         "id": "e86",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "PISTON CROWN",
 
@@ -1910,11 +2027,9 @@
 
         "id": "e142",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "partname": "PISTON SKIRT",
 
@@ -1933,11 +2048,9 @@
 
         "id": "e143",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "PISTON CROWN",
 
@@ -1956,11 +2069,9 @@
 
         "id": "e144",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON CROWN",
 
@@ -1979,11 +2090,9 @@
 
         "id": "e145",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "partname": "PISTON CROWN",
 
@@ -2002,11 +2111,9 @@
 
         "id": "e145",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON",
 
@@ -2027,11 +2134,9 @@
 
         "id": "e87",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S50MC-C",
+        "Products": "S50MC-C",
 
         "partname": "PISTON CROWN",
 
@@ -2051,11 +2156,9 @@
 
         "id": "e88",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2075,11 +2178,9 @@
 
         "id": "e89",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "42MC",
+        "Products": "42MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2099,11 +2200,9 @@
 
         "id": "e90",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2123,11 +2222,9 @@
 
         "id": "e92",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC-C",
+        "Products": "S70MC-C",
 
         "partname": "PISTON COMPLETE",
 
@@ -2147,11 +2244,9 @@
 
         "id": "e93",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "6S42MC",
+        "Products": "6S42MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2171,11 +2266,9 @@
 
         "id": "e94",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "70MC",
+        "Products": "70MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2195,11 +2288,9 @@
 
         "id": "e95",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "80MC",
+        "Products": "80MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2219,11 +2310,9 @@
 
         "id": "e119",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2243,11 +2332,9 @@
 
         "id": "e120",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2267,11 +2354,9 @@
 
         "id": "e121",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2291,11 +2376,9 @@
 
         "id": "e122",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2315,11 +2398,9 @@
 
         "id": "e123",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2339,11 +2420,9 @@
 
         "id": "e124",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "50MC",
+        "Products": "50MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2363,11 +2442,9 @@
 
         "id": "e125",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L35MC",
+        "Products": "L35MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2387,11 +2464,9 @@
 
         "id": "e126",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2411,11 +2486,9 @@
 
         "id": "e127",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON COMPLETE",
 
@@ -2435,11 +2508,9 @@
 
         "id": "e128",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "L50MC",
+        "Products": "L50MC",
 
         "partname": "PISTON CROWN",
 
@@ -2459,11 +2530,9 @@
 
         "id": "e129",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC-C",
+        "Products": "S70MC-C",
 
         "partname": "PISTON SKIRT",
 
@@ -2483,11 +2552,9 @@
 
         "id": "e130",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "PISTON",
 
@@ -2507,11 +2574,9 @@
 
         "id": "e131",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "PISTON SKIRT",
 
@@ -2531,11 +2596,9 @@
 
         "id": "e133",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC-C",
+        "Products": "S70MC-C",
 
         "partname": "PISTON",
 
@@ -2555,11 +2618,9 @@
 
         "id": "e134",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S50MC",
+        "Products": "S50MC",
 
         "partname": "PISTON CROWN",
 
@@ -2578,11 +2639,9 @@
 
         "id": "e152",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON SKIRT",
 
@@ -2602,11 +2661,9 @@
 
         "id": "e135",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON CROWN",
 
@@ -2626,11 +2683,9 @@
 
         "id": "e136",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "PISTON CROWN",
 
@@ -2648,11 +2703,9 @@
     {
         "id": "e150",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "80MC",
+        "Products": "80MC",
 
         "partname": "PISTON CROWN",
 
@@ -2670,12 +2723,11 @@
     {
 
         "id": "e137",
-
-        "company": "MAN B&W",
+     
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON CROWN",
 
@@ -2695,11 +2747,11 @@
 
         "id": "e138",
 
-        "company": "MAN B&W",
+   
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON SKIRT",
 
@@ -2718,11 +2770,10 @@
         
         "id": "e153",
 
-        "company": "MAN B&W",
 
         "Make": "MAN B&W",
 
-        "Model": "S60MC",
+        "Products": "S60MC",
 
         "partname": "PISTON SKIRT",
 
@@ -2739,11 +2790,11 @@
     {
         "id": "e154",
 
-        "company": "MAN B&W",
+    
 
         "Make": "MAN B&W",
 
-        "Model": "70MC",
+        "Products": "70MC",
 
         "partname": "PISTON CROWN",
 
@@ -2760,11 +2811,11 @@
     {
         "id": "e155",
 
-        "company": "MAN B&W",
+     
 
         "Make": "MAN B&W",
 
-        "Model": "6S42MC",
+        "Products": "6S42MC",
 
         "partname": "PISTON CROWN",
 
@@ -2781,11 +2832,11 @@
     {
         "id": "e156",
 
-        "company": "MAN B&W",
+      
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "PISTON SKIRT",
 
@@ -2802,11 +2853,11 @@
     {
         "id": "e157",
 
-        "company": "MAN B&W",
+    
 
         "Make": "MAN B&W",
 
-        "Model": "S70MC",
+        "Products": "S70MC",
 
         "partname": "PISTON SKIRT",
 
@@ -2823,11 +2874,9 @@
     {
         "id": "e158",
 
-        "company": "MAN B&W",
-
         "Make": "MAN B&W",
 
-        "Model": "42MC",
+        "Products": "42MC",
 
         "partname": "PISTON CROWN",
 

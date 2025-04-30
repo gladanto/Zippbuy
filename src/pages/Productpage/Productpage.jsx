@@ -4,6 +4,7 @@ import NavBar from "../../components/TopNavBar/NavBar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import data from "../../data/demoProduct.json";
+
 import "./Productpage.css";
 
 const Productpage = () => {
@@ -213,6 +214,8 @@ const Productpage = () => {
 };
 
 export default Productpage;
+
+
 // import React, { useState } from "react";
 // import { Rating } from "@mui/material";
 // import NavBar from "../../components/TopNavBar/NavBar";
