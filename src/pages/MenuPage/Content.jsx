@@ -182,7 +182,7 @@ const Content = () => {
                     <p><span>Make:</span> {product.make || "N/A"}</p>
                     <p><span>Products:</span> {product.Products || "N/A"}</p>
                   </div>
-                  <button className="view-button" onClick={() => navigate(`/product/${product.id}`)}>
+                  <button className="view-button" onClick={() => navigate(`/product`)}>
                     View Details
                   </button>
                 </div>

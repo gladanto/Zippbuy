@@ -179,21 +179,32 @@ const Productpage = () => {
                 </div>
 
                 {/* Variant Description Below */}
-                {selectedVariant && (
+                {/* {selectedVariant && (
                   <div className="variant-description bg-light border rounded p-3 mb-4">
                     <h5 className="text-info">Details for Model: {selectedVariant.model}</h5>
                     <p className="text-secondary small mb-0">{selectedVariant.specifications}</p>
                   </div>
-                )}
-
+                )} */}
+{/* 
                 <h2 className="mt-4 mb-3">Specifications</h2>
                 <ul className="list-group mb-5">
-                  {specifications.map((spec, index) => (
+                  {product.specifications.map((spec, index) => (
                     <li key={index} className="list-group-item">
                       {spec}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
+                <h2 className="mt-4 mb-3">Specifications</h2>
+<ul className="list-group mb-5">
+  {(selectedVariant?.specifications || product.specifications || "")
+    .split(",")
+    .map((spec, index) => (
+      <li key={index} className="list-group-item">
+        {spec.trim()}
+      </li>
+    ))}
+</ul>
+
 
                 <div className="row mb-14 mt-4">
                   <div className="col-12 col-xl-8 mb-4 mb-xl-0">

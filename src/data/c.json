@@ -5,10 +5,11 @@
     "name": "Cylinder Liner",
     "make": "SULZER",
     "makeId": "M01",
+    "price":34.99,
     "seriesId": "S01",
     "seriesName": "RTA",
     "category": "Cylinder Liner",
-    "Header": "Cylinder Liner (Complete)",
+    "Header": "Cylinder Liner(Complete)",
     "rating": 4.5,
     "image": "/assets/p/P5.png",
     "reviews": 1200,
@@ -24,6 +25,24 @@
       "Machined with tight tolerances for perfect integration with the engine block and piston.",
       "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
     ],
+    "specifications":
+      "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
+    ,
+    "stock_by_condition": [
+        { "condition": "New", "quantity": 10 }
+      
+      ],
+    
+    "subImages": [
+        
+        "/public/assets/p/p2.png",
+        "/public/assets/p/p5.png" 
+       
+      ],
+      
+      "subcategory_id": "s001",
+      "child_subcategories_id": ["cs003"],
+    
     "variants": [
       {
         "id": "e1",
@@ -33,22 +52,40 @@
         "quantity": 1,
         "price": 34.99,
         "image": "/assets/p/P2.png",
-        "link": "#"
+        "link": "#",
+          "description": "Designed for the RTA48T marine engine series, this cylinder liner offers optimal wear resistance and thermal performance.",
+          "specifications": "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
+        
       },
       {
         "id": "e2",
-        "model": "RTA58",
+        "model": "RTA58T-B",
         "condition": "Recondition",
         "stock": "Available",
         "quantity": 3,
         "price": 34.99,
         "image": "/assets/p/P2.png",
-        "link": "#"
+        "link": "#",
+        "description": "Reconditioned liner for RTA58T-B model with precision-machined surfaces for efficient sealing and durability.",
+         "specifications": "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
+      },
+      {
+        "id": "e1",
+        "model": "RTA72",
+        "condition": "New",
+        "stock": "Available",
+        "quantity": 1,
+        "price": 34.99,
+        "image": "/assets/p/P2.png",
+        "link": "#",
+         "description": "RTA72 liner engineered to handle high combustion pressures and prolonged operating conditions with minimal wear.",
+          "specifications": "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
       }
+      
+
     ]
   },
   
-
 
     {
 

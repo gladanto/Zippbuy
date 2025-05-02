@@ -1,0 +1,635 @@
+[
+
+    {
+
+        "id": "P001",
+
+        "partname": "Cylinder Liner(Complete)",
+
+        "partId": "c001",
+
+        "name": "Cylinder Liner",
+
+        "make": "SULZER",
+
+        "makeId": "M01",
+
+        "seriesId": "S01",
+
+        "seriesName": "RTA",
+
+        "category": "Cylinder Liner",
+
+        "Header": "Cylinder Liner (Complete)",
+
+        "rating": 4.5,
+
+        "image": "/assets/p/P5.png",
+
+        "reviews": 1200,
+
+        "reviews_content": "This cylinder liner works flawlessly for our marine engines. Durable and highly precise.",
+
+        "shipping": "Ships within 3–5 business days. Free returns within 30 days.",
+
+        "brand": "Trusted marine engine component supplier for robust and reliable performance.",
+
+        "features": [
+
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+
+        ],
+
+        "description": [
+
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+
+        ],
+
+        "variants": [
+
+            {
+
+                "id": "e1",
+
+                "model": "RTA48T",
+
+                "condition": "New",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e2",
+
+                "model": "RTA58",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 3,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e3",
+
+                "model": "RTA52U",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P5.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e4",
+
+                "model": "RTA84T",
+
+                "condition": "New",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            }
+
+        ]
+
+    },
+
+    {
+
+        "id": "P002",
+
+        "partname": "Cylinder Liner(Complete)",
+
+        "partId": "c001",
+
+        "name": "Cylinder Liner",
+
+        "make": "SULZER",
+
+        "makeId": "M01",
+
+        "seriesId": "S02",
+
+        "seriesName": "RND",
+
+        "category": "Cylinder Liner",
+
+        "Header": "Cylinder Liner (Complete)",
+
+        "rating": 4.5,
+
+        "image": "/assets/p/P5.png",
+
+        "reviews": 1200,
+
+        "reviews_content": "This cylinder liner works flawlessly for our marine engines. Durable and highly precise.",
+
+        "shipping": "Ships within 3–5 business days. Free returns within 30 days.",
+
+        "brand": "Trusted marine engine component supplier for robust and reliable performance.",
+
+        "features": [
+
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+
+        ],
+
+        "description": [
+
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+
+        ],
+
+        "variants": [
+
+            {
+
+                "id": "e5",
+
+                "model": "RND68",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 4,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P5.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e6",
+
+                "model": "RND68M",
+
+                "condition": "New",
+
+                "stock": "Available",
+
+                "quantity": 11,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            }
+
+        ]
+
+    },
+
+    {
+
+        "id": "P003",
+
+        "partname": "Cylinder Liner(Complete)",
+
+        "partId": "c001",
+
+        "name": "Cylinder Liner",
+
+        "make": "MITSUBISHI",
+
+        "makeId": "M02",
+
+        "seriesId": "S03",
+
+        "seriesName": "UEC",
+
+        "category": "Cylinder Liner",
+
+        "Header": "Cylinder Liner (Complete)",
+
+        "rating": 4.5,
+
+        "image": "/assets/p/P5.png",
+
+        "reviews": 1200,
+
+        "reviews_content": "This cylinder liner works flawlessly for our marine engines. Durable and highly precise.",
+
+        "shipping": "Ships within 3–5 business days. Free returns within 30 days.",
+
+        "brand": "Trusted marine engine component supplier for robust and reliable performance.",
+
+        "features": [
+
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+
+        ],
+
+        "description": [
+
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+
+        ],
+
+        "variants": [
+
+            {
+
+                "id": "e7",
+
+                "model": "UEC 85LS2",
+
+                "condition": "New",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "price": 34.99,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            }
+
+        ]
+
+    },
+
+    {
+
+        "id": "P004",
+
+        "partname": "Cylinder Liner(Complete)",
+
+        "partId": "c001",
+
+        "name": "Cylinder Liner",
+
+        "make": "MAN B&W",
+
+        "makeId": "M03",
+
+        "seriesId": "S04",
+
+        "seriesName": "MC",
+
+        "category": "Cylinder Liner",
+
+        "Header": "Cylinder Liner (Complete)",
+
+        "rating": 4.5,
+
+        "image": "/assets/p/P5.png",
+
+        "reviews": 1200,
+
+        "reviews_content": "This cylinder liner works flawlessly for our marine engines. Durable and highly precise.",
+
+        "shipping": "Ships within 3–5 business days. Free returns within 30 days.",
+
+        "brand": "Trusted marine engine component supplier for robust and reliable performance.",
+
+        "features": [
+
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+
+        ],
+
+        "description": [
+
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+
+        ],
+
+        "variants": [
+
+            {
+
+                "id": "e8",
+
+                "model": "L50MC",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 2,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e9",
+
+                "model": "L35MC",
+
+                "condition": [
+
+                    {
+
+                        "type": "New",
+
+                        "quantity": 4
+
+                    },
+
+                    {
+
+                        "type": "Recondition",
+
+                        "quantity": 6
+
+                    }
+
+                ],
+
+                "stock": "Available",
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e10",
+
+                "model": "S35MC",
+
+                "condition": "New",
+
+                "stock": "Available",
+
+                "quantity": 3,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e11",
+
+                "model": "42MC",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e12",
+
+                "model": "50MC",
+
+                "condition": [
+
+                    {
+
+                        "type": "New",
+
+                        "quantity": 1
+
+                    },
+
+                    {
+
+                        "type": "Recondition",
+
+                        "quantity": 3
+
+                    }
+
+                ],
+
+                "stock": "Available",
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e13",
+
+                "model": "L50MC",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e14",
+
+                "model": "S50MC",
+
+                "condition": [
+
+                    {
+
+                        "type": "New",
+
+                        "quantity": 1
+
+                    },
+
+                    {
+
+                        "type": "Recondition",
+
+                        "quantity": 4
+
+                    }
+
+                ],
+
+                "stock": "Available",
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e15",
+
+                "model": "S50MC",
+
+                "condition": "Recondition",
+
+                "stock": "Available",
+
+                "quantity": 1,
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e16",
+
+                "model": "S60MC",
+
+                "condition": [
+
+                    {
+
+                        "type": "New",
+
+                        "quantity": 2
+
+                    },
+
+                    {
+
+                        "type": "Recondition",
+
+                        "quantity": 3
+
+                    }
+
+                ],
+
+                "stock": "Available",
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            },
+
+            {
+
+                "id": "e17",
+
+                "model": "S70MC",
+
+                "condition": [
+
+                    {
+
+                        "type": "New",
+
+                        "quantity": 1
+
+                    },
+
+                    {
+
+                        "type": "Recondition",
+
+                        "quantity": 2
+
+                    }
+
+                ],
+
+                "stock": "Available",
+
+                "image": "/assets/p/P2.png",
+
+                "link": "#"
+
+            }
+
+        ]
+
+    }
+
+]
