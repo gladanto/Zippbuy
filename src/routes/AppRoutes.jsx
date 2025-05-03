@@ -16,7 +16,8 @@ function AppRoutes() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/About' element={<About/>} />
           <Route path='/Contact' element={<Contact/>} />
-          <Route path='/Product' element={<Productpage/>} />
+          {/* <Route path='/Product' element={<Productpage/>} /> */}
+          <Route path="/product/:id" element={<Productpage />} />
       </Routes>
     </div>
   )

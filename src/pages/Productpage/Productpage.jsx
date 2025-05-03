@@ -1,19 +1,31 @@
+
 import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { Rating } from "@mui/material";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import data from "../../data/c.json";
-
 import "./Productpage.css";
 
 const Productpage = () => {
-  const product = data[0];
-  const images = [product.image, ...product.subImages || []];
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const product = data.find((item) => item.id.toString() === id);
+  const seriesId = product?.seriesId;
+  const partId = product?.partId;
 
-  // Handle image array
+  const subproducts = data.filter(
+    (item) =>
+      item.seriesId === seriesId &&
+      item.partId === partId &&
+      item.id.toString() !== id
+  );
+
+  if (!product) return <div>Product not found</div>;
+
+  const images = [product.image, ...(product.subImages || [])];
   const subImages = Array.isArray(product.subImages) ? product.subImages : [];
-  // const images = [product.image, ...subImages.filter(Boolean)];
 
   const [rating, setRating] = useState(product.rating || 4);
   const [mainImageIndex, setMainImageIndex] = useState(0);
@@ -22,6 +34,7 @@ const Productpage = () => {
 
   const tabContent = {
     description: product.description || "No description available.",
+    specifications: product.specifications || "No specifications available.",
     reviews: product.reviews_content || "No reviews available.",
     shipping: product.shipping || "Shipping info not available.",
     brand: product.brand || "Brand info not available.",
@@ -35,19 +48,16 @@ const Productpage = () => {
     setMainImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  const specifications = product["model rta"]?.[0]?.specifications
-    ?.split(",")
-    .map((s) => s.trim()) || [];
-
   return (
     <>
       <Header />
-      <NavBar /> 
+      <NavBar />
       <br />
       <br />
       <section className="py-20 overflow-hidden mt-10">
         <div className="container">
           <div className="row mb-24">
+            {/* Image Section */}
             <div className="col-12 col-md-6 mb-8 mb-md-0">
               <div className="row">
                 <div className="col-3 d-flex flex-column align-items-center pe-2 sub-images mt-10">
@@ -55,7 +65,12 @@ const Productpage = () => {
                     <img
                       key={index}
                       className="sub-images img-fluid mb-2 rounded"
-                      style={{ width: "80px", height: "80px", cursor: "pointer", objectFit: "cover" }}
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        cursor: "pointer",
+                        objectFit: "cover",
+                      }}
                       src={img}
                       alt={`Thumbnail ${index}`}
                       onClick={() => setMainImageIndex(index)}
@@ -98,7 +113,6 @@ const Productpage = () => {
                         />
                       ))}
                     </div>
-
                     <a
                       className="position-absolute top-50 end-0 me-2 translate-middle-y"
                       href="#"
@@ -114,15 +128,18 @@ const Productpage = () => {
                   </div>
                 </div>
               </div>
-              
             </div>
-            
 
+            {/* Product Info */}
             <div className="col-12 col-md-6">
               <div className="ps-lg-20">
                 <div className="mb-10 pb-10 border-bottom">
                   <span className="text-secondary">{product.Make}</span>
-                  <h1 className="mt-2 mb-6 mw-xl">{product.name}</h1>
+                  <h1 className="mt-2 mb-2 mw-xl">{product.name}| {product.Products}</h1>
+<p className="text-muted fw-medium mb-4" style={{ fontSize: "1rem" }}>
+  {product.partname} | {product.make} | {product.seriesName}
+</p>
+
                   <div className="mb-8 d-flex align-items-center">
                     <Rating
                       name="rating"
@@ -130,40 +147,42 @@ const Productpage = () => {
                       precision={0.5}
                       onChange={(event, newValue) => setRating(newValue)}
                     />
-                    <span className="ms-2 text-secondary">({product.reviews || 0} reviews)</span>    
+                    <span className="ms-2 text-secondary">({product.reviews || 0} reviews)</span>
                   </div>
-                  {/* u */}
-                  {product.stock_by_condition && product.stock_by_condition.length > 0 && (
-    <div className="mb-2">
-      {product.stock_by_condition.map((item, index) => (
-        <span
-          key={index}
-          className="badge bg-success text-white me-2 px-3 py-2"
-          style={{ fontSize: "0.9rem", fontWeight: "500" }}
-        >
-          {item.condition} – Qty: {item.quantity}
-        </span>
-      ))}
-    </div>
-  )}
-   
+
+                  {product.stock_by_condition?.length > 0 && (
+                    <div className="mb-2">
+                      {product.stock_by_condition.map((item, index) => (
+                        <span
+                          key={index}
+                          className="badge bg-success text-white me-2 px-3 py-2"
+                          style={{ fontSize: "0.9rem", fontWeight: "500" }}
+                        >
+                          {item.condition} – Qty: {item.quantity}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
                   <p className="d-inline-block mb-8 h5 text-info">${product.price}</p>
-                  <p className="mw-md text-secondary">{product.description}</p>
+                  <p className="mw-md text-secondary">
+                    {Array.isArray(product.description) ? product.description[0] : product.description}
+                  </p>
                 </div>
 
+                {/* Features */}
                 <ul className="mb-4 text-secondary ps-3">
                   {product.features?.map((feature, i) => (
                     <li key={i}>{feature}</li>
                   ))}
                 </ul>
 
-                {/* Variant Boxes */}
+                {/* Variants */}
                 <div className="d-flex flex-wrap gap-3 mb-4">
-                  {product.variants?.map((variant, index) => (
+                  {subproducts?.map((subproduct, index) => (
                     <div
                       key={index}
-                      onClick={() => setSelectedVariant(variant)}
-                      onMouseEnter={() => setMainImageIndex(index)}
+                      onClick={() => navigate(`/product/${subproduct.id}`)}
                       className="size-option-box border rounded-2 p-3 text-center position-relative"
                       style={{
                         width: "180px",
@@ -172,40 +191,25 @@ const Productpage = () => {
                         backgroundColor: "#f8f9fa",
                       }}
                     >
-                      <div className="fw-bold text-secondary mb-1">Model: {variant.model}</div>
-                      <div className="price text-info mb-1">{variant.model2}</div>
+                      <div className="fw-bold text-secondary mb-1">Model: {subproduct.Products}</div>
+                      <div className="price text-info mb-1">{subproduct.make}</div>
                     </div>
                   ))}
                 </div>
 
-                {/* Variant Description Below */}
-                {/* {selectedVariant && (
-                  <div className="variant-description bg-light border rounded p-3 mb-4">
-                    <h5 className="text-info">Details for Model: {selectedVariant.model}</h5>
-                    <p className="text-secondary small mb-0">{selectedVariant.specifications}</p>
-                  </div>
-                )} */}
-{/* 
+                {/* Full Specifications */}
                 <h2 className="mt-4 mb-3">Specifications</h2>
                 <ul className="list-group mb-5">
-                  {product.specifications.map((spec, index) => (
-                    <li key={index} className="list-group-item">
-                      {spec}
-                    </li>
-                  ))}
-                </ul> */}
-                <h2 className="mt-4 mb-3">Specifications</h2>
-<ul className="list-group mb-5">
-  {(selectedVariant?.specifications || product.specifications || "")
-    .split(",")
-    .map((spec, index) => (
-      <li key={index} className="list-group-item">
-        {spec.trim()}
-      </li>
-    ))}
-</ul>
+                  {(selectedVariant?.specifications || product.specifications || "")
+                    .split(",")
+                    .map((spec, index) => (
+                      <li key={index} className="list-group-item">
+                        {spec.trim()}
+                      </li>
+                    ))}
+                </ul>
 
-
+                {/* Add to Cart */}
                 <div className="row mb-14 mt-4">
                   <div className="col-12 col-xl-8 mb-4 mb-xl-0">
                     <a className="btn w-100 btn-primary" href="#">
@@ -217,10 +221,10 @@ const Productpage = () => {
             </div>
           </div>
 
-          {/* Tabs */}
+          {/* Tabs Section */}
           <div className="mt-16">
             <div className="row mb-16 border-bottom border-2 mt-16">
-              {["description", "reviews", "shipping", "brand"].map((tab) => (
+              {["description", "specifications", "reviews", "shipping", "brand"].map((tab) => (
                 <div key={tab} className="col-6 col-md-auto">
                   <button
                     className={`btn ${activeTab === tab ? "bg-white text-secondary shadow" : "text-secondary"}`}
@@ -231,8 +235,17 @@ const Productpage = () => {
                 </div>
               ))}
             </div>
+
             <h3 className="mb-8 text-info">{activeTab.toUpperCase()}</h3>
-            <p className="mw-2xl text-secondary">{tabContent[activeTab]}</p>
+            <p className="mw-2xl text-secondary">
+              {activeTab === "description" && selectedVariant?.description
+                ? selectedVariant.description
+                : activeTab === "specifications" && selectedVariant?.specifications
+                ? selectedVariant.specifications
+                : Array.isArray(tabContent[activeTab])
+                ? tabContent[activeTab][0]
+                : tabContent[activeTab]}
+            </p>
           </div>
         </div>
       </section>
@@ -242,5 +255,3 @@ const Productpage = () => {
 };
 
 export default Productpage;
-
-

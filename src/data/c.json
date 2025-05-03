@@ -1,13 +1,15 @@
 [
 {
-    "id": "P001",
+    "id": "e1",
     "partname": "Cylinder Liner",
+    "partId": "P001",
     "name": "Cylinder Liner",
     "make": "SULZER",
     "makeId": "M01",
     "price":34.99,
     "seriesId": "S01",
     "seriesName": "RTA",
+    "Products": "RTA48T",
     "category": "Cylinder Liner",
     "Header": "Cylinder Liner(Complete)",
     "rating": 4.5,
@@ -29,7 +31,7 @@
       "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
     ,
     "stock_by_condition": [
-        { "condition": "New", "quantity": 10 }
+        { "condition": "New", "quantity": 2 }
       
       ],
     
@@ -41,49 +43,9 @@
       ],
       
       "subcategory_id": "s001",
-      "child_subcategories_id": ["cs003"],
+      "child_subcategories_id": ["cs003"]
     
-    "variants": [
-      {
-        "id": "e1",
-        "model": "RTA48T",
-        "condition": "New",
-        "stock": "Available",
-        "quantity": 1,
-        "price": 34.99,
-        "image": "/assets/p/P2.png",
-        "link": "#",
-          "description": "Designed for the RTA48T marine engine series, this cylinder liner offers optimal wear resistance and thermal performance.",
-          "specifications": "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
-        
-      },
-      {
-        "id": "e2",
-        "model": "RTA58T-B",
-        "condition": "Recondition",
-        "stock": "Available",
-        "quantity": 3,
-        "price": 34.99,
-        "image": "/assets/p/P2.png",
-        "link": "#",
-        "description": "Reconditioned liner for RTA58T-B model with precision-machined surfaces for efficient sealing and durability.",
-         "specifications": "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
-      },
-      {
-        "id": "e1",
-        "model": "RTA72",
-        "condition": "New",
-        "stock": "Available",
-        "quantity": 1,
-        "price": 34.99,
-        "image": "/assets/p/P2.png",
-        "link": "#",
-         "description": "RTA72 liner engineered to handle high combustion pressures and prolonged operating conditions with minimal wear.",
-          "specifications": "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes"
-      }
-      
 
-    ]
   },
   
 
@@ -94,6 +56,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "SULZER",
 
@@ -106,18 +69,42 @@
         "Products": "RTA52U",
 
         "stock": "Available",
-
-        "condition": "Recondition",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
+              
+              "condition": "Recondition",
 
         "category": "Cylinder Liner",
         "Header":"Cylinder Liner(Complete)",
 
         "image": "/assets/p/P5.png",
 
-        "link": "#",
+        "link": "#"
 
-        "Quantity": "1"
-
+        
     },
 
     {
@@ -127,6 +114,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "SULZER",
 
@@ -136,7 +124,32 @@
 
         "seriesName": "RTA",
 
-        "Products": "RTA84T",
+        "Products": "RTA52U",
+        "rating": 4.5,
+        "price":34.99,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ], 
 
         "stock": "Available",
 
@@ -147,9 +160,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -160,6 +171,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "SULZER",
 
@@ -170,6 +182,31 @@
         "seriesName": "RND",
 
         "Products": "RND68",
+        "rating": 4.5,
+        "price":34.99,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 4 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ], 
 
         "stock": "Available",
 
@@ -180,9 +217,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "4"
+        "link": "#"
 
     },
 
@@ -193,6 +228,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "SULZER",
 
@@ -203,6 +239,31 @@
         "seriesName": "RND",
 
         "Products": "RND68M",
+        "rating": 4.5,
+        "price":34.99,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 11 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ], 
 
         "stock": "Available",
 
@@ -213,9 +274,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "11"
+        "link": "#"
 
     },
 
@@ -226,6 +285,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MITSUBISHI",
 
@@ -236,6 +296,31 @@
         "seriesName": "UEC",
 
         "Products": "UEC 85LS2",
+        "rating": 4.5,
+        "price":34.99,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ], 
 
         "stock": "Available",
 
@@ -246,9 +331,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -260,6 +343,8 @@
 
         "partId": "P001",
 
+        "name":"Cylinder Liner",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -269,6 +354,31 @@
         "seriesName": "MC",
 
         "Products": "L50MC",
+        "rating": 4.5,
+        "price":34.99,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ], 
 
         "stock": "Available",
 
@@ -279,9 +389,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -292,6 +400,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MAN B&W",
 
@@ -302,28 +411,34 @@
         "seriesName": "MC",
 
         "product": "L35MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 4 },
+                {"condition": "Recondition", "quantity": 6 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
-
-        "condition": [
-
-            {
-
-                "type": "New",
-
-                "quantity": 4
-
-            },
-
-            {
-
-                "type": "Recondition",
-
-                "quantity": 6
-
-            }
-
-        ],
 
         "category": "Cylinder Liner",
         "Header":"Cylinder Liner(Complete)",
@@ -341,6 +456,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MAN B&W",
 
@@ -351,6 +467,31 @@
         "seriesName": "MC",
 
         "Products": "S35MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 3 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -361,9 +502,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "3"
+        "link": "#"
 
     },
 
@@ -374,6 +513,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MAN B&W",
 
@@ -384,6 +524,31 @@
         "seriesName": "MC",
 
         "Products": "42MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -394,9 +559,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -407,6 +570,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MAN B&W",
 
@@ -417,28 +581,36 @@
         "seriesName": "MC",
 
         "product": "50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 1 },
+                {"condition": "Recondition", "quantity": 3 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
-        "condition": [
-
-            {
-
-                "type": "New",
-
-                "quantity": 1
-
-            },
-
-            {
-
-                "type": "Recondition",
-
-                "quantity": 3
-
-            }
-
-        ],
+        
 
         "category": "Cylinder Liner",
         "Header":"Cylinder Liner(Complete)",
@@ -456,6 +628,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MAN B&W",
 
@@ -466,6 +639,31 @@
         "seriesName": "MC",
 
         "Products": "L50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -476,9 +674,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -490,6 +686,8 @@
 
         "partId": "P001",
 
+        "name":"Cylinder Liner",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -499,28 +697,34 @@
         "seriesName": "MC",
 
         "product": "S50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 1 },
+                {"condition": "Recondition", "quantity": 4 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
-
-        "condition": [
-
-            {
-
-                "type": "New",
-
-                "quantity": 1
-
-            },
-
-            {
-
-                "type": "Recondition",
-
-                "quantity": 4
-
-            }
-
-        ],
 
         "category": "Cylinder Liner",
         "Header":"Cylinder Liner(Complete)",
@@ -539,6 +743,8 @@
 
         "partId": "P001",
 
+        "name":"Cylinder Liner",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -548,6 +754,31 @@
         "seriesName": "MC",
 
         "Products": "S50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -559,9 +790,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -573,6 +802,8 @@
 
         "partId": "P001",
 
+        "name":"Cylinder Liner",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -582,28 +813,35 @@
         "seriesName": "MC",
 
         "product": "S60MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 2 },
+                {"condition": "Recondition", "quantity": 3 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
-        "condition": [
-
-            {
-
-                "type": "New",
-
-                "quantity": 2
-
-            },
-
-            {
-
-                "type": "Recondition",
-
-                "quantity": 3
-
-            }
-
-        ],
 
         "category": "Cylinder Liner",
         "Header":"Cylinder Liner(Complete)",
@@ -621,6 +859,7 @@
         "partname": "Cylinder Liner",
 
         "partId": "P001",
+        "name":"Cylinder Liner",
 
         "make": "MAN B&W",
 
@@ -631,28 +870,35 @@
         "seriesName": "MC",
 
         "product": "S70MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 1 },
+                {"condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
-        "condition": [
-
-            {
-
-                "type": "New",
-
-                "quantity": 1
-
-            },
-
-            {
-
-                "type": "Recondition",
-
-                "quantity": 2
-
-            }
-
-        ],
 
         "category": "Cylinder Liner",
         "Header":"Cylinder Liner(Complete)",
@@ -675,6 +921,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "Sulzer",
 
         "makeId": "M01",
@@ -684,6 +932,31 @@
         "seriesName": "RTA",
 
         "Products": "RTA58",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -696,9 +969,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
 
     },
@@ -713,6 +984,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "Sulzer",
 
         "makeId": "M01",
@@ -722,6 +995,31 @@
         "seriesName": "RTA",
 
         "Products": "RTA58T-B",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -733,9 +1031,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -747,6 +1043,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "Sulzer",
 
         "makeId": "M01",
@@ -756,6 +1054,31 @@
         "seriesName": "RTA",
 
         "Products": "RTA72",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 4 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -767,9 +1090,7 @@
 
         "image": "/assets/p/P4.png",
 
-        "link": "#",
-
-        "Quantity": "4"
+        "link": "#"
 
     },
 
@@ -781,6 +1102,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MITSUBISHI",
 
         "makeId": "M02",
@@ -790,6 +1113,31 @@
         "seriesName": "UEC",
 
         "Products": " 7UEC37/37HA",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],  
 
         "stock": "Available",
 
@@ -801,9 +1149,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -815,6 +1161,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -824,6 +1172,31 @@
         "seriesName": "MC",
 
         "Products": "35MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -835,9 +1208,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -849,6 +1220,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -858,28 +1231,35 @@
         "seriesName": "MC",
 
         "product": "L35MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "New", "quantity": 4 },
+                {"condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
-        "condition": [
-
-          {
-
-            "type": "New",
-
-            "quantity": 4
-
-          },
-
-          {
-
-            "type": "Recondition",
-
-            "quantity": 1
-
-          }
-
-        ],
 
         "category": "Cylinder Head ",
 
@@ -901,6 +1281,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -910,6 +1292,31 @@
         "seriesName": "MC",
 
         "Products": "S42MC-C",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 3 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -921,9 +1328,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "3"  
+        "link": "#"
 
     },
 
@@ -935,6 +1340,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -944,6 +1351,31 @@
         "seriesName": "MC",
 
         "Products": "S50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -955,9 +1387,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -968,6 +1398,8 @@
         "partname": "Cylinder Head (Complete)",
 
         "partId": "P002",
+        
+        "name":"Cylinder Head",
 
         "make": "MAN B&W",
 
@@ -978,6 +1410,31 @@
         "seriesName": "MC",
 
         "Products": "S60MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 7 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -989,9 +1446,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "7"
+        "link": "#"
 
     },
 
@@ -1003,6 +1458,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1012,6 +1469,31 @@
         "seriesName": "MC",
 
         "Products": "S60MC - C",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1023,9 +1505,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -1037,6 +1517,9 @@
 
         "partId": "P002",
 
+
+        "name":"Cylinder Head", 
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1046,6 +1529,31 @@
         "seriesName": "MC",
 
         "Products": "S70MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2}
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1053,13 +1561,13 @@
 
         "category": "Cylinder Head ",
 
+
+
         "Header":"Cylinder Head (Complete)",
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -1071,6 +1579,8 @@
 
         "partId": "P002",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1080,6 +1590,31 @@
         "seriesName": "MC",
 
         "Products": "S70MC - C",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity":2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1091,9 +1626,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -1105,6 +1638,8 @@
 
         "partId": "P003",
 
+        "name":"Cylinder Head",
+
         "make": "Sulzer",
 
         "makeId": "M01",
@@ -1114,6 +1649,31 @@
         "seriesName": "RTA",
 
         "Products": "RTA62",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1125,9 +1685,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -1139,6 +1697,8 @@
 
         "partId": "P004",
 
+        "name":"Cylinder Head",
+
         "make": "Sulzer",
 
         "makeId": "M01",
@@ -1148,6 +1708,31 @@
         "seriesName": "RTA",
 
         "Products": "RTA58",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1159,9 +1744,7 @@
 
         "image": "/assets/p/P1.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -1173,6 +1756,8 @@
 
         "partId": "P004",
 
+        "name":"Cylinder Headn bare",
+
         "make": "Sulzer",
 
         "makeId": "M01",
@@ -1182,6 +1767,31 @@
         "seriesName": "RTA",
 
         "Products": "RTA58",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1193,9 +1803,7 @@
 
         "image": "/assets/p/P1.png",
 
-        "link": "#",
-
-        "Quantity": "1"
+        "link": "#"
 
     },
 
@@ -1207,6 +1815,8 @@
 
         "partId": "P004",
 
+        "name":"Cylinder Headn bare",
+
         "make": "MITSUBISHI",
 
         "makeId": "M02",
@@ -1216,6 +1826,31 @@
         "seriesName": "UEC",
 
         "Products": "UEC37LA",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 3 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1227,9 +1862,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "3"
+        "link": "#"
 
     },
 
@@ -1241,6 +1874,8 @@
 
         "partId": "P005",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1250,6 +1885,31 @@
         "seriesName": "MC",
 
         "Products": "L35MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 3 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1261,9 +1921,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "3"
+        "link": "#"
 
     },
 
@@ -1275,6 +1933,8 @@
 
         "partId": "P005",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1284,6 +1944,31 @@
         "seriesName": "MC",
 
         "Products": "46MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1295,10 +1980,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
-
+        "link": "#"
     },
 
     {
@@ -1309,6 +1991,8 @@
 
         "partId": "P006",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1317,7 +2001,32 @@
 
         "seriesName": "MC",
 
-        "Products": "L35MC",
+        "Products": "S60MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1329,10 +2038,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
-
+        "link": "#"
     },
 
     {
@@ -1343,6 +2049,8 @@
 
         "partId": "P006",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1352,6 +2060,31 @@
         "seriesName": "MC",
 
         "Products": "42MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 1 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1363,10 +2096,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "1"
-
+        "link": "#"
     },
 
     {
@@ -1377,6 +2107,8 @@
 
         "partId": "P006",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1386,6 +2118,31 @@
         "seriesName": "MC",
 
         "Products": "L50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1397,9 +2154,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -1411,6 +2166,8 @@
 
         "partId": "P006",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1420,6 +2177,30 @@
         "seriesName": "MC",
 
         "Products": "S50MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 5 }              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1431,9 +2212,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "5"
+        "link": "#"
 
     },
 
@@ -1445,6 +2224,8 @@
 
         "partId": "P006",
 
+        "name":"Cylinder Head",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1454,6 +2235,31 @@
         "seriesName": "MC",
 
         "Products": "L60MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 2 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1465,9 +2271,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "2"
+        "link": "#"
 
     },
 
@@ -1479,6 +2283,8 @@
 
         "partId": "P006",
 
+        "name":"Cylinder Head Bare",
+
         "make": "MAN B&W",
 
         "makeId": "M03",
@@ -1488,6 +2294,31 @@
         "seriesName": "MC",
 
         "Products": "S60MC",
+        "price":34.99,
+        "rating": 4.5,
+        "reviews": 1200,
+        "features": [
+            "High Wear Resistance – Manufactured from alloyed cast iron or steel with optimized surface hardness to withstand long-term friction.",
+            "Efficient Heat Dissipation – Designed to transfer combustion heat away from the piston and into the coolant, preventing overheating.",
+            "Corrosion Protection – Treated with anti-corrosive coatings to resist damage from coolant and combustion gases."
+          ],
+          "description": [
+            "Machined with tight tolerances for perfect integration with the engine block and piston.",
+            "Easy Maintenance and Replacement – Dry and wet liner designs available for easy servicing, reducing engine downtime."
+          ],
+          "specifications":
+            "Outer Diameter: 600 mm, Inner Diameter: 480 mm, Length: 2200 mm, Material: Alloyed Cast Iron, Cooling Type: Water-cooled, Surface Hardness: 230–270 HB, Compatibility: SULZER RTA48T / RTA58T-B / RTA72, Liner Type: Wet Liner, Weight: 520 kg, Anti-Corrosion Coated: Yes",
+            "stock_by_condition": [
+                { "condition": "Recondition", "quantity": 5 }
+              
+              ],
+            
+            "subImages": [
+                
+                "/public/assets/p/p2.png",
+                "/public/assets/p/p5.png" 
+               
+              ],      
 
         "stock": "Available",
 
@@ -1499,10 +2330,7 @@
 
         "image": "/assets/p/P2.png",
 
-        "link": "#",
-
-        "Quantity": "5"
-
+        "link": "#"
     }
 
 ]
