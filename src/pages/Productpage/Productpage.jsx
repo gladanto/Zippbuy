@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Rating } from "@mui/material";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/TestHome/Footer";
 import data from "../../data/c.json";
 import "./Productpage.css";
 
