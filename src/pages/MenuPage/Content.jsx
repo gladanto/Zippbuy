@@ -139,7 +139,7 @@ const Content = () => {
             ))}
           </select>
 
-          <select
+          {/* <select
             className="filter-select"
             value={filterSeries || ""}
             onChange={(e) => setFilterSeries(e.target.value || null)}
@@ -148,7 +148,7 @@ const Content = () => {
             {seriesNames.map((series, idx) => (
               <option key={idx} value={series}>{series}</option>
             ))}
-          </select>
+          </select> */}
 
           <button
             className="clear-filters"
@@ -180,7 +180,7 @@ const Content = () => {
                   <div className="details">
                     <p><span>Part:</span> {product.partname || "N/A"}</p>
                     <p><span>Make:</span> {product.make || "N/A"}</p>
-                    <p><span>Products:</span> {product.Products || "N/A"}</p>
+                    <p><span>Products:</span> {product.seriesName || "N/A"}</p>
                   </div>
                   <button className="view-button" onClick={() => navigate(`/product/${product.id}`)}>
                     View Details

@@ -222,7 +222,7 @@ const Productpage = () => {
           </div>
 
           {/* Tabs Section */}
-          <div className="mt-16">
+          {/* <div className="mt-16">
             <div className="row mb-16 border-bottom border-2 mt-16">
               {["description", "specifications", "reviews", "shipping", "brand"].map((tab) => (
                 <div key={tab} className="col-6 col-md-auto">
@@ -246,7 +246,7 @@ const Productpage = () => {
                 ? tabContent[activeTab][0]
                 : tabContent[activeTab]}
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />

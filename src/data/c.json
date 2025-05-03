@@ -429,7 +429,7 @@
 
         "seriesName": "MC",
 
-        "product": "L35MC",
+         "Products": "L35MC",
         "price":34.99,
         "rating": 4.5,
         "reviews": 1200,
@@ -608,7 +608,7 @@
 
         "seriesName": "MC",
 
-        "product": "50MC",
+         "Products": "50MC",
         "price":34.99,
         "rating": 4.5,
         "reviews": 1200,
@@ -730,7 +730,7 @@
 
         "seriesName": "MC",
 
-        "product": "S50MC",
+         "Products": "S50MC",
         "price":34.99,
         "rating": 4.5,
         "reviews": 1200,
@@ -852,7 +852,7 @@
 
         "seriesName": "MC",
 
-        "product": "S60MC",
+         "Products": "S60MC",
         "price":34.99,
         "rating": 4.5,
         "reviews": 1200,
@@ -912,7 +912,7 @@
 
         "seriesName": "MC",
 
-        "product": "S70MC",
+         "Products": "S70MC",
         "price":34.99,
         "rating": 4.5,
         "reviews": 1200,
@@ -1290,7 +1290,7 @@
 
         "seriesName": "MC",
 
-        "product": "L35MC",
+         "Products": "L35MC",
         "price":34.99,
         "rating": 4.5,
         "reviews": 1200,
