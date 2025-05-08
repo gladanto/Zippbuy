@@ -1,5 +1,4 @@
-
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Rating } from "@mui/material";
 import NavBar from "../../components/TopNavBar/NavBar";
@@ -11,244 +10,289 @@ import "./Productpage.css";
 const Productpage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+
   const product = data.find((item) => item.id.toString() === id);
   const seriesId = product?.seriesId;
   const partId = product?.partId;
 
-  const subproducts = data.filter(
-    (item) =>
-      item.seriesId === seriesId &&
-      item.partId === partId &&
-      item.id.toString() !== id
-  );
+  const subproducts = useMemo(() => {
+    return data.filter(
+      (item) =>
+        item.seriesId === seriesId &&
+        item.partId === partId &&
+        item.id.toString() !== id
+    );
+  }, [data, seriesId, partId, id]);
 
-  if (!product) return <div>Product not found</div>;
-
-  const images = [product.image, ...(product.subImages || [])];
-  const subImages = Array.isArray(product.subImages) ? product.subImages : [];
-
-  const [rating, setRating] = useState(product.rating || 4);
+  const [rating, setRating] = useState(product?.rating || 4);
   const [mainImageIndex, setMainImageIndex] = useState(0);
   const [activeTab, setActiveTab] = useState("description");
-  const [selectedVariant, setSelectedVariant] = useState(null);
+  const [isZoomed, setIsZoomed] = useState(false);
+  const [zoomPosition, setZoomPosition] = useState({ x: 50, y: 50 });
+  const imageRef = useRef(null);
 
-  const tabContent = {
-    description: product.description || "No description available.",
-    specifications: product.specifications || "No specifications available.",
-    reviews: product.reviews_content || "No reviews available.",
-    shipping: product.shipping || "Shipping info not available.",
-    brand: product.brand || "Brand info not available.",
-  };
+  const images = useMemo(() => {
+    return product ? [product.image, ...(product.subImages || [])] : [];
+  }, [product]);
 
-  const handleNextImage = () => {
-    setMainImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  const tabContent = useMemo(() => ({
+    description: product?.description || "No description available.",
+    specifications: product?.specifications || "No specifications available.",
+    reviews: product?.reviews_content || "No reviews available.",
+    shipping: product?.shipping || "Shipping info not available.",
+    brand: product?.brand || "Brand info not available.",
+  }), [product]);
 
-  const handlePrevImage = () => {
-    setMainImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
+  const handleNextImage = useCallback(() => {
+    setMainImageIndex((prev) => (prev + 1) % images.length);
+  }, [images.length]);
+
+  const handlePrevImage = useCallback(() => {
+    setMainImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  }, [images.length]);
+
+  const handleMouseMove = useCallback((e) => {
+    if (!imageRef.current) return;
+    const rect = imageRef.current.getBoundingClientRect();
+    const x = Math.min(Math.max(0, e.clientX - rect.left), rect.width);
+    const y = Math.min(Math.max(0, e.clientY - rect.top), rect.height);
+    setZoomPosition({
+      x: (x / rect.width) * 100,
+      y: (y / rect.height) * 100,
+    });
+  }, []);
+
+  if (!product) {
+    return (
+      <div className="product-not-found">
+        <Header />
+        <NavBar />
+        <div className="container">
+          <h2>Product not found</h2>
+          <button onClick={() => navigate(-1)}>Go back</button>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 
   return (
     <>
       <Header />
       <NavBar />
-      <br />
-      <br />
-      <section className="py-20 overflow-hidden mt-10">
-        <div className="container">
-          <div className="row mb-24">
-            {/* Image Section */}
-            <div className="col-12 col-md-6 mb-8 mb-md-0">
-              <div className="row">
-                <div className="col-3 d-flex flex-column align-items-center pe-2 sub-images mt-10">
-                  {images.map((img, index) => (
+
+      <div className="product-page-container">
+        <section className="product-section">
+          <div className="product-container">
+            {/* Image Gallery */}
+            <div className="product-image-section">
+              <div className="thumbnail-container">
+                {images.map((img, index) => (
+                  <div
+                    key={index}
+                    className={`thumbnail-wrapper ${mainImageIndex === index ? "active" : ""}`}
+                    onClick={() => setMainImageIndex(index)}
+                    role="button"
+                    tabIndex="0"
+                    onKeyDown={(e) => e.key === "Enter" && setMainImageIndex(index)}
+                    aria-label={`Thumbnail ${index + 1}`}
+                  >
                     <img
-                      key={index}
-                      className="sub-images img-fluid mb-2 rounded"
-                      style={{
-                        width: "80px",
-                        height: "80px",
-                        cursor: "pointer",
-                        objectFit: "cover",
-                      }}
+                      className="thumbnail-image"
                       src={img}
-                      alt={`Thumbnail ${index}`}
-                      onClick={() => setMainImageIndex(index)}
+                      alt={`Thumbnail ${index + 1}`}
+                      loading="lazy"
+                      onError={(e) => (e.target.src = "/placeholder.png")}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <div className="main-image-container">
+                <div
+                  className="image-zoom-wrapper"
+                  onMouseEnter={() => setIsZoomed(true)}
+                  onMouseLeave={() => setIsZoomed(false)}
+                  onMouseMove={handleMouseMove}
+                  ref={imageRef}
+                >
+                  <img
+                    className="main-product-image"
+                    src={images[mainImageIndex]}
+                    alt={product.name}
+                    loading="eager"
+                  />
+                  {isZoomed && (
+                    <div
+                      className="zoom-lens"
+                      style={{
+                        left: `calc(${zoomPosition.x}% - 50px)`,
+                        top: `calc(${zoomPosition.y}% - 50px)`
+                      }}
+                    />
+                  )}
+                </div>
+
+                {isZoomed && (
+                  <div className="zoom-result">
+                    <div
+                      className="zoomed-image"
+                      style={{
+                        backgroundImage: `url(${images[mainImageIndex]})`,
+                        backgroundPosition: `${zoomPosition.x}% ${zoomPosition.y}%`
+                      }}
+                    />
+                  </div>
+                )}
+
+                <div className="image-navigation">
+                  <button className="nav-button prev" onClick={handlePrevImage} aria-label="Previous image">
+                    <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <button className="nav-button next" onClick={handleNextImage} aria-label="Next image">
+                    <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="image-indicators">
+                  {images.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setMainImageIndex(idx)}
+                      className={`indicator ${idx === mainImageIndex ? "active" : ""}`}
+                      aria-label={`Go to image ${idx + 1}`}
                     />
                   ))}
-                </div>
-                <div className="main-image-container col-9">
-                  <div className="position-relative mb-10" style={{ height: "564px" }}>
-                    <a
-                      className="position-absolute top-50 start-0 ms-2 translate-middle-y"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        handlePrevImage();
-                      }}
-                    >
-                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M15 18l-6-6 6-6" />
-                      </svg>
-                    </a>
-                    <img
-                      className="main-image-container img-fluid w-100 h-100"
-                      style={{ objectFit: "cover" }}
-                      src={images[mainImageIndex]}
-                      alt="Main Product"
-                    />
-                    <div className="d-flex justify-content-center gap-2 mt-2 d-md-none">
-                      {images.map((_, idx) => (
-                        <button
-                          key={idx}
-                          onClick={() => setMainImageIndex(idx)}
-                          className={`dot-button ${idx === mainImageIndex ? "active" : ""}`}
-                          style={{
-                            width: "10px",
-                            height: "10px",
-                            borderRadius: "50%",
-                            backgroundColor: idx === mainImageIndex ? "#0d6efd" : "#ccc",
-                            border: "none",
-                          }}
-                        />
-                      ))}
-                    </div>
-                    <a
-                      className="position-absolute top-50 end-0 me-2 translate-middle-y"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        handleNextImage();
-                      }}
-                    >
-                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M9 18l6-6-6-6" />
-                      </svg>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
 
             {/* Product Info */}
-            <div className="col-12 col-md-6">
-              <div className="ps-lg-20">
-                <div className="mb-10 pb-10 border-bottom">
-                  <span className="text-secondary">{product.Make}</span>
-                  <h1 className="mt-2 mb-2 mw-xl">{product.name}| {product.Products}</h1>
-<p className="text-muted fw-medium mb-4" style={{ fontSize: "1rem" }}>
-  {product.partname} | {product.make} | {product.seriesName}
-</p>
-
-                  <div className="mb-8 d-flex align-items-center">
-                    <Rating
-                      name="rating"
-                      value={rating}
-                      precision={0.5}
-                      onChange={(event, newValue) => setRating(newValue)}
-                    />
-                    <span className="ms-2 text-secondary">({product.reviews || 0} reviews)</span>
-                  </div>
-
-                  {product.stock_by_condition?.length > 0 && (
-                    <div className="mb-2">
-                      {product.stock_by_condition.map((item, index) => (
-                        <span
-                          key={index}
-                          className="badge bg-success text-white me-2 px-3 py-2"
-                          style={{ fontSize: "0.9rem", fontWeight: "500" }}
-                        >
-                          {item.condition} – Qty: {item.quantity}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
-                  <p className="d-inline-block mb-8 h5 text-info">${product.price}</p>
-                  <p className="mw-md text-secondary">
-                    {Array.isArray(product.description) ? product.description[0] : product.description}
+            <div className="product-info-section">
+              <div className="product-info-content">
+                <div className="product-header">
+                  <span className="product-make">{product.Make}</span>
+                  <h1 className="product-title">{product.name} | {product.Products}</h1>
+                  <p className="product-subtitle">
+                    {product.partname} | {product.make} | {product.seriesName}
                   </p>
                 </div>
 
-                {/* Features */}
-                <ul className="mb-4 text-secondary ps-3">
-                  {product.features?.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
+                <div className="rating-container">
+                  <Rating
+                    name="product-rating"
+                    value={rating}
+                    precision={0.5}
+                    onChange={(e, newValue) => setRating(newValue)}
+                  />
+                  <span className="review-count">({product.reviews || 0} reviews)</span>
+                </div>
 
-                {/* Variants */}
-                <div className="d-flex flex-wrap gap-3 mb-4">
-                  {subproducts?.map((subproduct, index) => (
-                    <div
-                      key={index}
-                      onClick={() => navigate(`/product/${subproduct.id}`)}
-                      className="size-option-box border rounded-2 p-3 text-center position-relative"
-                      style={{
-                        width: "180px",
-                        cursor: "pointer",
-                        transition: "all 0.3s ease-in-out",
-                        backgroundColor: "#f8f9fa",
-                      }}
+                {product.stock_by_condition?.length > 0 && (
+                  <div className="stock-container">
+                    {product.stock_by_condition.map((item, index) => (
+                      <span
+                        key={index}
+                        className={`stock-badge ${item.quantity > 0 ? "in-stock" : "out-of-stock"}`}
+                      >
+                        {item.condition} – {item.quantity > 0 ? `Qty: ${item.quantity}` : "Out of Stock"}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <div className="price-container">
+                  <span className="product-price">${product.price}</span>
+                  {product.originalPrice && (
+                    <span className="original-price">${product.originalPrice}</span>
+                  )}
+                </div>
+
+                <div className="tabs-container">
+                  {Object.keys(tabContent).map((tab) => (
+                    <button
+                      key={tab}
+                      className={`tab-button ${activeTab === tab ? "active" : ""}`}
+                      onClick={() => setActiveTab(tab)}
                     >
-                      <div className="fw-bold text-secondary mb-1">Model: {subproduct.Products}</div>
-                      <div className="price text-info mb-1">{subproduct.make}</div>
-                    </div>
+                      {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                    </button>
                   ))}
                 </div>
 
-                {/* Full Specifications */}
-                <h2 className="mt-4 mb-3">Specifications</h2>
-                <ul className="list-group mb-5">
-                  {(selectedVariant?.specifications || product.specifications || "")
-                    .split(",")
-                    .map((spec, index) => (
-                      <li key={index} className="list-group-item">
-                        {spec.trim()}
-                      </li>
-                    ))}
-                </ul>
+                <div className="tab-content">
+                  {typeof tabContent[activeTab] === "string" ? (
+                    <p>{tabContent[activeTab]}</p>
+                  ) : Array.isArray(tabContent[activeTab]) ? (
+                    <ul>
+                      {tabContent[activeTab].map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div>{tabContent[activeTab]}</div>
+                  )}
+                </div>
 
-                {/* Add to Cart */}
-                <div className="row mb-14 mt-4">
-                  <div className="col-12 col-xl-8 mb-4 mb-xl-0">
-                    <a className="btn w-100 btn-primary" href="#">
-                      Add to cart
-                    </a>
+                {product.features?.length > 0 && (
+                  <div className="features-container">
+                    <h3>Key Features</h3>
+                    <ul className="features-list">
+                      {product.features.map((feature, i) => (
+                        <li key={i}>
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0066cc" strokeWidth="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                          </svg>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+                )}
+
+                {subproducts?.length > 0 && (
+                  <div className="variants-container">
+                    <h3>Available Variants</h3>
+                    <div className="variants-grid">
+                      {subproducts.map((subproduct) => (
+                        <div
+                          key={subproduct.id}
+                          className="variant-card"
+                          onClick={() => navigate(`/product/${subproduct.id}`)}
+                          role="button"
+                          tabIndex="0"
+                          aria-label={`View ${subproduct.Products} variant`}
+                          onKeyDown={(e) => e.key === "Enter" && navigate(`/product/${subproduct.id}`)}
+                        >
+                          <div className="variant-model">{subproduct.Products}</div>
+                          <div className="variant-price">${subproduct.price}</div>
+                          <div className="variant-make">{subproduct.make}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="action-container">
+                  <button className="add-to-cart-button">Add to cart</button>
+                  <button className="wishlist-button" aria-label="Save to wishlist">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    Save to Wishlist
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+      </div>
 
-          {/* Tabs Section */}
-          {/* <div className="mt-16">
-            <div className="row mb-16 border-bottom border-2 mt-16">
-              {["description", "specifications", "reviews", "shipping", "brand"].map((tab) => (
-                <div key={tab} className="col-6 col-md-auto">
-                  <button
-                    className={`btn ${activeTab === tab ? "bg-white text-secondary shadow" : "text-secondary"}`}
-                    onClick={() => setActiveTab(tab)}
-                  >
-                    {tab.toUpperCase()}
-                  </button>
-                </div>
-              ))}
-            </div>
-
-            <h3 className="mb-8 text-info">{activeTab.toUpperCase()}</h3>
-            <p className="mw-2xl text-secondary">
-              {activeTab === "description" && selectedVariant?.description
-                ? selectedVariant.description
-                : activeTab === "specifications" && selectedVariant?.specifications
-                ? selectedVariant.specifications
-                : Array.isArray(tabContent[activeTab])
-                ? tabContent[activeTab][0]
-                : tabContent[activeTab]}
-            </p>
-          </div> */}
-        </div>
-      </section>
       <Footer />
     </>
   );
