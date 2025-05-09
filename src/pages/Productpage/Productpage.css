@@ -235,17 +235,34 @@
   font-size: 16px;
   margin: 0;
 }
-
 .rating-container {
   display: flex;
   align-items: center;
-  margin: 15px 0;
-  gap: 8px;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.circle-rating {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+}
+
+.star-icon {
+  color: #ffcc00;
+  font-size: 18px;
 }
 
 .review-count {
-  color: #666;
-  font-size: 14px;
+  font-size: 13px;
+  color: #555;
 }
 
 .stock-container {

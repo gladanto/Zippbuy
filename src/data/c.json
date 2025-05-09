@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": "e3",
+    "id": "e2",
     "partname": "Cylinder Liner",
     "partId": "P001",
     "name": "Cylinder Liner",
@@ -193,8 +193,8 @@
       }
     ],
     "subImages": [
-      "assets/p/RND68.jpg",
-      "assets/p/RND68.jpg"
+      "/assets/p/RND68.jpg",
+      "/assets/p/RND68.jpg"
     ],
     "stock": "Available",
     "condition": "Recondition",
@@ -233,14 +233,14 @@
       }
     ],
     "subImages": [
-      "assets/p/RND68.jpg",
-      "assets/p/RND68.jpg"
+     "/assets/p/RND68.jpg",
+      "/assets/p/RND68.jpg"
     ],
     "stock": "Available",
     "condition": "New",
     "category": "Cylinder Liner",
     "Header": "Cylinder Liner(Complete)",
-    "image": "assets/p/RND68.jpg",
+    "image":"/assets/p/RND68.jpg",
     "link": "#"
   },
   {

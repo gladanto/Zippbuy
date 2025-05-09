@@ -180,7 +180,7 @@ const Content = () => {
                   <div className="details">
                     <p><span>Part:</span> {product.partname || "N/A"}</p>
                     <p><span>Make:</span> {product.make || "N/A"}</p>
-                    <p><span>Products:</span> {product.seriesName || "N/A"}</p>
+                    <p><span>Products:</span> {product.Products || "N/A"}</p>
                   </div>
                   <button className="view-button" onClick={() => navigate(`/product/${product.id}`)}>
                     View Details

@@ -1,28 +1,43 @@
-import React, { useState, useRef, useCallback, useMemo } from "react";
+
+import React, { useState, useRef, useCallback, useMemo, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Rating } from "@mui/material";
 import NavBar from "../../components/TopNavBar/NavBar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/TestHome/Footer";
 import data from "../../data/c.json";
+import StarIcon from "@mui/icons-material/Star";
 import "./Productpage.css";
 
 const Productpage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [key, setKey] = useState(0); // Key to force re-render
 
-  const product = data.find((item) => item.id.toString() === id);
+  // Reset states when product changes
+  useEffect(() => {
+    setMainImageIndex(0);
+    setIsZoomed(false);
+    setActiveTab("description");
+    setKey(prev => prev + 1); // Force re-render
+  }, [id]);
+
+  const product = useMemo(() => {
+    return data.find((item) => item.id.toString() === id);
+  }, [id, data]);
+
   const seriesId = product?.seriesId;
   const partId = product?.partId;
 
   const subproducts = useMemo(() => {
+    if (!product) return [];
     return data.filter(
       (item) =>
         item.seriesId === seriesId &&
         item.partId === partId &&
         item.id.toString() !== id
     );
-  }, [data, seriesId, partId, id]);
+  }, [data, seriesId, partId, id, product]);
 
   const [rating, setRating] = useState(product?.rating || 4);
   const [mainImageIndex, setMainImageIndex] = useState(0);
@@ -81,7 +96,7 @@ const Productpage = () => {
       <Header />
       <NavBar />
 
-      <div className="product-page-container">
+      <div className="product-page-container" key={key}>
         <section className="product-section">
           <div className="product-container">
             {/* Image Gallery */}
@@ -183,12 +198,9 @@ const Productpage = () => {
                 </div>
 
                 <div className="rating-container">
-                  <Rating
-                    name="product-rating"
-                    value={rating}
-                    precision={0.5}
-                    onChange={(e, newValue) => setRating(newValue)}
-                  />
+                  <div className="circle-rating">
+                    {rating.toFixed(1)} <StarIcon className="star-icon" fontSize="small" />
+                  </div>
                   <span className="review-count">({product.reviews || 0} reviews)</span>
                 </div>
 
