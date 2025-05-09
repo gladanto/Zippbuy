@@ -33,6 +33,37 @@ $light-grey: #f0f0f0;
   }
 }
 
+
+.nav-item {
+  .icon-wrapper {
+    transition: all 0.2s ease;
+    
+    &:hover {
+      .icon {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+      }
+      .dropdown-name {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  &.active-category {
+    .icon-wrapper {
+      .icon {
+        filter: brightness(1.1);
+      }
+      .dropdown-name {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
 .category-link {
   display: flex;
   flex-direction: column;
@@ -161,7 +192,7 @@ $light-grey: #f0f0f0;
 }
 .mega-menu {
   position: absolute;
-  top: 100%;
+  top: 80px;
   left: 0;
   background: rgb(218, 223, 223);
   padding: 20px 20px;

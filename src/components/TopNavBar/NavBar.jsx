@@ -137,18 +137,24 @@ const NavBar = () => {
           handleCategoryClick(category.id);
         }}
       >
-        <div className="icon-wrapper">
-          {!isMobile && category.img && (
-            <img
-              src={category.img}
-              alt={category.alt || ""}
-              className="icon"
-              onMouseEnter={() => !isMobile && setActiveCategory(category.id)}
-              onMouseLeave={() => !isMobile && !dropdownClicked && setActiveCategory(null)}
-            />
-          )}
-          <span className="dropdown-name">{category.name}</span>
-        </div>
+       <div className="icon-wrapper">
+  {!isMobile && category.img && (
+    <img
+      src={category.img}
+      alt={category.alt || ""}
+      className="icon"
+      onMouseEnter={() => !isMobile && setActiveCategory(category.id)}
+      onMouseLeave={() => !isMobile && !dropdownClicked && setActiveCategory(null)}
+    />
+  )}
+  <span 
+    className="dropdown-name"
+    onMouseEnter={() => !isMobile && setActiveCategory(category.id)}
+    onMouseLeave={() => !isMobile && !dropdownClicked && setActiveCategory(null)}
+  >
+    {category.name}
+  </span>
+</div>
       </a>
 
       {/* Desktop Mega Menu */}
