@@ -76,6 +76,18 @@ const Productpage = () => {
       y: (y / rect.height) * 100,
     });
   }, []);
+  const handleVariantClick = (subproduct) => {
+    console.group("Variant Clicked");
+    console.log("Current product ID:", id);
+    console.log("Navigating to variant ID:", subproduct.id);
+    console.log("Variant details:", {
+      name: subproduct.Products,
+      make: subproduct.make,
+      price: subproduct.price
+    });
+    console.groupEnd();
+    navigate(`/product/${subproduct.id}`);
+  };
 
   if (!product) {
     return (
@@ -266,29 +278,28 @@ const Productpage = () => {
                     </ul>
                   </div>
                 )}
-
-                {subproducts?.length > 0 && (
-                  <div className="variants-container">
-                    <h3>Available Variants</h3>
-                    <div className="variants-grid">
-                      {subproducts.map((subproduct) => (
-                        <div
-                          key={subproduct.id}
-                          className="variant-card"
-                          onClick={() => navigate(`/product/${subproduct.id}`)}
-                          role="button"
-                          tabIndex="0"
-                          aria-label={`View ${subproduct.Products} variant`}
-                          onKeyDown={(e) => e.key === "Enter" && navigate(`/product/${subproduct.id}`)}
-                        >
-                          <div className="variant-model">{subproduct.Products}</div>
-                          <div className="variant-price">${subproduct.price}</div>
-                          <div className="variant-make">{subproduct.make}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
+ {subproducts?.length > 0 && (
+    <div className="variants-container">
+      <h3>Available Variants</h3>
+      <div className="variants-grid">
+        {subproducts.map((subproduct) => (
+          <div
+            key={subproduct.id}
+            className="variant-card"
+            onClick={() => handleVariantClick(subproduct)}
+            role="button"
+            tabIndex="0"
+            aria-label={`View ${subproduct.Products} variant`}
+            onKeyDown={(e) => e.key === "Enter" && handleVariantClick(subproduct)}
+          >
+            <div className="variant-model">{subproduct.Products}</div>
+            <div className="variant-price">${subproduct.price}</div>
+            <div className="variant-make">{subproduct.make}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
 
                 <div className="action-container">
                   <button className="add-to-cart-button">Add to cart</button>

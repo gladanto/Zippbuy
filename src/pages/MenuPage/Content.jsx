@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from "react";
 import "./Content.scss";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +13,7 @@ const Content = () => {
   const [filterSeries, setFilterSeries] = useState(null);
   const [filterPartName, setFilterPartName] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
 
   const categories = [...new Set(productsData.map((product) => product.category?.trim()))];
 
@@ -34,27 +34,32 @@ const Content = () => {
   }, [selectedCategory]);
 
   const headerFilters = useMemo(() => {
-    return [...new Set(allProducts.map((p) => p.Header?.trim()).filter(Boolean))];
+    const headers = [...new Set(allProducts.map((p) => p.Header?.trim()).filter(Boolean))];
+    return headers;
   }, [allProducts]);
 
   const partNames = useMemo(() => {
-    return [...new Set(allProducts.map((p) => p.partname?.trim()).filter(Boolean))];
+    const parts = [...new Set(allProducts.map((p) => p.partname?.trim()).filter(Boolean))];
+    return parts;
   }, [allProducts]);
 
   const companies = useMemo(() => {
-    return [...new Set(allProducts.map((p) => p.make?.trim()).filter(Boolean))];
+    const makes = [...new Set(allProducts.map((p) => p.make?.trim()).filter(Boolean))];
+    return makes;
   }, [allProducts]);
 
   const models = useMemo(() => {
-    return [...new Set(allProducts.map((p) => p.Model?.trim()).filter(Boolean))];
+    const modelList = [...new Set(allProducts.map((p) => p.Model?.trim()).filter(Boolean))];
+    return modelList;
   }, [allProducts]);
 
   const seriesNames = useMemo(() => {
-    return [...new Set(allProducts.map((p) => p.seriesName?.trim()).filter(Boolean))];
+    const series = [...new Set(allProducts.map((p) => p.seriesName?.trim()).filter(Boolean))];
+    return series;
   }, [allProducts]);
 
   const filteredProducts = useMemo(() => {
-    return allProducts.filter((product) => {
+    const filtered = allProducts.filter((product) => {
       const matchHeader = filterHeader ? product.Header?.trim() === filterHeader : true;
       const matchMake = filterMake ? product.make?.trim() === filterMake : true;
       const matchModel = filterModel ? product.Model?.trim() === filterModel : true;
@@ -62,7 +67,29 @@ const Content = () => {
       const matchPartName = filterPartName ? product.partname?.trim() === filterPartName : true;
       return matchHeader && matchMake && matchModel && matchSeries && matchPartName;
     });
+    return filtered;
   }, [allProducts, filterHeader, filterMake, filterModel, filterSeries, filterPartName]);
+
+  const handleProductClick = (product) => {
+    console.group("Product Click Details");
+    console.log("Product ID:", product.id);
+    console.log("Product Name:", product.partname || "N/A");
+    console.log("Make:", product.make || "N/A");
+    console.log("Model:", product.Products || "N/A");
+    console.log("Category:", product.category || "N/A");
+    console.groupEnd();
+    
+    navigate(`/product/${product.id}`);
+  };
+
+  const handleResetFilters = () => {
+    console.log("Resetting all filters");
+    setFilterHeader(null);
+    setFilterMake(null);
+    setFilterModel(null);
+    setFilterSeries(null);
+    setFilterPartName(null);
+  };
 
   return (
     <div className="content-container">
@@ -96,20 +123,35 @@ const Content = () => {
                 <button
                   key={idx}
                   className={`part-button ${filterHeader === header ? "selected" : ""}`}
-                  onClick={() => setFilterHeader(header)}
+                  onClick={() => {
+                    console.log("Header filter selected:", header);
+                    setFilterHeader(header);
+                  }}
                 >
                   {header}
                 </button>
               ))}
             </div>
-            <button className="clear-parts" onClick={() => setFilterHeader(null)}>
+            <button 
+              className="clear-parts" 
+              onClick={() => {
+                console.log("Clearing header filter");
+                setFilterHeader(null);
+              }}
+            >
               Clear
             </button>
           </div>
         )}
 
         {/* Mobile Menu Toggle */}
-        <button className="mobile-menu-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button 
+          className="mobile-menu-toggle" 
+          onClick={() => {
+            console.log("Mobile menu toggled:", !mobileMenuOpen);
+            setMobileMenuOpen(!mobileMenuOpen);
+          }}
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-boxes" viewBox="0 0 16 16">
             <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
           </svg>
@@ -120,7 +162,10 @@ const Content = () => {
           <select
             className="filter-select"
             value={filterPartName || ""}
-            onChange={(e) => setFilterPartName(e.target.value || null)}
+            onChange={(e) => {
+              console.log("Part name filter changed:", e.target.value || "All");
+              setFilterPartName(e.target.value || null);
+            }}
           >
             <option value="" hidden>All Parts</option>
             {partNames.map((part, idx) => (
@@ -131,7 +176,10 @@ const Content = () => {
           <select
             className="filter-select"
             value={filterMake || ""}
-            onChange={(e) => setFilterMake(e.target.value || null)}
+            onChange={(e) => {
+              console.log("Make filter changed:", e.target.value || "All");
+              setFilterMake(e.target.value || null);
+            }}
           >
             <option value="" hidden>All Makes</option>
             {companies.map((make, idx) => (
@@ -139,26 +187,9 @@ const Content = () => {
             ))}
           </select>
 
-          {/* <select
-            className="filter-select"
-            value={filterSeries || ""}
-            onChange={(e) => setFilterSeries(e.target.value || null)}
-          >
-            <option value="" hidden>All Models</option>
-            {seriesNames.map((series, idx) => (
-              <option key={idx} value={series}>{series}</option>
-            ))}
-          </select> */}
-
           <button
             className="clear-filters"
-            onClick={() => {
-              setFilterHeader(null);
-              setFilterMake(null);
-              setFilterModel(null);
-              setFilterSeries(null);
-              setFilterPartName(null);
-            }}
+            onClick={handleResetFilters}
           >
             Reset All
           </button>
@@ -173,7 +204,10 @@ const Content = () => {
                   <img
                     src={product.image || "/assets/default.jpg"}
                     alt={product.partname || "Product"}
-                    onError={(e) => (e.target.src = "/assets/default.jpg")}
+                    onError={(e) => {
+                      console.warn("Image failed to load, using fallback:", product.image);
+                      e.target.src = "/assets/default.jpg";
+                    }}
                   />
                 </div>
                 <div className="product-info">
@@ -182,7 +216,10 @@ const Content = () => {
                     <p><span>Make:</span> {product.make || "N/A"}</p>
                     <p><span>Products:</span> {product.Products || "N/A"}</p>
                   </div>
-                  <button className="view-button" onClick={() => navigate(`/product/${product.id}`)}>
+                  <button 
+                    className="view-button" 
+                    onClick={() => handleProductClick(product)}
+                  >
                     View Details
                   </button>
                 </div>
@@ -193,13 +230,7 @@ const Content = () => {
               <p>No products match your filters</p>
               <button
                 className="reset-button"
-                onClick={() => {
-                  setFilterHeader(null);
-                  setFilterMake(null);
-                  setFilterModel(null);
-                  setFilterSeries(null);
-                  setFilterPartName(null);
-                }}
+                onClick={handleResetFilters}
               >
                 Reset Filters
               </button>
