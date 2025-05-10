@@ -1,6 +1,4 @@
 
-
-
 $sidebar-width: 280px;
 $mobile-breakpoint: 992px;
 $primary-color: #2563eb;
@@ -49,7 +47,6 @@ body, html {
   background-color: white;
   border-right: 1px solid $border-color;
   padding: 20px;
-  //overflow-y: auto;
   overflow: hidden;
   transition: transform 0.3s ease;
   z-index: 100;
@@ -61,19 +58,6 @@ body, html {
 
     &.mobile-open {
       transform: translateX(0);
-    }
-  }
-
-  .sidebar-category {
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    background-color: $light-bg;
-    border-radius: 8px;
-    cursor: pointer;
-
-    .sidebar-title {
-      font-weight: 600;
-      color: $text-color;
     }
   }
 
@@ -104,15 +88,16 @@ body, html {
     }
   }
 }
+
 .mobile-menu-toggle {
-  display: none !important; // Make absolutely sure it's hidden on desktop
+  display: none !important;
 
   position: absolute;
-  top: 245px;
-  right: 15px;
+  top: 15px;
+  right: 20px;
   z-index: 101;
-  background: #0c0c0c;
-  color: white;
+  background: black;
+  color: rgb(248, 245, 245);
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -121,10 +106,9 @@ body, html {
   cursor: pointer;
 
   @media (max-width: $mobile-breakpoint) {
-    display: flex !important; // Override and show it only on mobile/tablet
+    display: flex !important;
   }
 }
-
 
 // Main Content Styles
 .main-content {
@@ -134,10 +118,52 @@ body, html {
   background-color: $light-bg;
 }
 
-// Filter Sections
+// Filter Header Styles
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .category-title {
+    color: $text-color;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $primary-color;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.make-filter {
+  select {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid $border-color;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 200px;
+
+    &:hover {
+      border-color: darken($border-color, 10%);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 2px rgba($primary-color, 0.1);
+    }
+  }
+}
+
+// Part Filter Section
 .part-filter-section {
   background: white;
-  padding: 15px 20px;
+  padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
   display: flex;
@@ -145,6 +171,7 @@ body, html {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   .part-buttons {
     display: flex;
@@ -155,59 +182,133 @@ body, html {
     .part-button {
       padding: 8px 16px;
       border-radius: 20px;
-      border: none;
-      background-color: #f0f0f0;
+      border: 1px solid $border-color;
+      background-color: white;
       cursor: pointer;
       transition: all 0.2s;
+      font-size: 14px;
 
-      &:hover, &.selected {
+      &:hover {
+        background-color: rgba($primary-color, 0.1);
+        border-color: $primary-color;
+      }
+
+      &.selected {
         background-color: $primary-color;
         color: white;
+        border-color: $primary-color;
       }
     }
   }
 
   .clear-parts {
+    padding: 8px 16px;
     background: none;
     border: none;
     color: $accent-color;
     cursor: pointer;
     font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
-.filter-controls {
+// Series Grid Styles
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.series-card {
   background: white;
-  padding: 15px 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
+  overflow: hidden;
+  @include card-shadow;
+  cursor: pointer;
+  border: 1px solid $border-color;
 
-  .filter-select {
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: 1px solid $border-color;
-    min-width: 180px;
-    cursor: pointer;
-    background-color: white;
-    transition: border-color 0.2s;
+  .series-image-container {
+    height: 180px;
+    overflow: hidden;
+    background: #f9fafb;
+    @include flex-center;
 
-    &:hover {
-      border-color: darken($border-color, 10%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.5s;
     }
   }
 
-  .clear-filters {
-    padding: 10px 15px;
+  &:hover .series-image-container img {
+    transform: scale(1.05);
+  }
+
+  .series-info {
+    padding: 15px;
+    border-top: 1px solid $border-color;
+
+    h3 {
+      margin: 0 0 8px 0;
+      color: $text-color;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .product-name {
+      margin: 0 0 5px 0;
+      color: #111827;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .make-name {
+      margin: 0 0 5px 0;
+      color: $light-text;
+      font-size: 13px;
+    }
+
+    .models-available {
+      margin: 8px 0 0 0;
+      color: lighten($light-text, 10%);
+      font-size: 12px;
+    }
+  }
+}
+
+// No Series Found Styles
+.no-series {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  color: $light-text;
+
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .reset-button {
+    padding: 10px 20px;
     background-color: $accent-color;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.2s;
+    font-size: 14px;
 
     &:hover {
       background-color: darken($accent-color, 10%);
@@ -215,108 +316,41 @@ body, html {
   }
 }
 
-// Product Grid
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+// Responsive adjustments
+@media (max-width: $mobile-breakpoint) {
+  .main-content {
+    padding-top: 70px;
   }
 
-  .product-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    @include card-shadow;
+  .mobile-menu-toggle {
+    top: 230px;
+    right: 25px;
+  }
 
-    .image-container {
-      height: 200px;
-      background: #f9fafb;
-      @include flex-center;
-      padding: 20px;
+  .filter-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-      }
-    }
-
-    .product-info {
-      padding: 15px;
-
-      h3 {
-        margin: 0 0 10px;
-        font-size: 16px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .price {
-        font-weight: 700;
-        color: $accent-color;
-        font-size: 18px;
-        margin: 0 0 10px;
-      }
-
-      .details {
-        p {
-          margin: 5px 0;
-          font-size: 14px;
-
-          span {
-            font-weight: 600;
-            color: $text-color;
-          }
-        }
-      }
-
-      .view-button {
+    .make-filter {
+      width: 100%;
+      
+      select {
         width: 100%;
-        padding: 10px;
-        margin-top: 15px;
-        background-color: $primary-color;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-
-        &:hover {
-          background-color: $secondary-color;
-        }
       }
     }
   }
-}
 
-.no-products {
-  grid-column: 1 / -1;
-  @include flex-center;
-  flex-direction: column;
-  padding: 40px;
-  background: white;
-  border-radius: 10px;
+  .part-filter-section {
+    flex-direction: column;
+    align-items: flex-start;
 
-  p {
-    margin-bottom: 20px;
-    color: $light-text;
-  }
+    .part-buttons {
+      width: 100%;
+    }
 
-  .reset-button {
-    padding: 10px 20px;
-    background-color: $primary-color;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-
-    &:hover {
-      background-color: $secondary-color;
+    .clear-parts {
+      align-self: flex-end;
     }
   }
 }
