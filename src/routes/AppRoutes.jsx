@@ -1,6 +1,3 @@
-
-import { useState, useEffect } from 'react';
-import React from 'react';
 import { Route, Routes} from 'react-router-dom';
 import HomePage from "../pages/HomePage/Home";
 import Menu from "../pages/MenuPage/Menu";
@@ -16,7 +13,6 @@ function AppRoutes() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />
-          {/* <Route path='/Product' element={<Productpage/>} /> */}
           <Route path="/product/:id" element={<Productpage />} />
       </Routes>
     </div>
