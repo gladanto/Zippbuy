@@ -16,7 +16,7 @@ const products = [
   {
     name: "ZippBuy",
     logo: "/assets/p.z.png",
-    website: "https://zippbuy.enochshipping.com/",
+    website: "https://zippbay.com/",
   },
 ];
 
