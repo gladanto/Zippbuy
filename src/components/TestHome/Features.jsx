@@ -88,12 +88,12 @@ const Features = () => {
           <div className="text-content">
             <h2 className="section-subtitle">Spares and Stores</h2>
             <p className="section-description">
-            Ship's spares and stores are essential for the smooth running of vessel.
-            To provide such spares and stores on time without any hiccup is our mission. 
-            We leave no stone unturned to find the simplest cost effective method of delivery basis vessel trading route.
-            For this we have experienced professionals who have been doing this for the past 15 years.
-            We not only supply the spare and store but also work towards quick deliveries when port changes happen at the last minute.
-            Partner with us for smooth delivery at all times.
+              Ship's spares and stores are essential for the smooth running of vessel.
+              To provide such spares and stores on time without any hiccup is our mission.
+              We leave no stone unturned to find the simplest cost effective method of delivery basis vessel trading route.
+              For this we have experienced professionals who have been doing this for the past 15 years.
+              We not only supply the spare and store but also work towards quick deliveries when port changes happen at the last minute.
+              Partner with us for smooth delivery at all times.
             </p>
           </div>
           <div className="image-content">
@@ -131,7 +131,7 @@ const Features = () => {
             <h2 className="section-subtitle">Fitting,Welding and Fabrication</h2>
             <p className="section-description">
               Ship repair cannot be complete without a competent team of Fitters. We have a host
-              of Certified manpower to carry out any type of fitting, welding and Fabrication work. 
+              of Certified manpower to carry out any type of fitting, welding and Fabrication work.
               Our manpower are not only certified but also hold documents to sail onboard to carry out
               repairs while sailing along with the ship.
             </p>

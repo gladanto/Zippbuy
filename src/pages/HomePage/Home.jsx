@@ -2,7 +2,7 @@ import React from "react";
 import './Home.scss';
 import Header from "../../components/Header/Header";
 import NavBar from "../../components/TopNavBar/NavBar";
-import About from "../../components/TestHome/About";
+import AboutUs from "../../components/TestHome/AboutUs"
 import Services from "../../components/TestHome/Services";
 import Features from "../../components/TestHome/Features";
 import Footer from "../../components/TestHome/Footer";
@@ -14,10 +14,10 @@ const Home = () => {
       <Header />
       <NavBar />
       <Welcome />
-      <About/>
-      <Services/>
-      <Features/>
-      <Footer/>
+      <AboutUs />
+      <Services />
+      <Features />
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,7 @@
-.Main-img{
-    height: 400px;
+.Main-img {
+  height: 400px;
 }
-.product-img{
-    overflow: hidden;
-    object-fit: contain;
+.product-img {
+  overflow: hidden;
+  object-fit: contain;
 }

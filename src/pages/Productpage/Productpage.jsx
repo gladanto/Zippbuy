@@ -7,12 +7,12 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/TestHome/Footer";
 import data from "../../data/c.json";
 import StarIcon from "@mui/icons-material/Star";
-import "./Productpage.css";
+import "./Productpage.scss";
 
 const Productpage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [key, setKey] = useState(0); // Key to force re-render
+  const [key, setKey] = useState(0);
 
   // Reset states when product changes
   useEffect(() => {
@@ -278,28 +278,28 @@ const Productpage = () => {
                     </ul>
                   </div>
                 )}
- {subproducts?.length > 0 && (
-    <div className="variants-container">
-      <h3>Available Variants</h3>
-      <div className="variants-grid">
-        {subproducts.map((subproduct) => (
-          <div
-            key={subproduct.id}
-            className="variant-card"
-            onClick={() => handleVariantClick(subproduct)}
-            role="button"
-            tabIndex="0"
-            aria-label={`View ${subproduct.Products} variant`}
-            onKeyDown={(e) => e.key === "Enter" && handleVariantClick(subproduct)}
-          >
-            <div className="variant-model">{subproduct.Products}</div>
-            <div className="variant-price">${subproduct.price}</div>
-            <div className="variant-make">{subproduct.make}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  )}
+                {subproducts?.length > 0 && (
+                  <div className="variants-container">
+                    <h3>Available Variants</h3>
+                    <div className="variants-grid">
+                      {subproducts.map((subproduct) => (
+                        <div
+                          key={subproduct.id}
+                          className="variant-card"
+                          onClick={() => handleVariantClick(subproduct)}
+                          role="button"
+                          tabIndex="0"
+                          aria-label={`View ${subproduct.Products} variant`}
+                          onKeyDown={(e) => e.key === "Enter" && handleVariantClick(subproduct)}
+                        >
+                          <div className="variant-model">{subproduct.Products}</div>
+                          <div className="variant-price">${subproduct.price}</div>
+                          <div className="variant-make">{subproduct.make}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="action-container">
                   <button className="add-to-cart-button">Add to cart</button>

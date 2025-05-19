@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "/assets/logo.png";
 import "./Footer.scss";
@@ -9,15 +9,15 @@ const Footer = () => {
       <div className="footer-container">
         {/* Header Section */}
         <div className="footer-header">
-          <img 
-            src={logo} 
-            alt="Company Logo" 
-            className="logo hover-opacity" 
-            style={{ 
-              height: "70px", 
+          <img
+            src={logo}
+            alt="Company Logo"
+            className="logo hover-opacity"
+            style={{
+              height: "70px",
               cursor: "pointer",
               transition: "opacity 0.0s ease"
-            }} 
+            }}
           />
           <p>Call or Message Us for a detailed expression of our expertise!</p>
         </div>
@@ -27,10 +27,10 @@ const Footer = () => {
           <div className="footer-column">
             <h3>COMPANY</h3>
             <ul className="links-list">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/contact">Contact Us</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/terms">Terms & Conditions</Link></li>
             </ul>
             <h3>FOLLOW US</h3>
             <div className="social-icons">

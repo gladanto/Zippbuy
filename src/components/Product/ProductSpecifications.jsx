@@ -3,8 +3,8 @@ import "./Productdes.css";
 
 const ProductSpecifications = () => {
   const specifications = [
- 
-  ""
+
+    ""
   ];
 
   return (

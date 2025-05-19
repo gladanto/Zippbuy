@@ -1,4 +1,3 @@
-
 $sidebar-width: 280px;
 $mobile-breakpoint: 992px;
 $primary-color: #2563eb;
@@ -27,11 +26,12 @@ $light-text: #6b7280;
 }
 
 // Base Styles
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: $light-bg;
 }
 
@@ -334,7 +334,7 @@ body, html {
 
     .make-filter {
       width: 100%;
-      
+
       select {
         width: 100%;
       }

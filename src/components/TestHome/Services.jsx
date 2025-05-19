@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Services.scss';
-import sideImage from '../../../public/assets/s7.png'; 
+import sideImage from '../../../public/assets/s7.png';
 import s1 from '../../../public/assets/s1.png';
 import s2 from '../../../public/assets/s2.png';
 import s3 from '../../../public/assets/s3.png';

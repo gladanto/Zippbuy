@@ -55,7 +55,7 @@ const Content = () => {
         (product) => product.Header?.trim() === filterHeader
       );
     }
-    
+
     const groups = {};
     categoryProducts.forEach((product) => {
       const series = product.seriesName?.trim();
@@ -66,7 +66,7 @@ const Content = () => {
         groups[series].push(product);
       }
     });
-    
+
     return groups;
   }, [selectedCategory, selectedMake, filterHeader]);
 
@@ -94,8 +94,8 @@ const Content = () => {
       {/* Main Content */}
       <div className="main-content">
         {/* Mobile Menu Toggle */}
-        <button 
-          className="mobile-menu-toggle" 
+        <button
+          className="mobile-menu-toggle"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-boxes" viewBox="0 0 16 16">
@@ -107,7 +107,7 @@ const Content = () => {
         <div className="series-display-section">
           <div className="filter-header">
             <h2 className="category-title">{selectedCategory}</h2>
-            
+
             {/* Make Filter Dropdown */}
             <div className="make-filter">
               <select
@@ -139,8 +139,8 @@ const Content = () => {
                 ))}
               </div>
               {filterHeader && (
-                <button 
-                  className="clear-parts" 
+                <button
+                  className="clear-parts"
                   onClick={() => setFilterHeader(null)}
                 >
                   Clear
@@ -148,14 +148,14 @@ const Content = () => {
               )}
             </div>
           )}
-          
+
           <div className="series-grid">
             {Object.keys(seriesGroups).length > 0 ? (
               Object.entries(seriesGroups).map(([series, products]) => {
                 const firstProduct = products[0];
                 return (
-                  <div 
-                    key={series} 
+                  <div
+                    key={series}
                     className="series-card"
                     onClick={() => handleSeriesClick(series, firstProduct)}
                   >
@@ -169,9 +169,9 @@ const Content = () => {
                       />
                     </div>
                     <div className="series-info">
-                     <h2 className="product-name">{firstProduct.partname || firstProduct.name || "Product"}</h2>
+                      <h2 className="product-name">{firstProduct.partname || firstProduct.name || "Product"}</h2>
                       <h3 className="make-name">{firstProduct.make || "N/A"}</h3>
-                       <h3>{series}</h3>
+                      <h3>{series}</h3>
 
                       <p className="models-available">{products.length} models available</p>
                     </div>

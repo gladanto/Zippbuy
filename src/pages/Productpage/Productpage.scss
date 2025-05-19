@@ -67,7 +67,6 @@
 .main-image-container {
   position: relative;
   margin-left: 95px;
-  
 }
 
 .main-product-image {
@@ -81,7 +80,7 @@
 .image-zoom-wrapper {
   position: relative;
   cursor: zoom-in;
-  overflow:visible;
+  overflow: visible;
   border-radius: 8px;
 }
 
@@ -513,11 +512,11 @@
   .product-title {
     font-size: 24px;
   }
-  
+
   .variants-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-  
+
   .action-container {
     flex-direction: column;
   }
