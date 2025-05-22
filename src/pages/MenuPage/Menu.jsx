@@ -29,7 +29,7 @@ const Menu = () => {
         subCategory={subCategory}
         childSubCategory={childSubCategory}
       />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

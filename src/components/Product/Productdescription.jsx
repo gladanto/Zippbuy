@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Productdes.css";
+import "./Productdes.scss";
 import Productsubimg from "./Productsubimg";
 import ProductSpecifications from "./ProductSpecifications";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { BiMap, BiPhone, BiEnvelope } from "react-icons/bi";
+import { BiMap, BiPhone, BiEnvelope, BiMobile} from "react-icons/bi";
 import "./Contact.scss"; // Import custom styles
 
 const Contact = () => {
@@ -45,7 +45,7 @@ const Contact = () => {
                   className="icon"
                   onClick={() => (window.location.href = "tel:+914424460444")}
                 />
-              </div>
+                </div>
               <h5 className="fw-bold">Contact Us</h5>
               <p className="small">
                 <a href="tel:+914424460444" className="text-decoration-none text-dark">
@@ -53,9 +53,14 @@ const Contact = () => {
                 </a>
               </p>
               <p className="small">
+                <a href="tel:+91-9790865554" className="text-decoration-none text-dark">
+                  +91-9790865554
+                </a>
+              </p>
+              <p className="small">
                 <BiEnvelope />{" "}
-                <a href="mailto:zippbuy@enochshipping.com" className="text-decoration-none">
-                  zippbuy@enochshipping.com
+                <a href="mailto:info@zippbay.com" className="text-decoration-none">
+                  info@zippbay.com
                 </a>
               </p>
             </Card>

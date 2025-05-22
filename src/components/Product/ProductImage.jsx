@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Productcard.css"
+import "./Productcard.scss"
 const ProductImage = () => {
   return (
     <div className='Main-img'>

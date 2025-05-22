@@ -14,8 +14,8 @@ const products = [
     website: "https://mexain.com/",
   },
   {
-    name: "ZippBuy",
-    logo: "/assets/p.z.png",
+    name: "ZippBay",
+    logo: "/assets/logo.png",
     website: "https://zippbay.com/",
   },
 ];

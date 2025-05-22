@@ -19,7 +19,6 @@ const Footer = () => {
               transition: "opacity 0.0s ease"
             }}
           />
-          <p>Call or Message Us for a detailed expression of our expertise!</p>
         </div>
         {/* Main Content - 3 Columns */}
         <div className="footer-grid">
@@ -27,10 +26,10 @@ const Footer = () => {
           <div className="footer-column">
             <h3>COMPANY</h3>
             <ul className="links-list">
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/"onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
-              <li><Link to="/terms">Terms & Conditions</Link></li>
+              <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Terms & Conditions</Link></li>
             </ul>
             <h3>FOLLOW US</h3>
             <div className="social-icons">
@@ -51,7 +50,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3>ADDRESS</h3>
             <div className="address-section">
-              <p>12, Demonte St, </p>
+              <p>NO. 1, OLD NO. 12, Demonte St, </p>
               <p>Santhome, Chennai,</p>
               <p>Tamil Nadu 60004, India</p>
             </div>

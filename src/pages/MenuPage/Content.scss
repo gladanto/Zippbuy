@@ -8,7 +8,6 @@ $border-color: #e5e7eb;
 $text-color: #111827;
 $light-text: #6b7280;
 
-// Mixins
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -25,7 +24,6 @@ $light-text: #6b7280;
   }
 }
 
-// Base Styles
 body,
 html {
   margin: 0;
@@ -37,11 +35,9 @@ html {
 
 .content-container {
   display: flex;
-  height: 100vh;
   overflow: hidden;
 }
 
-// Sidebar Styles
 .sidebar {
   width: $sidebar-width;
   background-color: white;
@@ -110,7 +106,6 @@ html {
   }
 }
 
-// Main Content Styles
 .main-content {
   flex: 1;
   overflow-y: auto;
@@ -118,7 +113,6 @@ html {
   background-color: $light-bg;
 }
 
-// Filter Header Styles
 .filter-header {
   display: flex;
   justify-content: space-between;
@@ -160,7 +154,6 @@ html {
   }
 }
 
-// Part Filter Section
 .part-filter-section {
   background: white;
   padding: 15px;
@@ -217,7 +210,6 @@ html {
   }
 }
 
-// Series Grid Styles
 .series-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -286,7 +278,6 @@ html {
   }
 }
 
-// No Series Found Styles
 .no-series {
   grid-column: 1 / -1;
   text-align: center;
@@ -316,7 +307,6 @@ html {
   }
 }
 
-// Responsive adjustments
 @media (max-width: $mobile-breakpoint) {
   .main-content {
     padding-top: 70px;

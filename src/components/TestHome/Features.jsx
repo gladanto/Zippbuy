@@ -1,11 +1,11 @@
 import React from 'react';
 import './Features.scss';
-import VessaleImage from '../../../public/assets/_1.png';
-import charteringImage from '../../../public/assets/Hydroblasting.jpeg.jpg';
-import repairImage from '../../../public/assets/_4.png';
-import IHMImage from '../../../public/assets/rope-access.jpg'
-import smartShippingImage from '../../../public/assets/ship_block_fab.jpg';
-import sparesImage from '../../../public/assets/_6.png';
+import VessaleImage from '/assets/_1.png';
+import charteringImage from '/assets/Hydroblasting.jpeg.jpg';
+import repairImage from '/assets/_4.png';
+import IHMImage from '/assets/rope-access.jpg'
+import smartShippingImage from '/assets/ship_block_fab.jpg';
+import sparesImage from '/assets/_6.png';
 
 const Features = () => {
   return (
