@@ -8,7 +8,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate("/", { replace: true });
+    navigate(`/`, { replace: true });
   };
 
   return (

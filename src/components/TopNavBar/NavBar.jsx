@@ -71,12 +71,11 @@ const NavBar = () => {
           prev === subCategory.id ? null : subCategory.id
         );
         setActiveChildSubcategory(null);
-      } else {
-        navigate("/menu", { state: { category, subCategory } });
       }
-    } else {
-      navigate("/menu", { state: { category, subCategory } });
     }
+    sessionStorage.setItem('category', JSON.stringify(category));
+    sessionStorage.setItem('subCategory', JSON.stringify(subCategory));
+      navigate(`/menu`);
   };
 
   const handleChildSubCategoryClick = (
@@ -90,7 +89,10 @@ const NavBar = () => {
       event.stopPropagation();
     }
     setActiveChildSubcategory(childSubCategory.id);
-    navigate("/menu", { state: { category, subCategory, childSubCategory } });
+    sessionStorage.setItem('category', JSON.stringify(category));
+    sessionStorage.setItem('subCategory', JSON.stringify(subCategory));
+    sessionStorage.setItem('childSubCategory', JSON.stringify(childSubCategory));
+    navigate(`/menu`);
   };
 
   return (

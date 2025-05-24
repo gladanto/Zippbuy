@@ -1,11 +1,11 @@
 .product-page-container {
   padding: 20px;
-  max-width: 1400px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .product-section {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .product-container {
@@ -22,7 +22,6 @@
   height: fit-content;
   flex: 0 0 45%;
   max-width: 600px;
-  align-self: flex-start;
 }
 
 .thumbnail-container {
@@ -191,7 +190,7 @@
 
 .product-info-content {
   overflow-y: auto;
-  padding-right: 15px;
+  padding: 15px;
   scrollbar-width: thin;
   scrollbar-color: #0066cc #f1f1f1;
 }
@@ -308,7 +307,6 @@
 
 /* Tabs Styles */
 .tabs-container {
-  display: flex;
   border-bottom: 1px solid #eee;
   margin: 25px 0;
   gap: 5px;
@@ -442,6 +440,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  max-width: 250px;
 }
 
 .add-to-cart-button:hover {
@@ -464,6 +463,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  max-width: 250px;
 }
 
 .wishlist-button:hover {
@@ -482,7 +482,6 @@
   .product-image-section {
     position: static;
     max-width: 100%;
-    margin-bottom: 30px;
   }
 
   .product-info-content {
@@ -518,6 +517,7 @@
 
   .action-container {
     flex-direction: column;
+    align-items: center;
   }
 }
 
